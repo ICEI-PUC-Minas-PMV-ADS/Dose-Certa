@@ -148,23 +148,23 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 
 # Gerenciamento de Projeto
 
-De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
+O gerenciamento adequado do projeto contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tempo, tarefas, pessoas e do orçamento, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
-## Gerenciamento de Tempo
+## Gerenciamento de Tempo e Equipe
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
+Esta meticulosa planilha foi criada para organizar, monitorar e otimizar o gerenciamento de tempo e equipe. Seus principais aspectos são:
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
+* Etapas e Tarefas: A planilha é dividida em etapas do projeto, cada uma com tarefas específicas. Ela oferece uma visão clara do cronograma, permitindo o acompanhamento do progresso de cada etapa.
 
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
+* Responsabilidades: Cada tarefa é atribuída a determinado membro da equipe. Isso garante que todos saibam suas responsabilidades durante o projeto.
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+* Datas Importantes: As colunas de início e fim previstos ajudam a planejar prazos. É possivel visualizar quando cada tarefa deve ser concluída.
 
-## Gerenciamento de Equipe
+* Distribuição Equitativa: A seção de distribuição de tarefas mostra como o trabalho está dividido entre os membros da equipe. Isso promove uma abordagem colaborativa.
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+📌 OBS: A planilha será atualizada conforme o projeto avança. Isso permite ajustes, identificação de atrasos e tomada de decisões informadas.
 
-![Simple Project Timeline](img/02-project-timeline.png)
+![Gerenciamento de Tempo e Equipe](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-pmv-ads-2024-1-e4-proj-dad-t2-grupo9/assets/83494301/4597f311-6e4f-4480-ac17-7d2cb626761d)
 
 ## Gestão de Orçamento
 
