@@ -4,9 +4,9 @@
 
 `Projeto: Desenvolvimento de uma Aplicação Distribuída`
 
-`Eixo 4`
+`4º SEMESTRE - 2024.1`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+[nomedoprojeto] é uma aplicação distribuída que busca atrair e capacitar agentes comunitários para auxiliar idosos não alfabetizados. A aplicação também tem como propósito conscientizar sobre a importância do cuidado regular com a saúde e promover ações que encorajem essa prática. Com uma interface fácil de usar e recursos intuitivos, Saúde em Casa torna o processo de organização de medicamentos mais simples e acessível para todos, especialmente para aqueles que vivem em cidades do interior do Brasil onde muitos idosos precisam tomar regularmente alguns remédios.
 
 ## Integrantes
 
