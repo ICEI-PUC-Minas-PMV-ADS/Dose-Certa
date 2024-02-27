@@ -170,4 +170,5 @@ Esta meticulosa planilha foi criada para organizar, monitorar e otimizar o geren
 
 O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-![Orçamento](img/02-orcamento.png)
+![Gestão de custos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-pmv-ads-2024-1-e4-proj-dad-t2-grupo9/assets/83494301/8f67c267-62c4-4e4c-a5dc-c964fdbcdd90)
+
