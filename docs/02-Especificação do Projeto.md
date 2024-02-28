@@ -104,13 +104,13 @@ A tabela a seguir apresenta os requisitos não funcionais ( que não se relacion
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  ALTA | 
-|RNF-003| Deve processar requisições do usuário em no máximo 3s |  MÉDIA | 
-|RNF-004| Deve processar requisições do usuário em no máximo 3s |  MÉDIA | 
-|RNF-005| Deve processar requisições do usuário em no máximo 3s |  ALTA | 
-|RNF-006| Deve processar requisições do usuário em no máximo 3s |  ALTA | 
-|RNF-007| Deve processar requisições do usuário em no máximo 3s |  MÉDIA | 
+|RNF-001| O sistema deve garantir a confidencialidade dos dados dos pacientes e agentes comunitários | ALTA | 
+|RNF-002| O sistema deve responder de forma rápida e eficiente, especialmente durante o agendamento de visitas e registro de medicações |  ALTA | 
+|RNF-003| O tempo de carregamento das páginas deve ser otimizado para melhorar a experiência do usuário |  MÉDIA | 
+|RNF-004| A interface do usuário deve ser intuitiva e fácil de usar, especialmente para os agentes comunitários que farão o agendamento de visitas |  MÉDIA | 
+|RNF-005| O sistema deve ser projetado com recursos visuais claros e intuitivos para facilitar o entendimento de pessoas não alfabetizadas |  ALTA | 
+|RNF-006| Os pacientes devem conseguir visualizar suas medicações de forma clara e acessível |  ALTA | 
+|RNF-007| DO sistema deve ser compatível com diferentes dispositivos e navegadores |  MÉDIA | 
 
 
 ## Restrições
