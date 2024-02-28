@@ -121,16 +121,12 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. O caso de uso ilustrado no diagrama descreve o sistema para auxiliar agentes comunitários de saúde e pacientes no controle de visitas e medicações. 
+O ator agente comunitário poderá se cadastrar no sistema, realizar login, agendar visitas com seus pacientes, registrar as medicações que cada paciente utiliza incluindo dosagem, frequência e horário de administração, e registrar anotações sobre cada paciente.
+O ator paciente poderá se cadastrar no sistema, realizar login, consultar as medicações que utiliza, facilitando o controle do tratamento, e receber lembretes sobre a renovação de suas receitas.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+![Use case diagram](/docs/img/Eixo%204%20-%20use%20case%20diagram.png)
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
 
 # Matriz de Rastreabilidade
 
