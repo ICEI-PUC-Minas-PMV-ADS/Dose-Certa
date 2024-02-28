@@ -16,12 +16,11 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+A aplicação é fundamentada no eixo da saúde, e visa auxiliar o gerenciamento fármaco medicamentoso de acordo com as necessidades dos usuários (agentes de saúde e pacientes).
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Ou seja, a aplicação fornecerá aos agentes de saúde uma lista de controle das residências atendidas, e aos usuários pacientes uma listagem atualizada de horários e quantidades de medicamentos a serem administrados, de maneira simplificada e acessível.
+
+Assim, a aplicação proporcionará um facilitamento na interação entre agentes e pacientes, bem como facilitará o atendimento para ambos os perfis de usuários.
 
 ## Justificativa
 
