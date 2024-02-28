@@ -6,7 +6,7 @@
 
 `4º SEMESTRE - 2024.1`
 
-![download_image_1709084894136](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/8d329954-2204-48a1-9c1e-56ec5356a5f8)
+![logo](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/b82b564d-56ee-4333-97a0-d3e9a5a3c6b0)
 
 Dose Certa é uma aplicação distribuída que busca atrair e capacitar agentes comunitários para auxiliar idosos não alfabetizados. A aplicação também tem como propósito conscientizar sobre a importância do cuidado regular com a saúde e promover ações que encorajem essa prática. Com uma interface fácil de usar e recursos intuitivos, Dose Certa torna o processo de organização de medicamentos mais simples e acessível para todos, especialmente para aqueles que vivem em cidades do interior do Brasil onde muitos idosos precisam tomar regularmente alguns remédios.
 
