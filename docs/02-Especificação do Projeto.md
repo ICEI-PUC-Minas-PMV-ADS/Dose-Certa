@@ -110,7 +110,7 @@ A tabela a seguir apresenta os requisitos não funcionais ( que não se relacion
 |RNF-004| A interface do usuário deve ser intuitiva e fácil de usar, especialmente para os agentes comunitários que farão o agendamento de visitas |  MÉDIA | 
 |RNF-005| O sistema deve ser projetado com recursos visuais claros e intuitivos para facilitar o entendimento de pessoas não alfabetizadas |  ALTA | 
 |RNF-006| Os pacientes devem conseguir visualizar suas medicações de forma clara e acessível |  ALTA | 
-|RNF-007| DO sistema deve ser compatível com diferentes dispositivos e navegadores |  MÉDIA | 
+|RNF-007| O sistema deve ser compatível com diferentes dispositivos e navegadores |  MÉDIA | 
 
 
 ## Restrições
@@ -126,9 +126,6 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |RE-05| A arquitetura do sistema deve ser modular e escalável, facilitando a inclusão de novas funcionalidades e a integração com outros sistemas de saúde |
 |RE-06| A interface do aplicativo deve ser intuitiva e fácil de usar, considerando que alguns usuários podem ter pouca experiência com tecnologia ou não serem alfabetizados |
 |RE-06| O sistema deve ser capaz de operar offline para acomodar áreas sem acesso confiável à Internet |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
 
 ## Diagrama de Casos de Uso
 
