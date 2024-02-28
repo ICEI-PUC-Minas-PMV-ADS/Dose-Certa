@@ -73,51 +73,62 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para a priorização dos requisitos, foi utilizado a técnica de escala de três níveis, sendo:
+- Requisitos de Alta Prioridade: essenciais para o funcionamento do sistema.
+- Requisitos de Média Prioridade: importantes, mas não críticos.
+- Requisitos de Baixa Prioridade: podem ser implementados posteriormente.
+
 
 ### Requisitos Funcionais
 
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O site deve permitir que os agentes comunitários e pacientes façam login usando credenciais válidas | ALTA | 
+|RF-002| O sistema deve permitir que os usuários possam se cadastrar no sistema   | ALTA |
+|RF-003| O sistema deve permitir que os agentes comunitários cadastrem, editem ou excluem medicamentos | MÉDIA |
+|RF-004| O sistema deve permitir que os agentes comunitários cadastrem, editem ou excluem as medicações dos pacientes | ALTA |
+|RF-005| O sistema deve permitir que os pacientes visualizem suas medicações registradas, incluindo informações sobre dosagem e horário de administração | ALTA |
+|RF-006| O sistema deve permitir que os agentes comunitários agendem visitas domiciliares com os pacientes | ALTA |
+|RF-007| O sistema deve enviar notificações aos pacientes sobre visitas agendadas | BAIXA |
+|RF-008| O sistema deve permitir o cadastro de informações sobre as residências dos pacientes | BAIXA |
+|RF-009| O sistema deve permitir que os usuários (agentes e pacientes) possam criar anotações relacionadas a tarefas pendentes ou lembretes | MÉDIA |
+|RF-010| O sistema deve alertar os pacientes sobre o dia de renovação de receita para suas medicações | MÉDIA |
+|RF-011| O sistema deve permitir que os agentes comunitários visualizem uma lista das visitas agendadas para o dia | ALTA |
+|RF-012| O sistema deve permitir a interação entre pacientes e agentes comunitários por meio de um chat | BAIXA |
+|RF-013| O sistema deve permitir que o agente comunitário gere relatórios  | BAIXA |
 
 ### Requisitos não Funcionais
+A tabela a seguir apresenta os requisitos não funcionais ( que não se relacionam ao software) que o projeto deverá atender.
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
+|RNF-002| Deve processar requisições do usuário em no máximo 3s |  ALTA | 
+|RNF-003| Deve processar requisições do usuário em no máximo 3s |  MÉDIA | 
+|RNF-004| Deve processar requisições do usuário em no máximo 3s |  MÉDIA | 
+|RNF-005| Deve processar requisições do usuário em no máximo 3s |  ALTA | 
+|RNF-006| Deve processar requisições do usuário em no máximo 3s |  ALTA | 
+|RNF-007| Deve processar requisições do usuário em no máximo 3s |  MÉDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|RE-01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 23/06/2024 |
+|RE-02| A aplicação não pode gerar custos |
+|RE-03| A equipe não pode subcontratar o desenvolvimento do trabalho |
+|RE-04| O sistema deve ser compatível com dispositivos móveis, permitindo que os agentes acessem e atualizem informações em seus smartphones ou tablets |
+|RE-05| A arquitetura do sistema deve ser modular e escalável, facilitando a inclusão de novas funcionalidades e a integração com outros sistemas de saúde |
+|RE-06| A interface do aplicativo deve ser intuitiva e fácil de usar, considerando que alguns usuários podem ter pouca experiência com tecnologia ou não serem alfabetizados |
+|RE-06| O sistema deve ser capaz de operar offline para acomodar áreas sem acesso confiável à Internet |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
