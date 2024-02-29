@@ -8,12 +8,6 @@ Então com base nesse fato, foi pensado uma maneira de ajudar os agentes comunit
 ## Problema
 Buscamos resolver a melhora e agilidade de comunicação entre o agente comunitário e o paciente, evitando a necessidade do deslocamento do agente, assim ele tendo uma forma remota de prestar auxílio em cidades grandes e pequenas de maneira mais ágil e concreta. trazendo também para o paciente uma maneira fácil de  compreender a sua medicação descritas de modo simplificada e de fácil entendimento, dando a possibilidade de comunicação entre as partes através da aplicação 
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
