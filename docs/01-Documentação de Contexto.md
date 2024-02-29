@@ -6,9 +6,7 @@ Então com base nesse fato, foi pensado uma maneira de ajudar os agentes comunit
 
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Buscamos resolver a melhora e agilidade de comunicação entre o agente comunitário e o paciente, evitando a necessidade do deslocamento do agente, assim ele tendo uma forma remota de prestar auxílio em cidades grandes e pequenas de maneira mais ágil e concreta. trazendo também para o paciente uma maneira fácil de  compreender a sua medicação descritas de modo simplificada e de fácil entendimento, dando a possibilidade de comunicação entre as partes através da aplicação 
 
 Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
