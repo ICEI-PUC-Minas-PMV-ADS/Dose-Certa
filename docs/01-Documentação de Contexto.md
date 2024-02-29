@@ -1,6 +1,9 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Com o avanço da Tecnologia hoje em dia, surgem novas  possibilidades de realizar serviços de maneira mais ágil, descomplicada, e remota, diminuindo o tempo necessário de espera e aumentando a velocidade de atendimento em locais com pouco suporte.
+
+Então com base nesse fato, foi pensado uma maneira de ajudar os agentes comunitários de uma madeira mais tecnológica, que irá descomplicar o atendimento de pacientes que fazem uso de medicações no seu dia a dia. aumentando assim o nível do atendimento, propondo praticidade aos pacientes de ter todas as informações na palma da mão, e a agilidade do agente de saúde poder acompanhar e ditar novas situações ao seus pacientes.
+
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
