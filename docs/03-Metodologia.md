@@ -40,9 +40,9 @@ etiquetas:
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira: 
 
 - `Scrum Master`: 
-- `Product Owner`: 
+- `Product Owner`: Joice Ferreira
 - `Equipe de Desenvolvimento`: Iane Victória, Iris Gabriela, Joice Ferreira, Matheus de França, Milleny Ellen e Rafael Xavier;
-- `Equipe de Design`: 
+- `Equipe de Design`: Iane Victória e Iris Gabriela 
 
 ### Processo
 
