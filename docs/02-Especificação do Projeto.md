@@ -28,8 +28,28 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Fernanda Fernandes  | Fornecer ajuda Remotamente         | Simplificar e agilizar o atendimento   |
+|Fernanda Fernandes  | Conseguir ver o perfil dos pacientes |Saber o status do Paciente|  
+|Fernanda Fernandes| Fazer alterações nos medicamentos quando necessário | Readequar os medicamentos se necessário a cada paciente |
+|Fernanda Fernandes | Cadastrar Medicamentos | Colocar o horário correto dos equipamentos|
+|Rodrigo Rodrigues  | Acompanhar o atendimento dos Pacientes| Verificar se ainda a necessidade de manutenção na rotina de medicamentos|
+|Rodrigo Rodrigues  |  Agendar Visitas Presenciais| Deixar marcado o horário para comparecer ao local|
+|Rodrigo Rodrigues  |Criar Notas pessoais sobre os pacientes| Adicionar alguma particularidade de cada paciente para ele mesmo|
+|Rodrigo Rodrigues  |Criar relatórios | Criar relatórios sobre cada visita feita ao paciente|
+|Pedro Pedrosa|Verificar a dosagem dos remédios|saber se está consumindo o remédios e forma correta|
+|Pedro Pedrosa|Definir alarmes|definir alarmes  de lembrete através da aplicação |
+|Pedro Pedrosa|Solicitar Atendimento Presencial|Realizar a solicitação de um atendimento presencial quando necessario|
+|Pedro Pedrosa|ter um informativo das medicações|saber o'que é cada remédio e para que serve|
+
+
+
+
+
+
+
+
+
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
