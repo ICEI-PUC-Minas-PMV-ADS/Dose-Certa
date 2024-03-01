@@ -64,11 +64,17 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Nos dias atuais, o gerenciamento de medicamentos é um desafio para agentes comunitários e pacientes devido ao controle manual e à comunicação ineficiente. A proposta é uma aplicação que irá automatizar o gerenciamento de medicamentos, fornecendo aos profissionais da saúde uma lista de controle digital e aos pacientes uma lista atualizada de horários e quantidades de medicamentos. Isso melhora a eficiência, a precisão e a comunicação entre agentes e pacientes.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+O projeto propõe o desenvolvimento de uma aplicação de saúde com foco no gerenciamento eficiente de medicamentos para agentes de saúde e pacientes que visa centralizar informações essenciais, oferecendo aos agentes de saúde uma lista de controle das residências atendidas e aos pacientes uma listagem atualizada de horários e doses de medicamentos.
+
+Limitações: A aplicação concentra-se exclusivamente no gerenciamento de medicamentos, não abrangendo outras áreas da saúde.
+
+Alinhamento com Estratégias de Negócio: A proposta está alinhada com a estratégia de promover uma saúde melhor e mais eficaz, proporcionando soluções que facilitem o acesso e a administração de medicamentos.
+
+Ao oferecer aos pacientes uma visão clara de seus medicamentos, a aplicação pode aumentar o engajamento e a adesão ao tratamento.
 
 ### Processo 1 – NOME DO PROCESSO
 
