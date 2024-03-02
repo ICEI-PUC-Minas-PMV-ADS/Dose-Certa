@@ -28,27 +28,35 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Fernanda Fernandes  | Fornecer ajuda Remotamente         | Simplificar e agilizar o atendimento   |
+|Fernanda Fernandes  | Conseguir ver o perfil dos pacientes |Saber o status do Paciente|  
+|Fernanda Fernandes| Fazer alterações nos medicamentos quando necessário | Readequar os medicamentos se necessário a cada paciente |
+|Fernanda Fernandes | Cadastrar Medicamentos | Colocar o horário correto dos equipamentos|
+|Rodrigo Rodrigues  | Acompanhar o atendimento dos Pacientes| Verificar se ainda a necessidade de manutenção na rotina de medicamentos|
+|Rodrigo Rodrigues  |  Agendar Visitas Presenciais| Deixar marcado o horário para comparecer ao local|
+|Rodrigo Rodrigues  |Criar Notas pessoais sobre os pacientes| Adicionar alguma particularidade de cada paciente para ele mesmo|
+|Rodrigo Rodrigues  |Criar relatórios | Criar relatórios sobre cada visita feita ao paciente|
+|Pedro Pedrosa|Verificar a dosagem dos remédios|saber se está consumindo o remédios e forma correta|
+|Pedro Pedrosa|Definir alarmes|definir alarmes  de lembrete através da aplicação |
+|Pedro Pedrosa|Solicitar Atendimento Presencial|Realizar a solicitação de um atendimento presencial quando necessario|
+|Pedro Pedrosa|ter um informativo das medicações|saber o'que é cada remédio e para que serve|
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Modelagem do Processo de Negócio 
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Nos dias atuais, o gerenciamento de medicamentos é um desafio para agentes comunitários e pacientes devido ao controle manual e à comunicação ineficiente. A proposta é uma aplicação que irá automatizar o gerenciamento de medicamentos, fornecendo aos profissionais da saúde uma lista de controle digital e aos pacientes uma lista atualizada de horários e quantidades de medicamentos. Isso melhora a eficiência, a precisão e a comunicação entre agentes e pacientes.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+O projeto propõe o desenvolvimento de uma aplicação de saúde com foco no gerenciamento eficiente de medicamentos para agentes de saúde e pacientes que visa centralizar informações essenciais, oferecendo aos agentes de saúde uma lista de controle das residências atendidas e aos pacientes uma listagem atualizada de horários e doses de medicamentos.
+
+Limitações: A aplicação concentra-se exclusivamente no gerenciamento de medicamentos, não abrangendo outras áreas da saúde.
+
+Alinhamento com Estratégias de Negócio: A proposta está alinhada com a estratégia de promover uma saúde melhor e mais eficaz, proporcionando soluções que facilitem o acesso e a administração de medicamentos.
+
+Ao oferecer aos pacientes uma visão clara de seus medicamentos, a aplicação pode aumentar o engajamento e a adesão ao tratamento.
 
 ### Processo 1 – NOME DO PROCESSO
 
@@ -110,7 +118,7 @@ A tabela a seguir apresenta os requisitos não funcionais ( que não se relacion
 |RNF-004| A interface do usuário deve ser intuitiva e fácil de usar, especialmente para os agentes comunitários que farão o agendamento de visitas |  MÉDIA | 
 |RNF-005| O sistema deve ser projetado com recursos visuais claros e intuitivos para facilitar o entendimento de pessoas não alfabetizadas |  ALTA | 
 |RNF-006| Os pacientes devem conseguir visualizar suas medicações de forma clara e acessível |  ALTA | 
-|RNF-007| DO sistema deve ser compatível com diferentes dispositivos e navegadores |  MÉDIA | 
+|RNF-007| O sistema deve ser compatível com diferentes dispositivos e navegadores |  MÉDIA | 
 
 
 ## Restrições
@@ -126,9 +134,6 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |RE-05| A arquitetura do sistema deve ser modular e escalável, facilitando a inclusão de novas funcionalidades e a integração com outros sistemas de saúde |
 |RE-06| A interface do aplicativo deve ser intuitiva e fácil de usar, considerando que alguns usuários podem ter pouca experiência com tecnologia ou não serem alfabetizados |
 |RE-06| O sistema deve ser capaz de operar offline para acomodar áreas sem acesso confiável à Internet |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
 
 ## Diagrama de Casos de Uso
 
@@ -171,11 +176,14 @@ Esta meticulosa planilha foi criada para organizar, monitorar e otimizar o geren
 
 📌 OBS: A planilha será atualizada conforme o projeto avança. Isso permite ajustes, identificação de atrasos e tomada de decisões informadas.
 
-![Gerenciamento de Tempo e Equipe](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-pmv-ads-2024-1-e4-proj-dad-t2-grupo9/assets/83494301/4597f311-6e4f-4480-ac17-7d2cb626761d)
+![Gerenciamento de Tempo e Equipe](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/32b27395-ff87-4331-8c94-7b849172f947)
 
 ## Gestão de Orçamento
 
 O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
 
-![Gestão de custos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-pmv-ads-2024-1-e4-proj-dad-t2-grupo9/assets/83494301/8f67c267-62c4-4e4c-a5dc-c964fdbcdd90)
+A gestão de custos abaixo segue alinhada com valores reais do mercado de trabalho atual (2023-2024).
+
+![Gestão de Orçamento](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/785fca6d-8fc1-4c6a-9c6e-20d347ee2492)
+
 
