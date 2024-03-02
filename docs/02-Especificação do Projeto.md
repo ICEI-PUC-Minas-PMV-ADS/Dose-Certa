@@ -176,7 +176,7 @@ Esta meticulosa planilha foi criada para organizar, monitorar e otimizar o geren
 
 📌 OBS: A planilha será atualizada conforme o projeto avança. Isso permite ajustes, identificação de atrasos e tomada de decisões informadas.
 
-![Gerenciamento de Tempo e Equipe](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-dad-t2-pmv-ads-2024-1-e4-proj-dad-t2-grupo9/assets/83494301/4597f311-6e4f-4480-ac17-7d2cb626761d)
+![Gerenciamento de Tempo e Equipe](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/32b27395-ff87-4331-8c94-7b849172f947)
 
 ## Gestão de Orçamento
 
