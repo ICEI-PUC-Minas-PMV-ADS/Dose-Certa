@@ -8,6 +8,19 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
+Fernanda Fernandes, Agente de saúde:
+
+Idade: 25 anos
+
+Localização: Juiz de Fora
+
+Motivação: Aprimorar o controle da gestão das visitas e do tratamento dos pacientes.
+
+Necessidades: Cadastrar medicamentos administrados aos paacientes, assim como cadastrar infomrações pertinentes as residências desses pacientes.
+
+
+
+
 Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
