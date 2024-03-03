@@ -84,11 +84,27 @@ Este processo apresenta as ações que o usuário (Agente Comunitário) pode rea
 
 ![Processo 1](img/processo1-agente.png)
 
-### Processo 2 – NOME DO PROCESSO
+### Subprocesso – GERENCIAR MEDICAÇÕES
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+O Subprocesso "Gerenciar Medicações" é apresentado no processo 1, onde o ator Agente Comunitário que o realiza.
 
-![Processo 2](img/02-bpmn-proc2.png)
+![Subprocesso Gerenciar Medicações](img/subprocesso-gerenciar-medicacoes.png)
+
+### Subprocesso – CADASTRAR INFORMAÇÕES DE RESIDÊNCIA
+
+Este subprocesso é apresentado no processo 1, onde o ator Agente Comunitário que o realiza.
+
+![Subprocesso cadastrar Informações de residência](img/subprocesso-cadastrar-informacoes-residencia.png)
+
+### Processo 2 – FUNCIONALIDADES NO ACESSO DO PACIENTE
+
+Este processo apresenta as ações que o usuário (Paciente) pode realizar no sistema.
+
+### Subprocesso – TELA DE CADASTRO DO PACIENTE
+
+Este subprocesso é apresentado no processo 2, onde o ator Paciente realiza seu cadastro no sistema.
+
+![Subprocesso Tela de Cadastro do Paciente](img/subprocesso-tela-cadastro-paciente.png)
 
 ## Indicadores de Desempenho
 
