@@ -92,12 +92,12 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
-
-Usar o seguinte modelo: 
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+| Indicador                      | Objetivos                                 | Descrição                                                                                       | Fórmula de Cálculo                                        | Fonte de Dados                                 | Perspectiva                       |
+|--------------------------------|-------------------------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------|-----------------------------------|
+| Número de Usuários Cadastrados | Expandir a base de usuários da aplicação  | Quantifica o total acumulado de usuários que se cadastraram                                    | Total de usuários cadastrados até a data atual            | Banco de Dados da Aplicação                   | Crescimento do Produto             |
+| Número de Usuários Ativos      | Incrementar a retenção de usuários        | Quantifica o número de usuários que interagiram com a aplicação em um período definido         | Total de usuários ativos no período selecionado           | Sistema de Análise de Engajamento da Aplicação| Engajamento e Crescimento          |
+| Taxa de Conversão              | Otimizar a conversão de interessados em usuários ativos | Calcula a proporção de usuários que se cadastram após instalar a aplicação                   | (Número de Usuários Cadastrados / Total de Instalações) * 100 | Dados de Instalação das Plataformas de Distribuição | Desempenho Comercial e Crescimento |
+| Taxa de Churn                  | Minimizar a perda de usuários             | Indica a proporção de usuários que deixaram de usar a aplicação em um período definido        | (Número de Usuários Inativos / Total de Usuários Ativos no início do período) * 100 | Sistema de Análise de Engajamento da Aplicação| Retenção e Satisfação do Usuário   |
 
 ## Requisitos
 
@@ -166,17 +166,35 @@ O ator paciente poderá se cadastrar no sistema, realizar login, consultar as me
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+A matriz de rastreabilidade é uma ferramenta essencial no desenvolvimento de software, pois permite visualizar a relação entre os requisitos e os elementos do sistema. No caso a seguir, os requisitos RF-001, RF-002, RNF-003 e RNF-005 desempenham um papel crucial em diversas áreas-chave.
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+| Requisito   | Autenticação | Usuários | Medicamentos | Medicações | Agendamentos | Notificações |
+|-------------|--------------|----------|--------------|------------|--------------|--------------|
+| RF-001      | X            |          |              |            |              |              |
+| RF-002      | X            | X        |              |            |              |              |
+| RF-003      |              |          | X            |            |              |              |
+| RF-004      |              |          |              | X          |              |              |
+| RF-005      |              |          |              | X          |              |              |
+| RF-006      |              |          |              |            | X            |              |
+| RF-007      |              |          |              |            |              | X            |
+| RF-008      |              | X        |              |            |              |              |
+| RF-009      |              | X        |              |            |              |              |
+| RF-010      |              |          |              |            |              | X            |
+| RF-011      |              |          |              |            | X            |              |
+| RF-012      |              | X        |              |            |              |              |
+| RF-013      |              |          | X            |            |              |              |
+| RNF-001     | X            | X        | X            | X          | X            | X            |
+| RNF-002     |              |          |              |            | X            |              |
+| RNF-003     | X            | X        | X            | X          | X            | X            |
+| RNF-004     | X            | X        |              |            |              |              |
+| RNF-005     | X            | X        | X            | X          | X            | X            |
+| RNF-006     |              |          |              | X          |              |              |
+| RNF-007     | X            | X        | X            | X          | X            | X            |
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
 
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
+O RF-001 refere-se à autenticação, um aspecto fundamental para garantir a segurança e a integridade do sistema. A autenticação dos usuários (RF-002) é igualmente importante, pois permite controlar o acesso às funcionalidades e garantir que apenas usuários autorizados possam interagir com o sistema.
 
+Além disso, os requisitos RNF-003 e RNF-005 estão relacionados à robustez e confiabilidade do sistema. O RNF-003 aborda aspectos como o gerenciamento eficiente de medicamentos, enquanto o RNF-005 trata das funcionalidades de notificação, que são essenciais para manter os usuários informados sobre eventos importantes, como agendamentos de medicamentos ou consultas médicas.
 
 # Gerenciamento de Projeto
 
