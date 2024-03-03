@@ -100,6 +100,8 @@ Este subprocesso é apresentado no processo 1, onde o ator Agente Comunitário q
 
 Este processo apresenta as ações que o usuário (Paciente) pode realizar no sistema.
 
+![Processo 2](img/processo2-paciente.png)
+
 ### Subprocesso – TELA DE CADASTRO DO PACIENTE
 
 Este subprocesso é apresentado no processo 2, onde o ator Paciente realiza seu cadastro no sistema.
