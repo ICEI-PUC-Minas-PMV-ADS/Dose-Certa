@@ -1,8 +1,9 @@
 # Introdução
 
-Com o avanço da Tecnologia hoje em dia, surgem novas  possibilidades de realizar serviços de maneira mais ágil, descomplicada, e remota, diminuindo o tempo necessário de espera e aumentando a velocidade de atendimento em locais com pouco suporte.
+A era moderna, caracterizada por avanços tecnológicos sem precedentes, tem aberto portas para a otimização de serviços em diversas áreas, especialmente aquelas com recursos limitados. No campo da saúde, essa realidade se traduz em soluções inovadoras que auxiliam profissionais como os agentes comunitários de saúde (ACS) na árdua tarefa de oferecer um atendimento de qualidade à população.
+Em resposta às crescentes demandas da atenção básica à saúde, particularmente entre a população idosa, que no Brasil representa 10,9% da população total segundo o IBGE em 2022, e em locais com pouco suporte, uma solução tecnológica inovadora foi desenvolvida para auxiliar os ACS em suas funções. O Dose Certa, visa otimizar o atendimento de pacientes que utilizam medicações contínuas, elevando o padrão de cuidado e proporcionando maior autonomia e engajamento dos pacientes em sua própria saúde.
+Além disso, o Dose Certa oferece aos agentes de saúde a agilidade de acompanhar e orientar seus pacientes em novas situações de maneira eficaz. A solução tecnológica para ACS representa um salto qualitativo na atenção básica à saúde, empoderando pacientes e profissionais para a construção de um futuro mais saudável e sustentável. Através da otimização do atendimento, do aumento da qualidade do cuidado e da promoção da autonomia dos pacientes, essa solução contribui para a construção de um sistema de saúde mais colaborativo, eficiente, equitativo e humanizado. 
 
-Então com base nesse fato, foi pensado uma maneira de ajudar os agentes comunitários de uma madeira mais tecnológica, que irá descomplicar o atendimento de pacientes que fazem uso de medicações no seu dia a dia. aumentando assim o nível do atendimento, propondo praticidade aos pacientes de ter todas as informações na palma da mão, e a agilidade do agente de saúde poder acompanhar e ditar novas situações ao seus pacientes.
 
 
 ## Problema
