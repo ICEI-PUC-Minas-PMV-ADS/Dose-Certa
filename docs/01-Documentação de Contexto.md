@@ -39,17 +39,13 @@ O desenvolvimento e implementação do sistema "Dose Certa" trará diversos bene
 
 Diante do exposto, o desenvolvimento do sistema "Dose Certa" se configura como uma iniciativa de grande relevância para o fortalecimento da Atenção Básica no SUS e para a promoção da saúde da população brasileira. Assim, este trabalho se propõe a apresentar uma análise aprofundada das necessidades dos ACS, bem como uma descrição detalhada do sistema "Dose Certa" e seus potenciais impactos na saúde pública.
 
-> **Links Úteis**:
-> - [Agentes comunitários de saúde: perfil e formação](https://www.scielo.br/j/csc/a/ynGgXnSkDM47zhpMcPSpLMG/#:~:text=O%20perfil%20profissional%20do%20ACS,for%C3%A7a%20de%20vontade%20e%20doa%C3%A7%C3%A3o.)
-> - [Perfil de Competencia do Acs](https://bvsms.saude.gov.br/bvs/publicacoes/perfil_competencia_acs.pdf)
-
 ## Público-Alvo
 
+Nosso público-alvo abrange uma ampla gama de indivíduos, cada um com suas próprias necessidades e desafios únicos. Estamos comprometidos em atender a esses grupos diversos, reconhecendo suas particularidades e desenvolvendo soluções que atendam às suas necessidades específicas:
 
-
-> - Idosos analfabetos;
-> - Idosos com qualquer tipo de problema de memória;
-> - Pessoas com deficiências de locomoção que moram em áreas de difícil acesso;
-> - Agentes comunitários;
-> - Pessoas que fazem grande uso de remédios e tem dificuldade de identificar
+- Idosos analfabetos;
+- Idosos com qualquer tipo de problema de memória;
+- Pessoas com deficiências de locomoção que moram em áreas de difícil acesso;
+- Agentes comunitários;
+- Pessoas que fazem grande uso de remédios e tem dificuldade de identificar
 
