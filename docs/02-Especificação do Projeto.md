@@ -78,11 +78,11 @@ Alinhamento com Estratégias de Negócio: A proposta está alinhada com a estrat
 
 Ao oferecer aos pacientes uma visão clara de seus medicamentos, a aplicação pode aumentar o engajamento e a adesão ao tratamento.
 
-### Processo 1 – NOME DO PROCESSO
+### Processo 1 – FUNCIONALIDADES NO ACESSO DO AGENTE COMUNITÁRIO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+Este processo apresenta as ações que o usuário (Agente Comunitário) pode realizar no sistema.
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Processo 1](img/processo1-agente.png)
 
 ### Processo 2 – NOME DO PROCESSO
 
