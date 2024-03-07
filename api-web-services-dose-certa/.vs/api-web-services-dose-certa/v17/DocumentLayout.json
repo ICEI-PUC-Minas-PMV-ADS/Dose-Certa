@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4ACF05-C7C9-4B89-B9E9-6880A9F773F7}|api-web-services-dose-certa\\api-web-services-dose-certa.csproj|c:\\users\\joice\\onedrive\\documentos\\dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4ACF05-C7C9-4B89-B9E9-6880A9F773F7}|api-web-services-dose-certa\\api-web-services-dose-certa.csproj|solutionrelative:api-web-services-dose-certa\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4ACF05-C7C9-4B89-B9E9-6880A9F773F7}|api-web-services-dose-certa\\api-web-services-dose-certa.csproj|c:\\users\\joice\\onedrive\\documentos\\dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4ACF05-C7C9-4B89-B9E9-6880A9F773F7}|api-web-services-dose-certa\\api-web-services-dose-certa.csproj|solutionrelative:api-web-services-dose-certa\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF4ACF05-C7C9-4B89-B9E9-6880A9F773F7}|api-web-services-dose-certa\\api-web-services-dose-certa.csproj|c:\\users\\joice\\onedrive\\documentos\\dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF4ACF05-C7C9-4B89-B9E9-6880A9F773F7}|api-web-services-dose-certa\\api-web-services-dose-certa.csproj|solutionrelative:api-web-services-dose-certa\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\Models\\User.cs",
+              "RelativeDocumentMoniker": "api-web-services-dose-certa\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\Models\\User.cs",
+              "RelativeToolTip": "api-web-services-dose-certa\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T03:21:22.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "api-web-services-dose-certa\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\Controllers\\UserController.cs",
+              "RelativeToolTip": "api-web-services-dose-certa\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T02:59:21.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "api-web-services-dose-certa\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "api-web-services-dose-certa\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T02:53:11.284Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
