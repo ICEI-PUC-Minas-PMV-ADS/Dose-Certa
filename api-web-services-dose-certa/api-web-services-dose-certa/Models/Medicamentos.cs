@@ -10,7 +10,7 @@ namespace APIDoseCerta.Models
         [Required]
         public String Dosagem { get; set; }
         [Required]
-        
+        public String Indicacoes { get; set; }
 
     }
 }
