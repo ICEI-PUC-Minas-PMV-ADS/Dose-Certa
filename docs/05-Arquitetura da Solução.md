@@ -37,9 +37,22 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+| Categoria | Tecnologia | Descrição |
+| --- |---|---|
+| Linguagem utilizada | Javascript | Adiciona interatividade e dinamismo a uma página web |
+| | C# | Linguagem de programação robusta e versátil usada para desenvolvimento web back-end. |
+| | HTML | Define a estrutura e o conteúdo de uma página web. |
+| | CSS | Define o estilo visual de uma página web. |
+| Frameworks | ASP.NET | Criar APIs e aplicações web robustas. |
+| | React | Framework para construir interfaces de usuário interativas com JavaScript. |
+| | React Native | Framework para construir interfaces de usuário interativas para aplicações mobile com JavaScript. |
+| Bibliotecas | Bootstrap | Cria layouts responsivos e componentes de interface de usuário. |
+| IDEs de Desenvolvimento | Visual Studio Code | Editor de código leve e poderoso com muitos recursos para desenvolvimento web. |
+| Ferramentas | Git | Sistema de controle de versão para gerenciar o código do seu projeto. |
+| | GitHub | Plataforma online para hospedar e gerenciar projetos Git. |
+| Banco de dados | MongoDB | Banco de dados NoSQL de código aberto, popular por sua alta performance, escalabilidade e flexibilidade. |
 
 ## Hospedagem
 
