@@ -1,6 +1,12 @@
+using api_web_services_dose_certa.Models;
+using api_web_services_dose_certa.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.Configure<DoseCertaDatabaseSettings>(
+    builder.Configuration.GetSection("DoseCertaDatabase"));
+builder.Services.AddSingleton<NotesService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
