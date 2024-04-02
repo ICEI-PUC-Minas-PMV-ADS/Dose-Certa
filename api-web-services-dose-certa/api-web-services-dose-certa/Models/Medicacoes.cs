@@ -8,7 +8,5 @@ namespace APIDoseCerta.Medicacoes
         public DateTime DateInicio { get; set; }
         public DateTime DateFim { get; set; }
         public String Observacao { get; set; }
-
-
     }
 }
