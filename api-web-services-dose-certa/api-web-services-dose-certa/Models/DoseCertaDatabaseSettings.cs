@@ -10,5 +10,9 @@
 
         public string MedicacaoCollectionName { get; set; } = null!;
 
+        public string VisitaCollectionName { get; set; } = null!;
+
+        public string RemedioCollectionName { get; set; } = null!;
+
     }
 }
