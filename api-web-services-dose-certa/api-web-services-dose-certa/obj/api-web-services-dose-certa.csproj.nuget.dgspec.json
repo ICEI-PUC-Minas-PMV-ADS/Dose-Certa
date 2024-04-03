@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {}
+    "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
+    "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+        "projectUniqueName": "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
         "projectName": "api-web-services-dose-certa",
-        "projectPath": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
-        "packagesPath": "C:\\Users\\joice\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joice\\OneDrive\\Documentos\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
+        "projectPath": "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+        "packagesPath": "C:\\Users\\ellen\\.nuget\\packages\\",
+        "outputPath": "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\joice\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ellen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -70,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
