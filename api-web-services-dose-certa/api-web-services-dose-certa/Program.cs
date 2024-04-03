@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<DoseCertaDatabaseSettings>(
     builder.Configuration.GetSection("DoseCertaDatabase"));
 builder.Services.AddSingleton<NotesService>();
+//builder.Services.AddSingleton<MedicacaoService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -20,12 +21,18 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler("/error");
 }
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.MapGet("/error", () => Results.Problem());
 app.MapControllers();
 
 app.Run();

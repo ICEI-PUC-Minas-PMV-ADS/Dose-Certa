@@ -2,6 +2,8 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace api_web_services_dose_certa.Models
 {
@@ -14,46 +16,17 @@ namespace api_web_services_dose_certa.Models
 
         public string Content { get; set; }
 
-        public DateTime CreationDate { get; set; } = DateTime.Now;
+        public DateTime CreationDate { get; set; } = DateTime.UtcNow;
+
 
         /*
-        private User _user;
-        private User _agent;
+        public int IdUsuarioPaciente { get; set; }
 
-        
-        public virtual User User
-        {
-            get
-            {
-                if (_user == null)
-                {
-                    _user = await _noteRepository.GetUserAsync(UserId, "Paciente");
-                }
+        public int IdUsuarioAgente { get; set; }
 
-                return _user;
-            }
-            set
-            {
-                _user = value;
-            }
-        }
 
-        public virtual User Agent
-        {
-            get
-            {
-                if (_agent == null)
-                {
-                    _agent = await _noteRepository.GetUserAsync(AgentId, "Agente");
-                }
-
-                return _agent;
-            }
-            set
-            {
-                _agent = value;
-            }
-        }
+        public User? User { get; set; }
         */
+
     }
 }

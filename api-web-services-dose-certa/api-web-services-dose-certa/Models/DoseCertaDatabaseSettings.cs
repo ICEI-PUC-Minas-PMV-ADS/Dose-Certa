@@ -6,6 +6,9 @@
 
         public string DatabaseName { get; set; } = null!;
 
-        public string NotesCollectionName { get; set; } = null!;
+        public string NotesCollectionName { get; set; } = null!; 
+
+        public string MedicacaoCollectionName { get; set; } = null!;
+
     }
 }
