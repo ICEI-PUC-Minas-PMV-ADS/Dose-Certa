@@ -18,15 +18,12 @@ namespace api_web_services_dose_certa.Models
 
         public DateTime CreationDate { get; set; } = DateTime.UtcNow;
 
+        public string? IdUserAgente { get; set; }
+        public string? IdUserPaciente { get; set; }
 
-        /*
-        public int IdUsuarioPaciente { get; set; }
-
-        public int IdUsuarioAgente { get; set; }
-
-
-        public User? User { get; set; }
-        */
+        // Propriedade de Navegação (opcional)
+        public User? UserAgente { get; set; }
+        public User? UserPaciente { get; set; }
 
     }
 }
