@@ -15,6 +15,8 @@ namespace APIDoseCerta.Models
         public DateTime DataTermino { get; set; }
 
         public string Observacao { get; set; }
+
+        public int IdUsuarioPaciente { get; set; }
     }
 
 }

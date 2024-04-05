@@ -1,4 +1,5 @@
-﻿namespace api_web_services_dose_certa.Models
+﻿
+namespace api_web_services_dose_certa.Models
 {
     public class DoseCertaDatabaseSettings
     {
@@ -12,7 +13,7 @@
 
         public string VisitaCollectionName { get; set; } = null!;
 
-        public string RemedioCollectionName { get; set; } = null!;
+        public string RemediosCollectionName { get; set; }
 
     }
 }
