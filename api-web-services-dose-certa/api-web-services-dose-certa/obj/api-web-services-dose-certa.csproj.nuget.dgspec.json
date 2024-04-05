@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {}
+    "C:\\Users\\Vitória\\Downloads\\Dose-Certa\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
+    "C:\\Users\\Vitória\\Downloads\\Dose-Certa\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+        "projectUniqueName": "C:\\Users\\Vitória\\Downloads\\Dose-Certa\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
         "projectName": "api-web-services-dose-certa",
-        "projectPath": "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
-        "packagesPath": "C:\\Users\\ellen\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\Faculdade\\teste\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
+        "projectPath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+        "packagesPath": "C:\\Users\\Vitória\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ellen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vitória\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
