@@ -8,7 +8,7 @@ builder.Services.Configure<DoseCertaDatabaseSettings>(
     builder.Configuration.GetSection("DoseCertaDatabase"));
 builder.Services.AddSingleton<NotesService>();
 builder.Services.AddSingleton<MedicacaoService>();
-//builder.Services.AddSingleton<VisitaService>();
+builder.Services.AddSingleton<VisitaService>();
 //builder.Services.AddSingleton<RemedioService>();
 
 builder.Services.AddControllers();
