@@ -9,6 +9,7 @@ namespace api_web_services_dose_certa.Services
     {
         private readonly IMongoCollection<Medicacao> _medicacaoCollection;
 
+        //aqui que vc arrumou o erro da propriedade name que aparecia no mongodb
         public MedicacaoService(
             IOptions<DoseCertaDatabaseSettings> doseCertaDatabaseSettings)
         {
@@ -36,5 +37,18 @@ namespace api_web_services_dose_certa.Services
 
         public async Task RemoveAsync(string id) =>
             await _medicacaoCollection.DeleteOneAsync(x => x.Id == id);
-    }
+
+        public void Start(string id)
+        {
+            var filter = Builders<Medicacao>.Filter.Eq(m => m.Id, id);
+            var update = Builders<Medicacao>.Update.Set(m => m.Status, "Iniciado");
+            _medicacaoCollection.UpdateOne(filter, update);
+        }
+        public void Pause(string id)
+        {
+           var filter = Builders<Medicacao>.Filter.Eq(m => m.Id, id);
+           var update = Builders<Medicacao>.Update.Set(m => m.Status, "Pausado");
+           _medicacaoCollection.UpdateOne(filter, update);
+        }     
+    }  
 }

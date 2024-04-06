@@ -1,6 +1,7 @@
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace APIDoseCerta.Models
 {
@@ -17,6 +18,10 @@ namespace APIDoseCerta.Models
         public string Observacao { get; set; }
 
         public int IdUsuarioPaciente { get; set; }
+
+        public List<string> Remedios { get; set; }
+        
+        public string Status { get; set; }
     }
 
 }
