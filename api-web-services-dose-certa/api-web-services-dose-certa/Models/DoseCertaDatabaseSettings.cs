@@ -13,7 +13,9 @@ namespace api_web_services_dose_certa.Models
 
         public string VisitaCollectionName { get; set; } = null!;
 
-        public string RemediosCollectionName { get; set; }
+        public string RemediosCollectionName { get; set; } = null!;
+        
+        public string ResidenciaCollectionName { get; set; } = null!;
 
     }
 }
