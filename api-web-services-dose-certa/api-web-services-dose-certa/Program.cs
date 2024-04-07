@@ -11,6 +11,12 @@ builder.Services.AddSingleton<MedicacaoService>();
 builder.Services.AddSingleton<VisitaService>();
 //builder.Services.AddSingleton<RemedioService>();
 
+builder.Services.Configure<MySqlDatabaseSettings>(
+        builder.Configuration.GetSection(nameof(MySqlDatabaseSettings)));
+builder.Services.AddSingleton<UserService>();
+builder.Services.AddScoped<RequestVerifierService>();
+builder.Services.AddScoped<AuthenticationService>();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
