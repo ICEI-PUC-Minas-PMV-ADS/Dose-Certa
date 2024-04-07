@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace api_web_services_dose_certa.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/users")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -19,7 +19,7 @@ namespace api_web_services_dose_certa.Controllers
         public async Task<List<User>> GetUsers() =>
             await _userService.GetAllUsers();
 
-        [HttpGet("/api/Users/{id}")] 
+        [HttpGet("{id}")] 
         public async Task<ActionResult<User>> GetById(int id)
         {
             var user = await _userService.GetById(id);
@@ -41,7 +41,7 @@ namespace api_web_services_dose_certa.Controllers
         }
 
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult> updateUserById(int id, User updateUser)
         {
             var user = await _userService.GetById(id);
@@ -58,7 +58,7 @@ namespace api_web_services_dose_certa.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> deleteUserById(int id)
         {
             var user = await _userService.GetById(id);

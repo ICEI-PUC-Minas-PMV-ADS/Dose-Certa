@@ -1,10 +1,10 @@
 using APIDoseCerta.Models;
 using api_web_services_dose_certa.Models;
 using MySql.Data.MySqlClient;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using System.Data.Common;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace api_web_services_dose_certa.Services;
 
@@ -17,7 +17,7 @@ public class UserService
         string connectionString = mySqlDatabaseSettings.Value.ConnectionString;
         _connection = new MySqlConnection(connectionString);
     }
-    
+
     public async Task<List<User>> GetAllUsers()
     {
         List<User> users = new List<User>();
@@ -37,7 +37,6 @@ public class UserService
                     Id = (int)reader["Id"],
                     Name = reader["Name"].ToString(),
                     Email = reader["Email"].ToString(),
-                    Password = reader["Password"].ToString(),
                     UserType = reader["UserType"].ToString(),
                     HouseId = reader["HouseId"].ToString()
                 };
@@ -75,7 +74,6 @@ public class UserService
                     Id = (int)reader["Id"],
                     Name = reader["Name"].ToString(),
                     Email = reader["Email"].ToString(),
-                    Password = reader["Password"].ToString(),
                     UserType = reader["UserType"].ToString(),
                     HouseId = reader["HouseId"].ToString()
                 };
@@ -97,12 +95,13 @@ public class UserService
         {
             await _connection.OpenAsync();
 
-            string query = "INSERT INTO User (Id, Name, Email, Password, UserType, HouseId) VALUES (@Id, @Name, @Email, @Password, @UserType, @HouseId)";
+            string hashedPassword = HashPassword(userToCreate.Password);
+
+            string query = "INSERT INTO User (Name, Email, Password, UserType, HouseId) VALUES (@Name, @Email, @Password, @UserType, @HouseId)";
             MySqlCommand command = new MySqlCommand(query, _connection);
-            command.Parameters.AddWithValue("@Id", userToCreate.Id);
             command.Parameters.AddWithValue("@Name", userToCreate.Name);
             command.Parameters.AddWithValue("@Email", userToCreate.Email);
-            command.Parameters.AddWithValue("@Password", userToCreate.Password);
+            command.Parameters.AddWithValue("@Password", hashedPassword); // Salva o hash da senha
             command.Parameters.AddWithValue("@UserType", userToCreate.UserType);
             command.Parameters.AddWithValue("@HouseId", userToCreate.HouseId);
 
@@ -114,19 +113,20 @@ public class UserService
         }
     }
 
-
     public async Task UpdateAsync(int id, User userUpdated)
     {
         try
         {
             await _connection.OpenAsync();
 
+            string hashedPassword = HashPassword(userUpdated.Password);
+
             string query = "UPDATE User SET Name = @Name, Email = @Email, Password = @Password, UserType = @UserType, HouseId = @HouseId WHERE Id = @Id";
             MySqlCommand command = new MySqlCommand(query, _connection);
             command.Parameters.AddWithValue("@Id", id);
             command.Parameters.AddWithValue("@Name", userUpdated.Name);
             command.Parameters.AddWithValue("@Email", userUpdated.Email);
-            command.Parameters.AddWithValue("@Password", userUpdated.Password);
+            command.Parameters.AddWithValue("@Password", hashedPassword); // Salva o hash da senha
             command.Parameters.AddWithValue("@UserType", userUpdated.UserType);
             command.Parameters.AddWithValue("@HouseId", userUpdated.HouseId);
 
@@ -137,7 +137,6 @@ public class UserService
             await _connection.CloseAsync();
         }
     }
-
 
     public async Task RemoveAsync(int id)
     {
@@ -154,6 +153,61 @@ public class UserService
         finally
         {
             await _connection.CloseAsync();
+        }
+    }
+
+    public async Task<User> GetByEmailAndPassword(string email, string password)
+    {
+        User user = null;
+
+        string hashedPassword = HashPassword(password);
+
+        try
+        {
+            await _connection.OpenAsync();
+
+            string query = "SELECT * FROM User WHERE Email = @Email AND Password = @Password";
+            MySqlCommand command = new MySqlCommand(query, _connection);
+            command.Parameters.AddWithValue("@Email", email);
+            command.Parameters.AddWithValue("@Password", hashedPassword);
+
+            using (var reader = await command.ExecuteReaderAsync())
+            {
+                if (await reader.ReadAsync())
+                {
+                    user = new User
+                    {
+                        Id = (int)reader["Id"],
+                        Name = reader["Name"].ToString(),
+                        Email = reader["Email"].ToString(),
+                        UserType = reader["UserType"].ToString(),
+                        HouseId = reader["HouseId"].ToString()
+                    };
+                }
+            }
+        }
+        finally
+        {
+            await _connection.CloseAsync();
+        }
+
+        return user;
+    }
+
+    private string HashPassword(string password)
+    {
+        using (var sha256 = SHA256.Create())
+        {
+            byte[] bytes = Encoding.UTF8.GetBytes(password);
+
+            byte[] hash = sha256.ComputeHash(bytes);
+
+            StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < hash.Length; i++)
+            {
+                builder.Append(hash[i].ToString("x2"));
+            }
+            return builder.ToString();
         }
     }
 }
