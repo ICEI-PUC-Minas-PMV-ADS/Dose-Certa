@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("api-web-services-dose-certa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a506de6a0b7fb2f7c5259e88681efbff96ad093")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5af4f193562543562615cd42b030f7f0b176c414")]
 [assembly: System.Reflection.AssemblyProductAttribute("api-web-services-dose-certa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("api-web-services-dose-certa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

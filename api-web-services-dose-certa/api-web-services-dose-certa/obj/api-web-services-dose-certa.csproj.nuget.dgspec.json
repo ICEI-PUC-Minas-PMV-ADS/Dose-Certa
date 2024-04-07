@@ -46,17 +46,37 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.TestPlatform": {
+              "target": "Package",
+              "version": "[17.9.0, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.24.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.3.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.7.0, )"
             }
           },
           "imports": [
