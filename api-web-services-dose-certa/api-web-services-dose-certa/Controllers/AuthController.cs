@@ -5,7 +5,7 @@ using APIDoseCerta.Dtos;
 
 namespace api_web_services_dose_certa.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/auth")]
     [ApiController]
     public class AuthController : ControllerBase
     {
