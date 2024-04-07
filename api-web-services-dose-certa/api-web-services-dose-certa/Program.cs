@@ -16,6 +16,7 @@ builder.Services.Configure<MySqlDatabaseSettings>(
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddScoped<RequestVerifierService>();
 builder.Services.AddScoped<AuthenticationService>();
+builder.Services.AddScoped<MessageService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
