@@ -22,6 +22,9 @@ jobs:
           dotnet-version: '8.x'
           include-prerelease: true
 
+      - name: Change to API directory
+        run: cd api-web-services-dose-certa\api-web-services-dose-certa
+
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
