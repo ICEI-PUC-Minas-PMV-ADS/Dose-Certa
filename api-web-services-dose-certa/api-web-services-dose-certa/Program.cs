@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<DoseCertaDatabaseSettings>(
     builder.Configuration.GetSection("DoseCertaDatabase"));
 builder.Services.AddScoped<INotesService, NotesService>();
+builder.Services.AddScoped<IRemedioService, RemedioService>();
+
 //builder.Services.AddSingleton<MedicacaoService>();
 //builder.Services.AddSingleton<VisitaService>();
 //builder.Services.AddSingleton<RemedioService>();
