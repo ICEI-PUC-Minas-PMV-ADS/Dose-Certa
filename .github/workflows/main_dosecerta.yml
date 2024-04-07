@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'DoseCerta'
           slot-name: 'Production'
-          package: .
+          package: api-web-services-dose-certa\api-web-services-dose-certa
           
