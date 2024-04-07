@@ -15,12 +15,12 @@ namespace api_web_services_dose_certa.Controllers
         public UsersController(UserService userService) =>
             _userService = userService;
 
-        [HttpGet]
+        [HttpGet] 
         public async Task<List<User>> GetUsers() =>
             await _userService.GetAllUsers();
 
-        [HttpGet("{id:length(24)}")]
-        public async Task<ActionResult<User>> GetById(string id)
+        [HttpGet("/api/Users/{id}")] 
+        public async Task<ActionResult<User>> GetById(int id)
         {
             var user = await _userService.GetById(id);
 
@@ -33,7 +33,6 @@ namespace api_web_services_dose_certa.Controllers
         }
 
         [HttpPost]
-        [HttpPost]
         public async Task<IActionResult> CreateUser(User newUser)
         {
             await _userService.CreateAsync(newUser);
@@ -42,8 +41,8 @@ namespace api_web_services_dose_certa.Controllers
         }
 
 
-        [HttpPut("{id:length(24)}")]
-        public async Task<IActionResult> updateUserById(string id, User updateUser)
+        [HttpPut]
+        public async Task<IActionResult> updateUserById(int id, User updateUser)
         {
             var user = await _userService.GetById(id);
 
@@ -59,8 +58,8 @@ namespace api_web_services_dose_certa.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id:length(24)}")]
-        public async Task<IActionResult> deleteUserById(string id)
+        [HttpDelete]
+        public async Task<IActionResult> deleteUserById(int id)
         {
             var user = await _userService.GetById(id);
 

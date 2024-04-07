@@ -17,7 +17,7 @@ public class UserService
         string connectionString = mySqlDatabaseSettings.Value.ConnectionString;
         _connection = new MySqlConnection(connectionString);
     }
-
+    
     public async Task<List<User>> GetAllUsers()
     {
         List<User> users = new List<User>();
@@ -34,7 +34,7 @@ public class UserService
             {
                 User user = new User
                 {
-                    Id = reader["Id"].ToString(),
+                    Id = (int)reader["Id"],
                     Name = reader["Name"].ToString(),
                     Email = reader["Email"].ToString(),
                     Password = reader["Password"].ToString(),
@@ -54,7 +54,7 @@ public class UserService
         return users;
     }
 
-    public async Task<User> GetById(string id)
+    public async Task<User> GetById(int id)
     {
         User user = null;
 
@@ -72,7 +72,7 @@ public class UserService
             {
                 user = new User
                 {
-                    Id = reader["Id"].ToString(),
+                    Id = (int)reader["Id"],
                     Name = reader["Name"].ToString(),
                     Email = reader["Email"].ToString(),
                     Password = reader["Password"].ToString(),
@@ -115,7 +115,7 @@ public class UserService
     }
 
 
-    public async Task UpdateAsync(string id, User userUpdated)
+    public async Task UpdateAsync(int id, User userUpdated)
     {
         try
         {
@@ -139,7 +139,7 @@ public class UserService
     }
 
 
-    public async Task RemoveAsync(string id)
+    public async Task RemoveAsync(int id)
     {
         try
         {
