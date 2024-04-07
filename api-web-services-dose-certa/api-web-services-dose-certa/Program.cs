@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.Configure<DoseCertaDatabaseSettings>(
     builder.Configuration.GetSection("DoseCertaDatabase"));
-builder.Services.AddSingleton<NotesService>();
+builder.Services.AddScoped<INotesService, NotesService>();
 //builder.Services.AddSingleton<MedicacaoService>();
 //builder.Services.AddSingleton<VisitaService>();
 //builder.Services.AddSingleton<RemedioService>();

@@ -1,40 +1,34 @@
 ﻿using api_web_services_dose_certa.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using api_web_services_dose_certa.Services;
 
 namespace api_web_services_dose_certa.Services
 {
-    public class NotesService
+    public class NotesService : INotesService
     {
         private readonly IMongoCollection<Note> _notesCollection;
 
-        public NotesService(
-            IOptions<DoseCertaDatabaseSettings> doseCertaDatabaseSettings)
+        public NotesService(IOptions<DoseCertaDatabaseSettings> databaseSettings)
         {
-            var mongoClient = new MongoClient(
-                doseCertaDatabaseSettings.Value.ConnectionString);
-
-            var mongoDatabase = mongoClient.GetDatabase(
-                doseCertaDatabaseSettings.Value.DatabaseName);
-
-            _notesCollection = mongoDatabase.GetCollection<Note>(
-                doseCertaDatabaseSettings.Value.NotesCollectionName);
+            var client = new MongoClient(databaseSettings.Value.ConnectionString);
+            var database = client.GetDatabase(databaseSettings.Value.DatabaseName);
+            _notesCollection = database.GetCollection<Note>(databaseSettings.Value.NotesCollectionName);
         }
 
-        public async Task<List<Note>> GetAsync() =>
+        public async Task<List<Note>> GetNotesAsync() =>
             await _notesCollection.Find(_ => true).ToListAsync();
 
-        public async Task<Note?> GetAsync(string id) =>
-            await _notesCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+        public async Task<Note> GetNoteByIdAsync(string id) =>
+            await _notesCollection.Find(note => note.Id == id).FirstOrDefaultAsync();
 
-        public async Task CreateAsync(Note newNote) =>
-            await _notesCollection.InsertOneAsync(newNote);
+        public async Task CreateNoteAsync(Note note) =>
+            await _notesCollection.InsertOneAsync(note);
 
-        public async Task UpdateAsync(string id, Note updatedNote) =>
-            await _notesCollection.ReplaceOneAsync(x => x.Id == id, updatedNote);
+        public async Task UpdateNoteAsync(string id, Note note) =>
+            await _notesCollection.ReplaceOneAsync(n => n.Id == id, note);
 
-        public async Task RemoveAsync(string id) =>
-            await _notesCollection.DeleteOneAsync(x => x.Id == id);
-
+        public async Task DeleteNoteAsync(string id) =>
+            await _notesCollection.DeleteOneAsync(n => n.Id == id);
     }
 }
