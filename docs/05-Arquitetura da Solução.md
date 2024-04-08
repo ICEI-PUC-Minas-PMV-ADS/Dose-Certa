@@ -10,10 +10,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+![Diagrama de classes](./img/Diagrama%20de%20classes%20-%20Eixo%204.png)
 
 ## Modelo ER
 
@@ -27,13 +24,250 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
+ ![Esquema Relacional - tabelas MySQL](./img/esquema%20relacional%20-%203.png)
 
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
+## Modelo JSON
 
+- [Anotações](../api-web-services-dose-certa/api-web-services-dose-certa/Models/Note.cs):
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Note",
+  "description": "Este documento registra os detalhes de uma anotação",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Identificador único da anotação"
+    },
+    "Content": {
+      "type": "string",
+      "description": "O conteúdo da anotação"
+    },
+    "CreationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "A data e hora em que a anotação foi criada"
+    },
+    "IdUserAgente": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência para usuário Agente"
+    },
+    "IdUserPaciente": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência para usuário Paciente"
+    }
+  },
+  "required": ["_id", "Content", "CreationDate", "IdUserAgente", "IdUserPaciente"]
+}
+```
+- [Remédio](../api-web-services-dose-certa/api-web-services-dose-certa/Models/Remedio.cs):
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Remedio",
+  "description": "Este documento registra os detalhes de um remédio",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Identificador único do remédio"
+    },
+    "Nome": {
+      "type": "string",
+      "description": "O nome do remédio"
+    },
+    "Dosagem": {
+      "type": "string",
+      "description": "A dosagem do remédio"
+    },
+    "Horario": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Horário de tomar o remédio"
+    },
+    "Indicações": {
+      "type": "string",
+      "description": "Indicações do remédio"
+    },
+    "Frequência": {
+      "type": "string",
+      "description": "Frequência de uso do remédio"
+    }
+  },
+  "required": ["_id", "Nome", "Dosagem", "Horario", "Indicações", "Frequência"]
+}
+```
+- [Medicação](../api-web-services-dose-certa/api-web-services-dose-certa/Models/Medicacao.cs):
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Medicacao",
+  "description": "Este documento registra os detalhes de uma medicação",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Identificador único da medicação"
+    },
+    "IdUsuario": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência ao usuário"
+    },
+    "Remedios": {
+      "type": "array",
+      "description": "Lista de IDs de medicamentos",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "DataInicio": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data de início da medicação"
+    },
+    "DataTermino": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data de término da medicação"
+    },
+    "Observacoes": {
+      "type": "string",
+      "description": "Observações sobre a medicação"
+    }
+  },
+  "required": ["_id", "IdUsuario", "Remedios", "DataInicio", "DataTermino"]
+}
+```
+- [Visita](../api-web-services-dose-certa/api-web-services-dose-certa/Models/Visita.cs):
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Visita",
+  "description": "Este documento registra os detalhes de uma visita",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Identificador único da visita"
+    },
+    "DataVisita": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data da visita"
+    },
+    "Status": {
+      "type": "string",
+      "enum": ["Fazer", "Concluída", "Em Andamento"],
+      "description": "Status da visita"
+    },
+    "Observacoes": {
+      "type": "string",
+      "description": "Observações sobre a visita"
+    },
+    "IdPaciente": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência ao paciente"
+    },
+    "IdUsuario": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência ao usuário que realizou a visita"
+    }
+  },
+  "required": ["_id", "DataVisita", "Status", "IdPaciente", "IdUsuario"]
+}
+```
+- [Residência]():
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Residencia",
+  "description": "Este documento registra os detalhes de uma residência",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "type": ["string", "null"],
+      "format": "uuid",
+      "description": "Identificador único da residência"
+    },
+    "Rua": {
+      "type": "string",
+      "description": "Nome da rua onde a residência está localizada"
+    },
+    "Numero": {
+      "type": "string",
+      "description": "Número da residência"
+    },
+    "Complemento": {
+      "type": ["string", "null"],
+      "description": "Complemento do endereço da residência"
+    },
+    "Cidade": {
+      "type": "string",
+      "description": "Cidade onde a residência está localizada"
+    },
+    "Bairro": {
+      "type": "string",
+      "description": "Bairro onde a residência está localizada"
+    },
+    "IdUsuarioAgente": {
+      "type": ["integer", "null"],
+      "description": "Identificador do usuário agente associado à residência"
+    }
+  },
+  "required": ["Rua", "Numero", "Cidade", "Bairro"]
+}
+```
+- [Notificações]():
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Notifications",
+  "description": "Este documento registra os detalhes de uma notificação",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "type": ["string", "null"],
+      "format": "uuid",
+      "description": "Identificador único da notificação"
+    },
+    "Message": {
+      "type": ["string", "null"],
+      "description": "Mensagem da notificação"
+    },
+    "DateSent": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data e hora em que a notificação foi enviada"
+    },
+    "Read": {
+      "type": "boolean",
+      "description": "Indica se a notificação foi lida"
+    },
+    "RecipientUserId": {
+      "type": ["string", "null"],
+      "format": "uuid",
+      "description": "Identificador do usuário destinatário da notificação"
+    }
+  },
+  "required": ["DateSent", "Read"]
+}
+```
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Arquivo dosecerta.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+
+[Clique aqui para acessar o dosecerta.sql](../src/db)
 
 ## Tecnologias Utilizadas
 
