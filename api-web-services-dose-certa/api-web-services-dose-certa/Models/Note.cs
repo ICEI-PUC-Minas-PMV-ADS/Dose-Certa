@@ -3,6 +3,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using APIDoseCerta.Models;
 
 
 namespace api_web_services_dose_certa.Models
@@ -21,10 +22,6 @@ namespace api_web_services_dose_certa.Models
          public string? IdUserAgente { get; set; }
 
         public string? IdUserPaciente { get; set; }
-
-        public User? UserAgente { get; set; }
-
-        public User? UserPaciente { get; set; }
        
     }
 }
