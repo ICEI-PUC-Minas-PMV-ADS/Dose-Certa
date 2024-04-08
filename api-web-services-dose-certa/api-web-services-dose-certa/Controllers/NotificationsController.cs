@@ -10,9 +10,9 @@ namespace api_web_services_dose_certa.Controllers
     [ApiController]
     public class NotificationsController : ControllerBase
     {
-        private readonly NotificationsService _notificationsService;
+        private readonly INotificationsService _notificationsService;
 
-        public NotificationsController(NotificationsService notificationsService)
+        public NotificationsController(INotificationsService notificationsService)
         {
             _notificationsService = notificationsService;
         }
@@ -41,7 +41,7 @@ namespace api_web_services_dose_certa.Controllers
         {
             await _notificationsService.CreateNotificationsAsync(notifications);
 
-            return CreatedAtRoute("GetNotification", new { id = notifications.Id?.ToString() }, notifications);
+            return CreatedAtRoute("GetNotifications", new { id = notifications.Id?.ToString() }, notifications);
         }
 
         [HttpPut("{id:length(24)}")]

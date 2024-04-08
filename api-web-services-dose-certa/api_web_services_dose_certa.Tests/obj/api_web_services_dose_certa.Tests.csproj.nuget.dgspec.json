@@ -72,7 +72,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -170,11 +170,11 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[2.7.0, )"
             },
             "xunit.runner.visualstudio": {
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[*, )"
             }
           },
           "imports": [
