@@ -10,7 +10,9 @@ builder.Services.AddSingleton<NotesService>();
 builder.Services.AddSingleton<MedicacaoService>();
 builder.Services.AddSingleton<VisitaService>();
 builder.Services.AddSingleton<ResidenciaService>();
+builder.Services.AddScoped<INotificationsService, NotificationsService>();
 //builder.Services.AddSingleton<RemedioService>();
+
 
 builder.Services.Configure<MySqlDatabaseSettings>(
         builder.Configuration.GetSection(nameof(MySqlDatabaseSettings)));
