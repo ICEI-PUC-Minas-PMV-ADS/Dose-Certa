@@ -1,15 +1,14 @@
 CREATE DATABASE dosecerta;
 
 # Tabela Usuário
-CREATE TABLE IF NOT EXISTS dosecerta.user (
-  id VARCHAR(24) NOT NULL,
-  nome VARCHAR(50) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  senha VARCHAR(255) NOT NULL,
-  tipo VARCHAR(8) NOT NULL,
-  Residencia_id VARCHAR(24),
-  PRIMARY KEY (id),
-  FOREIGN KEY (Residencia_id) REFERENCES dosecerta.Residencia(id)
+CREATE TABLE IF NOT EXISTS dosecerta.User (
+  `Name` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+  `UserType` varchar(50) NOT NULL,
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `HouseId` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Id`)
 );
 
 # Tabela Residênca
@@ -35,5 +34,14 @@ CREATE TABLE IF NOT EXISTS dosecerta.Notificacao (
   PRIMARY KEY (id),
   FOREIGN KEY (Usuario_id) REFERENCES dosecerta.Usuario(id),
   FOREIGN KEY (Residencia_id) REFERENCES dosecerta.Residencia(id)
+);
+
+CREATE TABLE IF NOT EXISTS dosecerta.`message` (
+  `MessageId` int NOT NULL AUTO_INCREMENT,
+  `SenderId` int NOT NULL,
+  `ReceiverId` int NOT NULL,
+  `Content` text NOT NULL,
+  `SentAt` datetime NOT NULL,
+  PRIMARY KEY (`MessageId`)
 );
 
