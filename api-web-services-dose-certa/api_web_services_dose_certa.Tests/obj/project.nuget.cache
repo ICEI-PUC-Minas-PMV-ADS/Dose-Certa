@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FzBKeX4yMwsMdeaebSVXbih7GxZm3IM2+0es90sealLyn+JZ5FR/xV4TTqzJChAIZYf+KqejA3lppHkDqoKmEw==",
+  "dgSpecHash": "rBI1hM2gsx+Xw5DuN/D8OVZ/zKnNl3SUyDdor7ofmpRxjrFAQaAa3ezxTPMQVrjEz4eLkUTK+rJxOLd17icKoA==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
+  "projectFilePath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ellen\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -78,7 +78,7 @@
     "C:\\Users\\ellen\\.nuget\\packages\\xunit.core\\2.7.0\\xunit.core.2.7.0.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\xunit.extensibility.core\\2.7.0\\xunit.extensibility.core.2.7.0.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\xunit.extensibility.execution\\2.7.0\\xunit.extensibility.execution.2.7.0.nupkg.sha512",
-    "C:\\Users\\ellen\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.7\\xunit.runner.visualstudio.2.5.7.nupkg.sha512",
+    "C:\\Users\\ellen\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.0\\xunit.runner.visualstudio.2.8.0.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
   "logs": []

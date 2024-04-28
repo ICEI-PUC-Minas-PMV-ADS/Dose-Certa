@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Vsf4rm0JpTfeUQR/l/mPz4xEY4zt0RjcCs4YbN6s5hQQgJJswwTq6ET99LIodf7oMlagePDX7qCcrNY/I5coA==",
+  "dgSpecHash": "EzHf9D/xB8gAPGwptWXD+/gxhcd/b2qS3ve9LxV2dpa7r3ZGFIn3aMoJhpCeSpbrK1Q0/vG6Lhc0GK23Wg/uyg==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+  "projectFilePath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ellen\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -79,16 +79,6 @@
       "level": "Warning",
       "warningLevel": 1,
       "message": "Package 'System.IdentityModel.Tokens.Jwt' 6.15.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
-      "libraryId": "System.IdentityModel.Tokens.Jwt",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.IdentityModel.Tokens.Jwt' 6.15.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g9c-28fc-mcx2",
       "libraryId": "System.IdentityModel.Tokens.Jwt",
       "targetGraphs": [
         "net8.0"

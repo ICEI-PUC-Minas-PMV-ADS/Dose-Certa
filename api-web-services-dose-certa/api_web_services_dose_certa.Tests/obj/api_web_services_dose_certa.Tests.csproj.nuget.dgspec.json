@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj": {}
+    "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
+    "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+        "projectUniqueName": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
         "projectName": "api-web-services-dose-certa",
-        "projectPath": "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+        "projectPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
         "packagesPath": "C:\\Users\\ellen\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
+        "outputPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -106,14 +106,14 @@
         }
       }
     },
-    "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj": {
+    "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
+        "projectUniqueName": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
         "projectName": "api_web_services_dose_certa.Tests",
-        "projectPath": "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
+        "projectPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
         "packagesPath": "C:\\Users\\ellen\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\obj\\",
+        "outputPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -135,8 +135,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
-                "projectPath": "C:\\workspace\\PUC\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj"
+              "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
+                "projectPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj"
               }
             }
           }
