@@ -1,7 +1,6 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace APIDoseCerta.Models
 {
@@ -14,7 +13,10 @@ namespace APIDoseCerta.Models
         public string Status { get; set; }
         public string Observacoes { get; set; }
         public int? IdUsuarioPaciente { get; set; }
-        public string? IdUsuarioAgente { get; set; }
+        public int? IdUsuarioAgente { get; set; }
+
+        [NotMapped]
+        public string? FormattedDate => Date.ToString("dd/MM/yyyy");
     }
 
 }
