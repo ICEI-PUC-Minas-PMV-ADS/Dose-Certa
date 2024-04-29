@@ -64,3 +64,4 @@ app.MapGet("/error", () => Results.Problem());
 app.MapControllers();
 
 app.Run();
+public partial class Program { }

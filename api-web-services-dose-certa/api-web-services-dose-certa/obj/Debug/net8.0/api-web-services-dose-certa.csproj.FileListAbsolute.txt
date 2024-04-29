@@ -501,12 +501,18 @@ C:\workspace\PUC\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-ce
 C:\workspace\PUC\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-.1A1D7884.Up2Date
 C:\workspace\PUC\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.genruntimeconfig.cache
 C:\workspace\PUC\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\ref\api-web-services-dose-certa.dll
+C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\api-web-services-dose-certa.exe
+C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\api-web-services-dose-certa.dll
+C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\appsettings.Development.json
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\appsettings.json
-C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\api-web-services-dose-certa.exe
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\api-web-services-dose-certa.deps.json
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\api-web-services-dose-certa.runtimeconfig.json
-C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\api-web-services-dose-certa.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\api-web-services-dose-certa.pdb
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\AWSSDK.Core.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
@@ -520,10 +526,7 @@ C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\MongoDB.Bson.dll
-C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\MongoDB.Driver.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\MongoDB.Driver.Core.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Moq.dll
@@ -531,9 +534,6 @@ C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\SharpCompress.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Snappier.dll
-C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\workspace\PUC\eixo 4\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
