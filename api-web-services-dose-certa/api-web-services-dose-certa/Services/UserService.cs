@@ -124,7 +124,7 @@ public async Task CreateAsync(User userToCreate)
 
         string hashedPassword = HashPassword(userUpdated.Password);
 
-        string query = "UPDATE User SET Name = @Name, Email = @Email, Password = @Password, UserType = @UserType, DataNascimento = @DataNascimento WHERE Id = @Id";
+        string query = "UPDATE User SET Name = @Name, Email = @Email, Password = @Password, UserType = @UserType, DataNascimento = @DataNascimento, Cpf = @Cpf WHERE Id = @Id";
         MySqlCommand command = new MySqlCommand(query, _connection);
         command.Parameters.AddWithValue("@Id", id);
         command.Parameters.AddWithValue("@Name", userUpdated.Name);
@@ -132,6 +132,7 @@ public async Task CreateAsync(User userToCreate)
         command.Parameters.AddWithValue("@Password", hashedPassword); // Salva o hash da senha
         command.Parameters.AddWithValue("@UserType", userUpdated.UserType);
         command.Parameters.AddWithValue("@DataNascimento", userUpdated.DataNascimento);
+        command.Parameters.AddWithValue("@Cpf", userUpdated.Cpf);
 
         await command.ExecuteNonQueryAsync();
     }
