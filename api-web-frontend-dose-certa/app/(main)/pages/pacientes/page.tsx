@@ -17,8 +17,8 @@ interface Item {
     id?: string;
     name: string;
     cpf: string,
-    date: Date;
-    houseId?: string;
+    dataNascimento: Date;
+    // houseId?: string;
     status: string;
     formattedDate?: string;
     idUsuarioPaciente?: number | null;
@@ -34,11 +34,11 @@ interface User {
 const PacientesDemo = () => {
     let emptyPacientes: Item = {
         id: '',
-        date: new Date(),
+        dataNascimento: new Date(),
         status: '',
         name: '',
         cpf: '',
-        houseId: '',
+        // houseId: '',
         
     };
 
@@ -65,20 +65,39 @@ const PacientesDemo = () => {
 
     useEffect(() => {
         fetchData();
-        fetchPacientes();
+        // fetchPacientes();
     }, []);
 
     const fetchData = () => {
         axios
             .get('http://localhost:5092/api/users')
             .then((response) => {
-                console.log(response)
-                setData(response.data);
+                console.log(response);
+                
+                // Corrigir a data antes de definir o estado
+                const correctedData = response.data.map((user: { dataNascimento: string | number | Date; }) => {
+                    return {
+                        ...user,
+                        dataNascimento: new Date(user.dataNascimento).toLocaleDateString('pt-BR')
+                    };
+                });
+    
+                setData(correctedData);
             })
-            .catch((error) => {
-                console.error('Erro ao buscar dados:', error);
-            });
-    };
+    }
+
+    // useEffect(()=>{
+
+    //     const correctedData:any = data.map((user: { dataNascimento: string | number | Date; }) => {
+    //         return {
+    //             ...user,
+    //             dataNascimento: new Date(user.dataNascimento).toLocaleDateString('pt-BR')
+    //         };
+    //     });
+
+    //     setData(correctedData);
+
+    // },[data])
 
     const fetchPacientes = () => {
         axios
@@ -107,7 +126,7 @@ const PacientesDemo = () => {
         if (userId) {
             const selectedUser= data.find((user) => user.id === userId);
             if (selectedUser) {
-                const formattedUser = { ...selectedUser, date: new Date(selectedUser.date) };
+                const formattedUser = { ...selectedUser, date: new Date(selectedUser.dataNascimento) };
                 setUser(formattedUser);
             }
         } else {
@@ -118,13 +137,13 @@ const PacientesDemo = () => {
     const saveUser = () => {
         const newUser = {
             // id: user.id || '',
-            date: user.date,
+            dataNascimento: user.dataNascimento,
             cpf: user.cpf,
             name: user.name,
             email:"teste@gmail.com",
             password: "23456",
             userType:"Agente",
-            houseId: 90
+            // houseId: 90
             // status: user.status,
             // idUsuarioPaciente: user.idUsuarioPaciente || 0
         };
@@ -154,7 +173,7 @@ const PacientesDemo = () => {
     const onCalendarChange = (e: Nullable<Date>) => {
         if (e) {
             let _user = { ...user };
-            _user['date'] = e as Date;
+            _user['dataNascimento'] = e as Date;
             setUser(_user);
         }
     };
@@ -300,9 +319,9 @@ const PacientesDemo = () => {
                     <InputTextarea id="cpf" name="cpf" value={user.cpf} onChange={onInputChange} required rows={1} cols={20} style={{ resize: 'none' }} />
                 </div>
                 <div className="field">
-                    <label htmlFor="data">Data de Nascimento</label>
+                    <label htmlFor="dataNascimento">Data de Nascimento</label>
                     <span className="p-input-icon-right">
-                        <Calendar showButtonBar value={user.date} onChange={(e) => onCalendarChange(e.value as Date)} />
+                        <Calendar showButtonBar value={user.dataNascimento} onChange={(e) => onCalendarChange(e.value as Date)} />
                         <i className="pi pi-calendar" />
                     </span>
                 </div>
