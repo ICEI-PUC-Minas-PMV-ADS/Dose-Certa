@@ -17,7 +17,7 @@ interface Item {
     formattedCreationDate?: '';
 }
 
-interface User { 
+interface User {  
     id?: number;
     name: string;
 }

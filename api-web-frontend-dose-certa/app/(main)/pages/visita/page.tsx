@@ -241,7 +241,7 @@ const VisitasDemo = () => {
             <Toast ref={toast} />
             <div className="col-12 border-bottom-2 p-2">
                 <h2>Visitas</h2>
-            </div>
+            </div> 
 
             <div className="p-2 w-100 flex justify-content-end">
                 <Button label="Novo" icon="pi pi-plus" style={{ marginRight: '.5em', backgroundColor: '#0C84F3', border: 'none' }} onClick={() => openNew()} />

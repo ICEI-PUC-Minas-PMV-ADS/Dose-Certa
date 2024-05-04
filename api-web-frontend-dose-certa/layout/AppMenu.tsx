@@ -7,7 +7,7 @@ import { MenuProvider } from './context/menucontext';
 import Link from 'next/link';
 import { AppMenuItem } from '@/types';
 
-const AppMenu = () => {
+const AppMenu = () => { 
     const { layoutConfig } = useContext(LayoutContext);
 
     const model: AppMenuItem[] = [
