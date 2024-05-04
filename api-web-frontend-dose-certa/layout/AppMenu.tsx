@@ -7,13 +7,17 @@ import { MenuProvider } from './context/menucontext';
 import Link from 'next/link';
 import { AppMenuItem } from '@/types';
 
-const AppMenu = () => {
+const AppMenu = () => { 
     const { layoutConfig } = useContext(LayoutContext);
 
     const model: AppMenuItem[] = [
         {
             label: 'Home',
-            items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
+            items: [
+                { label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' },
+                { label: 'Anotações', icon: 'pi pi-fw pi-pencil', to: '/pages/note' },
+                { label: 'Visitas', icon: 'pi pi-fw pi-sitemap', to: '/pages/visita' }
+            ]
         }
         // {
         //     label: 'UI Components',

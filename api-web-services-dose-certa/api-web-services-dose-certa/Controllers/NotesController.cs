@@ -9,65 +9,65 @@ namespace api_web_services_dose_certa.Controllers
     [ApiController]
     public class NotesController : ControllerBase
     {
-        private readonly NotesService _notesService;
+        private readonly INotesService _notesService;
 
-        public NotesController(NotesService notesService) =>
+        public NotesController(INotesService notesService)
+        {
             _notesService = notesService;
+        }
 
         [HttpGet]
-        public async Task<List<Note>> Get() =>
-            await _notesService.GetAsync();
+        public async Task<ActionResult<List<Note>>> Get()
+        {
+            var notes = await _notesService.GetNotesAsync();
+            return Ok(notes);
+        }
 
         [HttpGet("{id:length(24)}")]
         public async Task<ActionResult<Note>> Get(string id)
         {
-            var note = await _notesService.GetAsync(id);
-
-            if (note is null)
+            var note = await _notesService.GetNoteByIdAsync(id);
+            if (note == null)
             {
                 return NotFound();
             }
-
-            return note;
+            return Ok(note);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Note newNote)
+        public async Task<IActionResult> Post(Note note)
         {
-            await _notesService.CreateAsync(newNote);
-
-            return CreatedAtAction(nameof(Get), new { id = newNote.Id }, newNote);
+            await _notesService.CreateNoteAsync(note);
+            return CreatedAtAction(nameof(Get), new { id = note.Id }, note);
         }
 
         [HttpPut("{id:length(24)}")]
-        public async Task<IActionResult> Update(string id, Note updatedNote)
+        public async Task<IActionResult> Put(string id, Note note)
         {
-            var note = await _notesService.GetAsync(id);
-
-            if (note is null)
+            var existingNote = await _notesService.GetNoteByIdAsync(id);
+            if (existingNote == null)
             {
                 return NotFound();
             }
+            
+            if (note.Id != id)
+            {
+                return BadRequest("O id do objeto note não corresponde ao id do documento existente.");
+            }
 
-            updatedNote.Id = note.Id;
-
-            await _notesService.UpdateAsync(id, updatedNote);
-
+            await _notesService.UpdateNoteAsync(id, note);
             return NoContent();
         }
 
         [HttpDelete("{id:length(24)}")]
         public async Task<IActionResult> Delete(string id)
         {
-            var note = await _notesService.GetAsync(id);
-
-            if (note is null)
+            var existingNote = await _notesService.GetNoteByIdAsync(id);
+            if (existingNote == null)
             {
                 return NotFound();
             }
-
-            await _notesService.RemoveAsync(id);
-
+            await _notesService.DeleteNoteAsync(id);
             return NoContent();
         }
     }

@@ -14,7 +14,7 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 
 ## Modelo ER
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
+O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
 
@@ -25,8 +25,175 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
  ![Esquema Relacional - tabelas MySQL](./img/esquema%20relacional%20-%203.png)
+<<<<<<< HEAD
 
 ## Modelo JSON
+
+- [Anotações](../api-web-services-dose-certa/api-web-services-dose-certa/Models/Note.cs):
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Note",
+  "description": "Este documento registra os detalhes de uma anotação",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Identificador único da anotação"
+    },
+    "Content": {
+      "type": "string",
+      "description": "O conteúdo da anotação"
+    },
+    "CreationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "A data e hora em que a anotação foi criada"
+    },
+    "IdUserAgente": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência para usuário Agente"
+    },
+    "IdUserPaciente": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência para usuário Paciente"
+    }
+  },
+  "required": ["_id", "Content", "CreationDate", "IdUserAgente", "IdUserPaciente"]
+}
+```
+- [Remédio](../api-web-services-dose-certa/api-web-services-dose-certa/Models/):
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Remedio",
+  "description": "Este documento registra os detalhes de um remédio",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Identificador único do remédio"
+    },
+    "Nome": {
+      "type": "string",
+      "description": "O nome do remédio"
+    },
+    "Dosagem": {
+      "type": "string",
+      "description": "A dosagem do remédio"
+    },
+    "Horario": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Horário de tomar o remédio"
+    },
+    "Indicações": {
+      "type": "string",
+      "description": "Indicações do remédio"
+    },
+    "Frequência": {
+      "type": "string",
+      "description": "Frequência de uso do remédio"
+    }
+  },
+  "required": ["_id", "Nome", "Dosagem", "Horario", "Indicações", "Frequência"]
+}
+```
+- [Medicação](../api-web-services-dose-certa/api-web-services-dose-certa/Models/):
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Medicacao",
+  "description": "Este documento registra os detalhes de uma medicação",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Identificador único da medicação"
+    },
+    "IdUsuario": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência ao usuário"
+    },
+    "Remedios": {
+      "type": "array",
+      "description": "Lista de IDs de medicamentos",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "DataInicio": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data de início da medicação"
+    },
+    "DataTermino": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data de término da medicação"
+    },
+    "Observacoes": {
+      "type": "string",
+      "description": "Observações sobre a medicação"
+    }
+  },
+  "required": ["_id", "IdUsuario", "Remedios", "DataInicio", "DataTermino"]
+}
+```
+- [Visita](../api-web-services-dose-certa/api-web-services-dose-certa/Models/):
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Visita",
+  "description": "Este documento registra os detalhes de uma visita",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Identificador único da visita"
+    },
+    "DataVisita": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data da visita"
+    },
+    "Status": {
+      "type": "string",
+      "enum": ["Fazer", "Concluída", "Em Andamento"],
+      "description": "Status da visita"
+    },
+    "Observacoes": {
+      "type": "string",
+      "description": "Observações sobre a visita"
+    },
+    "IdPaciente": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência ao paciente"
+    },
+    "IdUsuario": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Referência ao usuário que realizou a visita"
+    }
+  },
+  "required": ["_id", "DataVisita", "Status", "IdPaciente", "IdUsuario"]
+}
+```
+
+
+=======
+
+## Modelo JSON
+>>>>>>> origin/main
 
 - [Anotações](../api-web-services-dose-certa/api-web-services-dose-certa/Models/Note.cs):
 ```
@@ -290,14 +457,10 @@ Todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, f
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+- Front-end web: 
+- Front-end mobile: 
+- Back-end: 
+- Bancos de dados: 
 
 ## Qualidade de Software
 

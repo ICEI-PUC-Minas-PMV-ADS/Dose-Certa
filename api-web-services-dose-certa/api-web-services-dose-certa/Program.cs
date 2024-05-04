@@ -6,11 +6,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.Configure<DoseCertaDatabaseSettings>(
     builder.Configuration.GetSection("DoseCertaDatabase"));
-builder.Services.AddSingleton<NotesService>();
+builder.Services.AddScoped<INotesService, NotesService>();
+builder.Services.AddScoped<IRemedioService, RemedioService>();
 builder.Services.AddSingleton<MedicacaoService>();
 builder.Services.AddSingleton<VisitaService>();
 builder.Services.AddSingleton<ResidenciaService>();
-//builder.Services.AddSingleton<RemedioService>();
+builder.Services.AddScoped<INotificationsService, NotificationsService>();
+
 
 builder.Services.Configure<MySqlDatabaseSettings>(
         builder.Configuration.GetSection(nameof(MySqlDatabaseSettings)));
@@ -18,6 +20,21 @@ builder.Services.AddSingleton<UserService>();
 builder.Services.AddScoped<RequestVerifierService>();
 builder.Services.AddScoped<AuthenticationService>();
 builder.Services.AddScoped<MessageService>();
+
+builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAllOrigins",
+            builder =>
+            {
+                builder.AllowAnyOrigin();
+            });
+        options.AddPolicy("ReactAppPolicy", builder =>
+            {
+                builder.WithOrigins("http://localhost:3000")
+                       .AllowAnyHeader()
+                       .AllowAnyMethod();
+            });
+    });
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -27,6 +44,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseCors("ReactAppPolicy");
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -46,3 +64,4 @@ app.MapGet("/error", () => Results.Problem());
 app.MapControllers();
 
 app.Run();
+public partial class Program { }

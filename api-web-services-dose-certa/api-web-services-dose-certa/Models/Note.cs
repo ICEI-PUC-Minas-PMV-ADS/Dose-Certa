@@ -1,8 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 
 namespace api_web_services_dose_certa.Models
@@ -18,15 +16,10 @@ namespace api_web_services_dose_certa.Models
 
         public DateTime CreationDate { get; set; } = DateTime.UtcNow;
 
+        public int? IdUserPaciente { get; set; }
 
-        /*
-        public int IdUsuarioPaciente { get; set; }
-
-        public int IdUsuarioAgente { get; set; }
-
-
-        public User? User { get; set; }
-        */
-
+        [NotMapped] // Isso evita que esta propriedade seja mapeada para o banco de dados
+        public string? FormattedCreationDate => CreationDate.ToString("dd/MM/yyyy");
+       
     }
 }
