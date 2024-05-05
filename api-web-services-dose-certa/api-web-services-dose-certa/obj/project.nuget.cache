@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jK5RCduF1YBDnGQ24rXmdVEZ7rixmwz8WQyVWtjOiaN3ASlJFnhaVoxRiY8VPECuj+fipXdfKoblqQuWMXTWJA==",
+  "dgSpecHash": "oJoZEDQxnGll+Z/zl7A1jxg71ItbYlph/aPYjcAX8EVNUpatM1+fDZEl2Xe6wAheubhlkskLdQOIz3DzcAXWkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Iane\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
   "expectedPackageFiles": [
@@ -64,13 +64,13 @@
     "C:\\Users\\Vitória\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Vitória\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Vitória\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\Vitória\\.nuget\\packages\\xunit\\2.7.0\\xunit.2.7.0.nupkg.sha512",
+    "C:\\Users\\Vitória\\.nuget\\packages\\xunit\\2.8.0\\xunit.2.8.0.nupkg.sha512",
     "C:\\Users\\Vitória\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
-    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.analyzers\\1.11.0\\xunit.analyzers.1.11.0.nupkg.sha512",
-    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.assert\\2.7.0\\xunit.assert.2.7.0.nupkg.sha512",
-    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.core\\2.7.0\\xunit.core.2.7.0.nupkg.sha512",
-    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.extensibility.core\\2.7.0\\xunit.extensibility.core.2.7.0.nupkg.sha512",
-    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.extensibility.execution\\2.7.0\\xunit.extensibility.execution.2.7.0.nupkg.sha512",
+    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.analyzers\\1.13.0\\xunit.analyzers.1.13.0.nupkg.sha512",
+    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.assert\\2.8.0\\xunit.assert.2.8.0.nupkg.sha512",
+    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.core\\2.8.0\\xunit.core.2.8.0.nupkg.sha512",
+    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.extensibility.core\\2.8.0\\xunit.extensibility.core.2.8.0.nupkg.sha512",
+    "C:\\Users\\Vitória\\.nuget\\packages\\xunit.extensibility.execution\\2.8.0\\xunit.extensibility.execution.2.8.0.nupkg.sha512",
     "C:\\Users\\Vitória\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
   "logs": [

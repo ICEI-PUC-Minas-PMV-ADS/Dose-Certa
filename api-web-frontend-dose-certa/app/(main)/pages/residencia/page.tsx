@@ -204,14 +204,14 @@ const ResidenciaDemo = () => {
     const residenciaDialogFooter = (
         <>
             <Button label="Cancelar" icon="pi pi-times" style={{ color: '#FF0000', border: 'none' }} text onClick={hideDialog} />
-            <Button label="Save" icon="pi pi-check" style={{ color: '#fff', backgroundColor: '#0C84F3', border: 'none' }} text onClick={saveResidencia} />
+            <Button label="Salvar" icon="pi pi-check" style={{ color: '#fff', backgroundColor: '#0C84F3', border: 'none' }} text onClick={saveResidencia} />
         </>
     );
 
     const deleteResidenciaDialogFooter = (
         <>
-            <Button label="No" icon="pi pi-times" style={{ color: '#000', border: 'none' }} text onClick={hideDeleteResidenciaDialog} />
-            <Button label="Yes" icon="pi pi-check" style={{ backgroundColor: '#FF0000', border: 'none', color: '#fff' }} text onClick={deleteResidencia} />
+            <Button label="Não" icon="pi pi-times" style={{ color: '#000', border: 'none' }} text onClick={hideDeleteResidenciaDialog} />
+            <Button label="Sim" icon="pi pi-check" style={{ backgroundColor: '#FF0000', border: 'none', color: '#fff' }} text onClick={deleteResidencia} />
         </>
     );
 
@@ -241,7 +241,7 @@ const ResidenciaDemo = () => {
         <div className="d-flex">
             <Toast ref={toast} />
             <div className="col-12 border-bottom-2 p-2">
-                <h2>Residência</h2>
+                <h2>Residências</h2>
             </div>
 
             <div className="p-2 w-100 flex justify-content-end">
