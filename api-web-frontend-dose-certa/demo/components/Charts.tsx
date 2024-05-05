@@ -2,6 +2,8 @@ import { Chart } from "react-google-charts";
 import DashboardCard from "./DashboardCard";
 import { Calendar } from "primereact/calendar";
 import { Button } from "primereact/button";
+import { useEffect, useState } from "react";
+import axios from 'axios';
 
 export const data = [
     ["Element", "Quantidade", { role: "style" }],
@@ -11,6 +13,19 @@ export const data = [
 ];
 
 const Charts = () => {
+    const [data, setData] = useState();
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        try {
+            const response = await axios.get('http://localhost:5092/api/Remedio');
+            setData(response.data);
+        } catch (error) {
+            console.error('Erro ao buscar dados:', error);
+        }
+    };
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div className="col-12 border-bottom-2 p-2">

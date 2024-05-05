@@ -738,3 +738,14 @@ C:\Users\Vitória\Downloads\Dose-Certa-Iane\Dose-Certa\api-web-services-dose-cer
 C:\Users\Vitória\Downloads\Dose-Certa-Iane\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.pdb
 C:\Users\Vitória\Downloads\Dose-Certa-Iane\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.genruntimeconfig.cache
 C:\Users\Vitória\Downloads\Dose-Certa-Iane\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\ref\api-web-services-dose-certa.dll
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.csproj.AssemblyReference.cache
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.AssemblyInfoInputs.cache
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.AssemblyInfo.cs
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.csproj.CoreCompileInputs.cache
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.sourcelink.json
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.dll
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\refint\api-web-services-dose-certa.dll
+C:\Users\irisg\dev\Dose-Certa\api-web-services-dose-certa\api-web-services-dose-certa\obj\Debug\net8.0\api-web-services-dose-certa.pdb

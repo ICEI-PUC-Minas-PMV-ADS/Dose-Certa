@@ -15,11 +15,11 @@ namespace api_web_services_dose_certa.Controllers
         public UsersController(UserService userService) =>
             _userService = userService;
 
-        [HttpGet] 
+        [HttpGet]
         public async Task<List<User>> GetUsers() =>
             await _userService.GetAllUsers();
 
-        [HttpGet("{id}")] 
+        [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetById(int id)
         {
             var user = await _userService.GetById(id);
@@ -42,7 +42,7 @@ namespace api_web_services_dose_certa.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> updateUserById(int id, User updateUser)
+        public async Task<IActionResult> UpdateUserById(int id, User updateUser)
         {
             var user = await _userService.GetById(id);
 
@@ -59,7 +59,7 @@ namespace api_web_services_dose_certa.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> deleteUserById(int id)
+        public async Task<IActionResult> DeleteUserById(int id)
         {
             var user = await _userService.GetById(id);
 
@@ -72,5 +72,9 @@ namespace api_web_services_dose_certa.Controllers
 
             return NoContent();
         }
+
+        [HttpGet("patientCount")]
+        public async Task<int> GetPatientCount() =>
+            await _userService.GetPatientCount();
     }
 }
