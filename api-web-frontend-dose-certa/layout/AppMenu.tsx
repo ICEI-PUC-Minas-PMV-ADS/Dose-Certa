@@ -19,7 +19,10 @@ const AppMenu = () => {
                 { label: 'Residencia', icon: 'pi pi-fw pi-key', to: '/pages/residencia' },
                 { label: 'Anotações', icon: 'pi pi-fw pi-pencil', to: '/pages/note' },
                 { label: 'Visitas', icon: 'pi pi-fw pi-sitemap', to: '/pages/visita' },
-                { label: 'Landing', icon: 'pi pi-fw pi-sitemap', to: '/pages/landing' }
+                { label: 'Landing', icon: 'pi pi-fw pi-sitemap', to: '/pages/landing' },
+                { label: 'Medicamentos', icon: 'pi pi-fw pi-sitemap', to: '/pages/medicamentos'},
+                { label: 'Medicações', icon: 'pi pi-fw pi-sitemap', to: '/pages/medicacao'}
+
             ]
         }
         // {
