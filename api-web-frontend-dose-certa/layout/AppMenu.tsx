@@ -21,8 +21,6 @@ const AppMenu = () => {
                 { label: 'Residencias', icon: 'pi pi-fw pi-key', to: '/pages/residencia' },
                 { label: 'Visitas', icon: 'pi pi-fw pi-sitemap', to: '/pages/visita' },
                 { label: 'Anotações', icon: 'pi pi-fw pi-pencil', to: '/pages/note' },
-                { label: 'Landing', icon: 'pi pi-fw pi-sitemap', to: '/pages/landing' },
-
             ]
         }
         // {
