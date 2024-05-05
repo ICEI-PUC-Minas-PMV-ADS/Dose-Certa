@@ -20,10 +20,11 @@ export const LoginProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     if (token) {
       setIsLoggedIn(true);
     }
-  }, []);
+  }, []); 
 
   const login = () => {
     setIsLoggedIn(true);
+    localStorage.setItem('doseCertaToken', 'seu_token_aqui');
   };
 
   const logout = () => {

@@ -21,30 +21,31 @@ const LoginPage = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch(`http://localhost:5092/api/auth/login?key=WKKTxXNEyayNn7frBp0ErULwxQYvaZaU`, {
+            const response = await fetch('http://localhost:5092/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'x-api-key': 'WKKTxXNEyayNn7frBp0ErULwxQYvaZaU', 
                 },
                 body: JSON.stringify({ email, password }),
             });
-
+    
             if (!response.ok) {
                 throw new Error('Falha na autenticação');
             }
     
             const data = await response.json();
             localStorage.setItem('tokenDoseCerta', data.token);
+            localStorage.setItem('userDoseCerta', JSON.stringify(data.user));
             toast.current?.show({ severity: 'success', summary: 'Sucesso', detail: 'Login efetuado com sucesso' });
-
-            router.push('/dashboard');
+    
+            router.replace('/dashboard');
         } catch (error) {
             console.error('Erro ao fazer login:', error);
             toast.current?.show({ severity: 'error', summary: 'Erro', detail: 'Falha na autenticação' });
-           
         }
     };
-
+    
     return (
         <div className={containerClassName}>
             <div className="flex flex-row items-center justify-center">
@@ -64,7 +65,7 @@ const LoginPage = () => {
                                 <label htmlFor="email1" className="block text-900 text-xl font-medium mb-2">
                                     Email
                                 </label>
-                                <InputText id="email1" type="text" placeholder="Email" className="w-full md:w-30rem mb-5" style={{ padding: '1rem' }} />
+                                <InputText id="email1" type="text" placeholder="Email" className="w-full md:w-30rem mb-5" style={{ padding: '1rem' }} onChange={(e) => setEmail(e.target.value)} />
 
                                 <label htmlFor="password1" className="block text-900 font-medium text-xl mb-2">
                                     Senha
@@ -80,7 +81,7 @@ const LoginPage = () => {
                                     Esqueceu a senha?
                                 </a>
                                 </div>
-                                <Button label="Sign In" className="w-full p-3 text-xl" onClick={handleLogin}></Button>
+                                <Button label="Entrar" className="w-full p-3 text-xl" onClick={handleLogin}></Button>
                             </div>
                         </div>
                     </div>
