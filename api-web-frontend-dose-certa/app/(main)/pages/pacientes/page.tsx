@@ -260,7 +260,7 @@ const PacientesDemo = () => {
     const columns = [
         {
             field: 'name',
-            header: 'name',
+            header: 'Nome',
             // body: (rowData: Item) => getPacienteName(rowData.idUsuarioPaciente ?? 0)
         },
         { field: 'cpf', header: 'CPF' },
