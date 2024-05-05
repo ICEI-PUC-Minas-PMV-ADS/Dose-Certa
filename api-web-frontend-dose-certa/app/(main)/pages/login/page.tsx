@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 'use client';
 import { useRouter } from 'next/navigation';
 import React, { useContext, useState, useRef } from 'react';
@@ -19,24 +18,23 @@ const LoginPage = () => {
     const router = useRouter();
     const toast = useRef<Toast>(null);
     const containerClassName = classNames('surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden', { 'p-input-filled': layoutConfig.inputStyle === 'filled' });
-    const imageSrc = '/assets/layout/images/bg/bg-login.jpg';
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('/api/login', {
+            const response = await fetch(`http://localhost:5092/api/auth/login?key=WKKTxXNEyayNn7frBp0ErULwxQYvaZaU`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ email, password }),
             });
-    
+
             if (!response.ok) {
                 throw new Error('Falha na autenticação');
             }
     
             const data = await response.json();
-            localStorage.setItem('token', data.token);
+            localStorage.setItem('tokenDoseCerta', data.token);
             toast.current?.show({ severity: 'success', summary: 'Sucesso', detail: 'Login efetuado com sucesso' });
 
             router.push('/dashboard');
@@ -52,7 +50,7 @@ const LoginPage = () => {
             <div className="flex flex-row items-center justify-center">
                 {/* Imagem à esquerda */}
                 <div className="w-1/2">
-                    <img src={imageSrc} alt="Imagem de fundo" className="w-full h-auto object-cover" />
+                    {/* <img src={imageSrc} alt="Imagem de fundo" className="w-full h-auto object-cover" /> */}
                 </div>
                 {/* Formulário de login à direita */}
                 <div className="w-1/2">
@@ -66,21 +64,21 @@ const LoginPage = () => {
                                 <label htmlFor="email1" className="block text-900 text-xl font-medium mb-2">
                                     Email
                                 </label>
-                                <InputText id="email1" type="text" placeholder="Email address" className="w-full md:w-30rem mb-5" style={{ padding: '1rem' }} value={email}  />
+                                <InputText id="email1" type="text" placeholder="Email" className="w-full md:w-30rem mb-5" style={{ padding: '1rem' }} />
 
                                 <label htmlFor="password1" className="block text-900 font-medium text-xl mb-2">
                                     Senha
                                 </label>
-                                <Password inputId="password1" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" toggleMask className="w-full mb-5" inputClassName="w-full p-3 md:w-30rem"></Password>
+                                <Password inputId="password1" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Senha" toggleMask className="w-full mb-5" inputClassName="w-full p-3 md:w-30rem"></Password>
 
                                 <div className="flex align-items-center justify-content-between mb-5 gap-5">
                                     <div className="flex align-items-center">
                                         <Checkbox inputId="rememberme1" checked={checked} onChange={(e) => setChecked(e.checked ?? false)} className="mr-2"></Checkbox>
                                         <label htmlFor="rememberme1">Lembrar-me</label>
                                     </div>
-                                    {/* <a className="font-medium no-underline ml-2 text-right cursor-pointer" style={{ color: 'var(--primary-color)' }}>
+                                    <a className="font-medium no-underline ml-2 text-right cursor-pointer" style={{ color: 'var(--primary-color)' }}>
                                     Esqueceu a senha?
-                                </a> */}
+                                </a>
                                 </div>
                                 <Button label="Sign In" className="w-full p-3 text-xl" onClick={handleLogin}></Button>
                             </div>
