@@ -117,13 +117,16 @@ Este subprocesso é apresentado no processo 2, onde o ator Paciente realiza seu 
 | Taxa de Conversão              | Otimizar a conversão de interessados em usuários ativos | Calcula a proporção de usuários que se cadastram após instalar a aplicação                   | (Número de Usuários Cadastrados / Total de Instalações) * 100 | Dados de Instalação das Plataformas de Distribuição | Desempenho Comercial e Crescimento |
 | Taxa de Churn                  | Minimizar a perda de usuários             | Indica a proporção de usuários que deixaram de usar a aplicação em um período definido        | (Número de Usuários Inativos / Total de Usuários Ativos no início do período) * 100 | Sistema de Análise de Engajamento da Aplicação| Retenção e Satisfação do Usuário   |
 
+## Indicadores de Desempenho - Dashboards
+Obs: Todos estão funcionando de forma interativa. No vídeo da etapa 3, isso é mostrado!
+![Dashboards](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/382c3d6c-bca4-4373-9b53-3830f4da9365)
+
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para a priorização dos requisitos, foi utilizado a técnica de escala de três níveis, sendo:
 - Requisitos de Alta Prioridade: essenciais para o funcionamento do sistema.
 - Requisitos de Média Prioridade: importantes, mas não críticos.
 - Requisitos de Baixa Prioridade: podem ser implementados posteriormente.
-
 
 ### Requisitos Funcionais
 
