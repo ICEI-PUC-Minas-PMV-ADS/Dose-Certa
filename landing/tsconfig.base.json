@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "jsx": "react-native",
+      "resolveJsonModule": true,
+      "baseUrl": "./src",
+      "paths": {
+        "*": ["*", "src/*"]
+      }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
+  }
+  
