@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EzHf9D/xB8gAPGwptWXD+/gxhcd/b2qS3ve9LxV2dpa7r3ZGFIn3aMoJhpCeSpbrK1Q0/vG6Lhc0GK23Wg/uyg==",
+  "dgSpecHash": "sF6YzNeyMBruryZin5uonVG9uIvpA/ELk8WQEYOmavwEkZ2RfNOoJnu7pOu7VpGmqwSBQT4AkLGiDUqSTwOA/A==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+  "projectFilePath": "C:\\workspace\\milleny\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ellen\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -64,16 +64,22 @@
     "C:\\Users\\ellen\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\ellen\\.nuget\\packages\\xunit\\2.7.0\\xunit.2.7.0.nupkg.sha512",
+    "C:\\Users\\ellen\\.nuget\\packages\\xunit\\2.8.0\\xunit.2.8.0.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
-    "C:\\Users\\ellen\\.nuget\\packages\\xunit.analyzers\\1.11.0\\xunit.analyzers.1.11.0.nupkg.sha512",
-    "C:\\Users\\ellen\\.nuget\\packages\\xunit.assert\\2.7.0\\xunit.assert.2.7.0.nupkg.sha512",
-    "C:\\Users\\ellen\\.nuget\\packages\\xunit.core\\2.7.0\\xunit.core.2.7.0.nupkg.sha512",
-    "C:\\Users\\ellen\\.nuget\\packages\\xunit.extensibility.core\\2.7.0\\xunit.extensibility.core.2.7.0.nupkg.sha512",
-    "C:\\Users\\ellen\\.nuget\\packages\\xunit.extensibility.execution\\2.7.0\\xunit.extensibility.execution.2.7.0.nupkg.sha512",
+    "C:\\Users\\ellen\\.nuget\\packages\\xunit.analyzers\\1.13.0\\xunit.analyzers.1.13.0.nupkg.sha512",
+    "C:\\Users\\ellen\\.nuget\\packages\\xunit.assert\\2.8.0\\xunit.assert.2.8.0.nupkg.sha512",
+    "C:\\Users\\ellen\\.nuget\\packages\\xunit.core\\2.8.0\\xunit.core.2.8.0.nupkg.sha512",
+    "C:\\Users\\ellen\\.nuget\\packages\\xunit.extensibility.core\\2.8.0\\xunit.extensibility.core.2.8.0.nupkg.sha512",
+    "C:\\Users\\ellen\\.nuget\\packages\\xunit.extensibility.execution\\2.8.0\\xunit.extensibility.execution.2.8.0.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\workspace\\milleny\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1902",
       "level": "Warning",

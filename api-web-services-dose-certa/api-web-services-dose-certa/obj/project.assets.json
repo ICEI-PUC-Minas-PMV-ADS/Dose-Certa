@@ -983,12 +983,12 @@
           }
         }
       },
-      "xunit/2.7.0": {
+      "xunit/2.8.0": {
         "type": "package",
         "dependencies": {
-          "xunit.analyzers": "1.11.0",
-          "xunit.assert": "2.7.0",
-          "xunit.core": "[2.7.0]"
+          "xunit.analyzers": "1.13.0",
+          "xunit.assert": "2.8.0",
+          "xunit.core": "[2.8.0]"
         }
       },
       "xunit.abstractions/2.0.3": {
@@ -1004,10 +1004,10 @@
           }
         }
       },
-      "xunit.analyzers/1.11.0": {
+      "xunit.analyzers/1.13.0": {
         "type": "package"
       },
-      "xunit.assert/2.7.0": {
+      "xunit.assert/2.8.0": {
         "type": "package",
         "compile": {
           "lib/net6.0/xunit.assert.dll": {
@@ -1020,11 +1020,11 @@
           }
         }
       },
-      "xunit.core/2.7.0": {
+      "xunit.core/2.8.0": {
         "type": "package",
         "dependencies": {
-          "xunit.extensibility.core": "[2.7.0]",
-          "xunit.extensibility.execution": "[2.7.0]"
+          "xunit.extensibility.core": "[2.8.0]",
+          "xunit.extensibility.execution": "[2.8.0]"
         },
         "build": {
           "build/xunit.core.props": {},
@@ -1035,7 +1035,7 @@
           "buildMultiTargeting/xunit.core.targets": {}
         }
       },
-      "xunit.extensibility.core/2.7.0": {
+      "xunit.extensibility.core/2.8.0": {
         "type": "package",
         "dependencies": {
           "xunit.abstractions": "2.0.3"
@@ -1051,10 +1051,10 @@
           }
         }
       },
-      "xunit.extensibility.execution/2.7.0": {
+      "xunit.extensibility.execution/2.8.0": {
         "type": "package",
         "dependencies": {
-          "xunit.extensibility.core": "[2.7.0]"
+          "xunit.extensibility.core": "[2.8.0]"
         },
         "compile": {
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {
@@ -3842,16 +3842,16 @@
         "version.txt"
       ]
     },
-    "xunit/2.7.0": {
-      "sha512": "KcCI5zxh8zbUfQTeErc4oT7YokViVND2V0p4vDJ2VD4lhF9V5qCYMMDNixme7FdwYy3SwPHF+2xC2Dq4Z9GSlA==",
+    "xunit/2.8.0": {
+      "sha512": "US3a3twJziAif1kFPGdk9fALwILHxV0n1roX5j67bN/d3o4DGNLHnV3tr5ZX+uinVrzfkf0avH3zGX8JPBC0qA==",
       "type": "package",
-      "path": "xunit/2.7.0",
+      "path": "xunit/2.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "_content/README.md",
         "_content/logo-128-transparent.png",
-        "xunit.2.7.0.nupkg.sha512",
+        "xunit.2.8.0.nupkg.sha512",
         "xunit.nuspec"
       ]
     },
@@ -3872,10 +3872,10 @@
         "xunit.abstractions.nuspec"
       ]
     },
-    "xunit.analyzers/1.11.0": {
-      "sha512": "SCv+Ihxv+fCqotGeM8sVwLhw8nzAJ2aFRN5lcoKn9QtGdbVJ79JqDc+4u8/Ddnp2udxtmv+xYFWkHNlb/sk01w==",
+    "xunit.analyzers/1.13.0": {
+      "sha512": "Pai9YnDV71/Ox14nBHB6/f62iyPyLbmUG/YYMiA4dfdFZvr0gIYE9yGxSr0i5Tr3INK75wgL2MCUNEKpeiZ2Fw==",
       "type": "package",
-      "path": "xunit.analyzers/1.11.0",
+      "path": "xunit.analyzers/1.13.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -3892,14 +3892,14 @@
         "analyzers/dotnet/roslyn4.8/cs/xunit.analyzers.fixes.dll",
         "tools/install.ps1",
         "tools/uninstall.ps1",
-        "xunit.analyzers.1.11.0.nupkg.sha512",
+        "xunit.analyzers.1.13.0.nupkg.sha512",
         "xunit.analyzers.nuspec"
       ]
     },
-    "xunit.assert/2.7.0": {
-      "sha512": "CCTs3bUhmIS4tDwK6Cn/IiabG3RhYzdf65eIkO7u9/grKoN9MrN780LzVED3E8v+vwmmj7b5TW3/GFuZHPAzWA==",
+    "xunit.assert/2.8.0": {
+      "sha512": "lwf7Dy5/5HbDkaPx1YrGXCByytCEEcIn+KPI74jh2BD/RU/7RhO8c+S3k0Ph+Mr7+cLf338fl+o6UcgPCLa6PA==",
       "type": "package",
-      "path": "xunit.assert/2.7.0",
+      "path": "xunit.assert/2.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3909,14 +3909,14 @@
         "lib/net6.0/xunit.assert.xml",
         "lib/netstandard1.1/xunit.assert.dll",
         "lib/netstandard1.1/xunit.assert.xml",
-        "xunit.assert.2.7.0.nupkg.sha512",
+        "xunit.assert.2.8.0.nupkg.sha512",
         "xunit.assert.nuspec"
       ]
     },
-    "xunit.core/2.7.0": {
-      "sha512": "98tzqYAbtc/p/2Ba455XTNbD12Qoo8kPehjC4oDT46CAsLli5JOCU9hFF2MV3HHWMw/Y3yFUV2Vcukplbs6kuA==",
+    "xunit.core/2.8.0": {
+      "sha512": "McSTFGTETCxLpmJKE9TWi9FtFthrRbpRrjz2V2g8sK2wRt1+JHs15vwi+B+nfftFkV9aFWIXZfzZM95TIGZNIA==",
       "type": "package",
-      "path": "xunit.core/2.7.0",
+      "path": "xunit.core/2.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3926,14 +3926,14 @@
         "build/xunit.core.targets",
         "buildMultiTargeting/xunit.core.props",
         "buildMultiTargeting/xunit.core.targets",
-        "xunit.core.2.7.0.nupkg.sha512",
+        "xunit.core.2.8.0.nupkg.sha512",
         "xunit.core.nuspec"
       ]
     },
-    "xunit.extensibility.core/2.7.0": {
-      "sha512": "JLnx4PI0vn1Xr1Ust6ydrp2t/ktm2dyGPAVoDJV5gQuvBMSbd2K7WGzODa2ttiz030CeQ8nbsXl05+cvf7QNyA==",
+    "xunit.extensibility.core/2.8.0": {
+      "sha512": "eBJv9xQeY0p5z+C/L1tFjUFYqtl5pQqIEYCGTMl+MbRzA7sOlgYKwJE//vEePBp+mgBh7NjD0Qhz0liZBYM27w==",
       "type": "package",
-      "path": "xunit.extensibility.core/2.7.0",
+      "path": "xunit.extensibility.core/2.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3946,14 +3946,14 @@
         "lib/net452/xunit.runner.utility.net452.dll",
         "lib/netstandard1.1/xunit.core.dll",
         "lib/netstandard1.1/xunit.core.xml",
-        "xunit.extensibility.core.2.7.0.nupkg.sha512",
+        "xunit.extensibility.core.2.8.0.nupkg.sha512",
         "xunit.extensibility.core.nuspec"
       ]
     },
-    "xunit.extensibility.execution/2.7.0": {
-      "sha512": "bjY+crT1jOyxKagFjCMdEVzoenO2v66ru8+CK/0UaXvyG4U9Q3UTieJkbQXbi7/1yZIK1sGh01l5/jh2CwLJtQ==",
+    "xunit.extensibility.execution/2.8.0": {
+      "sha512": "TyyrZesHB9ODZMS9c73OqiBz4x0vL944JCkSPBWW5w6PF2LlUfdfXRjjOhoIOuY6lTmEgl07rS4/Jot9mCYnpg==",
       "type": "package",
-      "path": "xunit.extensibility.execution/2.7.0",
+      "path": "xunit.extensibility.execution/2.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3963,7 +3963,7 @@
         "lib/net452/xunit.execution.desktop.xml",
         "lib/netstandard1.1/xunit.execution.dotnet.dll",
         "lib/netstandard1.1/xunit.execution.dotnet.xml",
-        "xunit.extensibility.execution.2.7.0.nupkg.sha512",
+        "xunit.extensibility.execution.2.8.0.nupkg.sha512",
         "xunit.extensibility.execution.nuspec"
       ]
     },
@@ -3995,7 +3995,7 @@
       "Newtonsoft.Json >= 13.0.1",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "System.IdentityModel.Tokens.Jwt >= 6.15.1",
-      "xunit >= 2.7.0"
+      "xunit >= 2.8.0"
     ]
   },
   "packageFolders": {
@@ -4005,11 +4005,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+      "projectUniqueName": "C:\\workspace\\milleny\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
       "projectName": "api-web-services-dose-certa",
-      "projectPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+      "projectPath": "C:\\workspace\\milleny\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
       "packagesPath": "C:\\Users\\ellen\\.nuget\\packages\\",
-      "outputPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
+      "outputPath": "C:\\workspace\\milleny\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4078,7 +4078,7 @@
           },
           "xunit": {
             "target": "Package",
-            "version": "[2.7.0, )"
+            "version": "[2.8.0, )"
           }
         },
         "imports": [
@@ -4105,6 +4105,12 @@
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\workspace\\milleny\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1902",
       "level": "Warning",

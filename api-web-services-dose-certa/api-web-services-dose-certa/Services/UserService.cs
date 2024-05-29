@@ -38,8 +38,10 @@ public class UserService
                     Name = reader["Name"].ToString(),
                     Email = reader["Email"].ToString(),
                     UserType = reader["UserType"].ToString(),
-                    HouseId = reader["HouseId"].ToString()
-                };
+                    DataNascimento = reader["DataNascimento"].ToString(),
+
+                    // HouseId = reader["HouseId"].ToString(),
+                    Cpf = reader["Cpf"].ToString()                };
                 users.Add(user);
             }
 
@@ -75,7 +77,7 @@ public class UserService
                     Name = reader["Name"].ToString(),
                     Email = reader["Email"].ToString(),
                     UserType = reader["UserType"].ToString(),
-                    HouseId = reader["HouseId"].ToString()
+                    // HouseId = reader["HouseId"].ToString()
                 };
             }
 
@@ -89,54 +91,56 @@ public class UserService
         return user;
     }
 
-    public async Task CreateAsync(User userToCreate)
+public async Task CreateAsync(User userToCreate)
+{
+    try
     {
-        try
-        {
-            await _connection.OpenAsync();
+        await _connection.OpenAsync();
 
-            string hashedPassword = HashPassword(userToCreate.Password);
+        string hashedPassword = HashPassword(userToCreate.Password);
 
-            string query = "INSERT INTO User (Name, Email, Password, UserType, HouseId) VALUES (@Name, @Email, @Password, @UserType, @HouseId)";
-            MySqlCommand command = new MySqlCommand(query, _connection);
-            command.Parameters.AddWithValue("@Name", userToCreate.Name);
-            command.Parameters.AddWithValue("@Email", userToCreate.Email);
-            command.Parameters.AddWithValue("@Password", hashedPassword); // Salva o hash da senha
-            command.Parameters.AddWithValue("@UserType", userToCreate.UserType);
-            command.Parameters.AddWithValue("@HouseId", userToCreate.HouseId);
+        string query = "INSERT INTO User (Name, Email, Password, UserType, Cpf, DataNascimento) VALUES (@Name, @Email, @Password, @UserType, @Cpf, @DataNascimento)";
+        MySqlCommand command = new MySqlCommand(query, _connection);
+        command.Parameters.AddWithValue("@Name", userToCreate.Name);
+        command.Parameters.AddWithValue("@Email", userToCreate.Email);
+        command.Parameters.AddWithValue("@Password", hashedPassword); // Salva o hash da senha
+        command.Parameters.AddWithValue("@UserType", userToCreate.UserType);
+        command.Parameters.AddWithValue("@Cpf", userToCreate.Cpf);
+        command.Parameters.AddWithValue("@DataNascimento", userToCreate.DataNascimento);
 
-            await command.ExecuteNonQueryAsync();
-        }
-        finally
-        {
-            await _connection.CloseAsync();
-        }
+        await command.ExecuteNonQueryAsync();
     }
-
-    public async Task UpdateAsync(int id, User userUpdated)
+    finally
     {
-        try
-        {
-            await _connection.OpenAsync();
-
-            string hashedPassword = HashPassword(userUpdated.Password);
-
-            string query = "UPDATE User SET Name = @Name, Email = @Email, Password = @Password, UserType = @UserType, HouseId = @HouseId WHERE Id = @Id";
-            MySqlCommand command = new MySqlCommand(query, _connection);
-            command.Parameters.AddWithValue("@Id", id);
-            command.Parameters.AddWithValue("@Name", userUpdated.Name);
-            command.Parameters.AddWithValue("@Email", userUpdated.Email);
-            command.Parameters.AddWithValue("@Password", hashedPassword); // Salva o hash da senha
-            command.Parameters.AddWithValue("@UserType", userUpdated.UserType);
-            command.Parameters.AddWithValue("@HouseId", userUpdated.HouseId);
-
-            await command.ExecuteNonQueryAsync();
-        }
-        finally
-        {
-            await _connection.CloseAsync();
-        }
+        await _connection.CloseAsync();
     }
+}
+
+   public async Task UpdateAsync(int id, User userUpdated)
+{
+    try
+    {
+        await _connection.OpenAsync();
+
+        string hashedPassword = HashPassword(userUpdated.Password);
+
+        string query = "UPDATE User SET Name = @Name, Email = @Email, Password = @Password, UserType = @UserType, DataNascimento = @DataNascimento, Cpf = @Cpf WHERE Id = @Id";
+        MySqlCommand command = new MySqlCommand(query, _connection);
+        command.Parameters.AddWithValue("@Id", id);
+        command.Parameters.AddWithValue("@Name", userUpdated.Name);
+        command.Parameters.AddWithValue("@Email", userUpdated.Email);
+        command.Parameters.AddWithValue("@Password", hashedPassword); // Salva o hash da senha
+        command.Parameters.AddWithValue("@UserType", userUpdated.UserType);
+        command.Parameters.AddWithValue("@DataNascimento", userUpdated.DataNascimento);
+        command.Parameters.AddWithValue("@Cpf", userUpdated.Cpf);
+
+        await command.ExecuteNonQueryAsync();
+    }
+    finally
+    {
+        await _connection.CloseAsync();
+    }
+}
 
     public async Task RemoveAsync(int id)
     {
@@ -181,7 +185,7 @@ public class UserService
                         Name = reader["Name"].ToString(),
                         Email = reader["Email"].ToString(),
                         UserType = reader["UserType"].ToString(),
-                        HouseId = reader["HouseId"].ToString()
+                        // HouseId = reader["HouseId"].ToString()
                     };
                 }
             }
@@ -208,6 +212,6 @@ public class UserService
                 builder.Append(hash[i].ToString("x2"));
             }
             return builder.ToString();
-        }
-    }
+        }
+    }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj": {}
+    "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
+    "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+        "projectUniqueName": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
         "projectName": "api-web-services-dose-certa",
-        "projectPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
-        "packagesPath": "C:\\Users\\ellen\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
+        "projectPath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+        "packagesPath": "C:\\Users\\Vitória\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ellen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vitória\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -102,24 +102,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj": {
+    "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
         "projectName": "api_web_services_dose_certa.Tests",
-        "projectPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
-        "packagesPath": "C:\\Users\\ellen\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\obj\\",
+        "projectPath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\api_web_services_dose_certa.Tests.csproj",
+        "packagesPath": "C:\\Users\\Vitória\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api_web_services_dose_certa.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ellen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vitória\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -135,8 +135,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
-                "projectPath": "C:\\workspace\\PUC\\eixo 4\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj"
+              "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj": {
+                "projectPath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Front\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj"
               }
             }
           }
@@ -197,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
