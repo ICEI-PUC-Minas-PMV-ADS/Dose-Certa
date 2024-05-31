@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { FiSend } from 'react-icons/fi';
-import IconBot from './iconBot.svg'; // Importe o SVG como um módulo padrão
-
+import Image from 'next/image';
 
 
 type Message = { text: string; sender: 'user' | 'bot'; userName?: string };
@@ -86,7 +85,13 @@ function Chatbot() {
                 {messages.map((message, index) => (
                     <div key={index} className={`message ${message.sender}`}>
                         {message.sender === 'bot' && (
-                            <img src={IconBot} alt="Bot" className="avatar" />
+                            <Image
+                                src="/img/iconBot.svg" // Caminho relativo à pasta public
+                                alt="Bot"
+                                className="avatar"
+                                width={40}
+                                height={40}
+                            />
                         )}
                         <p dangerouslySetInnerHTML={{ __html: message.text }} />
                     </div>
