@@ -1,6 +1,8 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { Button } from 'primereact/button';
+import Chatbot from "@/demo/components/Chatbot"
+
 
 const LandingPage = () => {
     return (
@@ -11,15 +13,17 @@ const LandingPage = () => {
             </div>
 
             <div className="surface-0 text-700 text-center">
-    <div className="text-blue-600 font-bold mb-3">saúde em equilíbrio</div>
-    <div className="text-900 font-bold text-5xl mb-3">DOSE CERTA</div>
-    <div className="text-600 text-2xl mb-5">organização de medicamentos simples e acessível</div>
+                <div className="text-blue-600 font-bold mb-3">saúde em equilíbrio</div>
+                <div className="text-900 font-bold text-5xl mb-3">DOSE CERTA</div>
+                <div className="text-600 text-2xl mb-5">organização de medicamentos simples e acessível</div>
 
-</div>
+            </div>
 
 
-            
+            <Chatbot />
+
         </div>
+
     );
 }
 export default LandingPage;
