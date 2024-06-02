@@ -25,7 +25,6 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
  ![Esquema Relacional - tabelas MySQL](./img/esquema%20relacional%20-%203.png)
-<<<<<<< HEAD
 
 ## Modelo JSON
 
@@ -189,11 +188,7 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 }
 ```
 
-
-=======
-
 ## Modelo JSON
->>>>>>> origin/main
 
 - [Anotações](../api-web-services-dose-certa/api-web-services-dose-certa/Models/Note.cs):
 ```

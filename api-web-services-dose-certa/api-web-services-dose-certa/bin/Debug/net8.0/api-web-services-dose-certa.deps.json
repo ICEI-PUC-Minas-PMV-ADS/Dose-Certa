@@ -15,7 +15,7 @@
           "Newtonsoft.Json": "13.0.1",
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.IdentityModel.Tokens.Jwt": "6.15.1",
-          "xunit": "2.7.0"
+          "xunit": "2.8.0"
         },
         "runtime": {
           "api-web-services-dose-certa.dll": {}
@@ -545,11 +545,11 @@
           }
         }
       },
-      "xunit/2.7.0": {
+      "xunit/2.8.0": {
         "dependencies": {
-          "xunit.analyzers": "1.11.0",
-          "xunit.assert": "2.7.0",
-          "xunit.core": "2.7.0"
+          "xunit.analyzers": "1.13.0",
+          "xunit.assert": "2.8.0",
+          "xunit.core": "2.8.0"
         }
       },
       "xunit.abstractions/2.0.3": {
@@ -560,40 +560,40 @@
           }
         }
       },
-      "xunit.analyzers/1.11.0": {},
-      "xunit.assert/2.7.0": {
+      "xunit.analyzers/1.13.0": {},
+      "xunit.assert/2.8.0": {
         "runtime": {
           "lib/net6.0/xunit.assert.dll": {
-            "assemblyVersion": "2.7.0.0",
-            "fileVersion": "2.7.0.0"
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
           }
         }
       },
-      "xunit.core/2.7.0": {
+      "xunit.core/2.8.0": {
         "dependencies": {
-          "xunit.extensibility.core": "2.7.0",
-          "xunit.extensibility.execution": "2.7.0"
+          "xunit.extensibility.core": "2.8.0",
+          "xunit.extensibility.execution": "2.8.0"
         }
       },
-      "xunit.extensibility.core/2.7.0": {
+      "xunit.extensibility.core/2.8.0": {
         "dependencies": {
           "xunit.abstractions": "2.0.3"
         },
         "runtime": {
           "lib/netstandard1.1/xunit.core.dll": {
-            "assemblyVersion": "2.7.0.0",
-            "fileVersion": "2.7.0.0"
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
           }
         }
       },
-      "xunit.extensibility.execution/2.7.0": {
+      "xunit.extensibility.execution/2.8.0": {
         "dependencies": {
-          "xunit.extensibility.core": "2.7.0"
+          "xunit.extensibility.core": "2.8.0"
         },
         "runtime": {
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {
-            "assemblyVersion": "2.7.0.0",
-            "fileVersion": "2.7.0.0"
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
           }
         }
       },
@@ -1033,12 +1033,12 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "xunit/2.7.0": {
+    "xunit/2.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KcCI5zxh8zbUfQTeErc4oT7YokViVND2V0p4vDJ2VD4lhF9V5qCYMMDNixme7FdwYy3SwPHF+2xC2Dq4Z9GSlA==",
-      "path": "xunit/2.7.0",
-      "hashPath": "xunit.2.7.0.nupkg.sha512"
+      "sha512": "sha512-US3a3twJziAif1kFPGdk9fALwILHxV0n1roX5j67bN/d3o4DGNLHnV3tr5ZX+uinVrzfkf0avH3zGX8JPBC0qA==",
+      "path": "xunit/2.8.0",
+      "hashPath": "xunit.2.8.0.nupkg.sha512"
     },
     "xunit.abstractions/2.0.3": {
       "type": "package",
@@ -1047,40 +1047,40 @@
       "path": "xunit.abstractions/2.0.3",
       "hashPath": "xunit.abstractions.2.0.3.nupkg.sha512"
     },
-    "xunit.analyzers/1.11.0": {
+    "xunit.analyzers/1.13.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SCv+Ihxv+fCqotGeM8sVwLhw8nzAJ2aFRN5lcoKn9QtGdbVJ79JqDc+4u8/Ddnp2udxtmv+xYFWkHNlb/sk01w==",
-      "path": "xunit.analyzers/1.11.0",
-      "hashPath": "xunit.analyzers.1.11.0.nupkg.sha512"
+      "sha512": "sha512-Pai9YnDV71/Ox14nBHB6/f62iyPyLbmUG/YYMiA4dfdFZvr0gIYE9yGxSr0i5Tr3INK75wgL2MCUNEKpeiZ2Fw==",
+      "path": "xunit.analyzers/1.13.0",
+      "hashPath": "xunit.analyzers.1.13.0.nupkg.sha512"
     },
-    "xunit.assert/2.7.0": {
+    "xunit.assert/2.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CCTs3bUhmIS4tDwK6Cn/IiabG3RhYzdf65eIkO7u9/grKoN9MrN780LzVED3E8v+vwmmj7b5TW3/GFuZHPAzWA==",
-      "path": "xunit.assert/2.7.0",
-      "hashPath": "xunit.assert.2.7.0.nupkg.sha512"
+      "sha512": "sha512-lwf7Dy5/5HbDkaPx1YrGXCByytCEEcIn+KPI74jh2BD/RU/7RhO8c+S3k0Ph+Mr7+cLf338fl+o6UcgPCLa6PA==",
+      "path": "xunit.assert/2.8.0",
+      "hashPath": "xunit.assert.2.8.0.nupkg.sha512"
     },
-    "xunit.core/2.7.0": {
+    "xunit.core/2.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-98tzqYAbtc/p/2Ba455XTNbD12Qoo8kPehjC4oDT46CAsLli5JOCU9hFF2MV3HHWMw/Y3yFUV2Vcukplbs6kuA==",
-      "path": "xunit.core/2.7.0",
-      "hashPath": "xunit.core.2.7.0.nupkg.sha512"
+      "sha512": "sha512-McSTFGTETCxLpmJKE9TWi9FtFthrRbpRrjz2V2g8sK2wRt1+JHs15vwi+B+nfftFkV9aFWIXZfzZM95TIGZNIA==",
+      "path": "xunit.core/2.8.0",
+      "hashPath": "xunit.core.2.8.0.nupkg.sha512"
     },
-    "xunit.extensibility.core/2.7.0": {
+    "xunit.extensibility.core/2.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JLnx4PI0vn1Xr1Ust6ydrp2t/ktm2dyGPAVoDJV5gQuvBMSbd2K7WGzODa2ttiz030CeQ8nbsXl05+cvf7QNyA==",
-      "path": "xunit.extensibility.core/2.7.0",
-      "hashPath": "xunit.extensibility.core.2.7.0.nupkg.sha512"
+      "sha512": "sha512-eBJv9xQeY0p5z+C/L1tFjUFYqtl5pQqIEYCGTMl+MbRzA7sOlgYKwJE//vEePBp+mgBh7NjD0Qhz0liZBYM27w==",
+      "path": "xunit.extensibility.core/2.8.0",
+      "hashPath": "xunit.extensibility.core.2.8.0.nupkg.sha512"
     },
-    "xunit.extensibility.execution/2.7.0": {
+    "xunit.extensibility.execution/2.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bjY+crT1jOyxKagFjCMdEVzoenO2v66ru8+CK/0UaXvyG4U9Q3UTieJkbQXbi7/1yZIK1sGh01l5/jh2CwLJtQ==",
-      "path": "xunit.extensibility.execution/2.7.0",
-      "hashPath": "xunit.extensibility.execution.2.7.0.nupkg.sha512"
+      "sha512": "sha512-TyyrZesHB9ODZMS9c73OqiBz4x0vL944JCkSPBWW5w6PF2LlUfdfXRjjOhoIOuY6lTmEgl07rS4/Jot9mCYnpg==",
+      "path": "xunit.extensibility.execution/2.8.0",
+      "hashPath": "xunit.extensibility.execution.2.8.0.nupkg.sha512"
     },
     "ZstdSharp.Port/0.7.3": {
       "type": "package",

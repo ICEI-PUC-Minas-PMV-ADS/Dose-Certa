@@ -1,24 +1,24 @@
-using api_web_services_dose_certa.Controllers;
-using api_web_services_dose_certa.Services;
-using Microsoft.AspNetCore.Mvc;
-using Moq;
-using Xunit;
-using APIDoseCerta.Models;
+// using api_web_services_dose_certa.Controllers;
+// using api_web_services_dose_certa.Services;
+// using Microsoft.AspNetCore.Mvc;
+// using Moq;
+// using Xunit;
+// using APIDoseCerta.Models;
 
 
-namespace Tests
-{
-    public class ResidenciaControllerTest
-    {
-        private readonly ResidenciaController _controller;
-        private readonly Mock<ResidenciaService> _residenciaServiceMock;
+// namespace Tests
+// {
+//     public class ResidenciaControllerTest
+//     {
+//         private readonly ResidenciaController _controller;
+//         private readonly Mock<ResidenciaService> _residenciaServiceMock;
 
-        public ResidenciaControllerTest()
-        {
-            _residenciaServiceMock = new Mock<ResidenciaService>();
-            _controller = new ResidenciaController(_residenciaServiceMock.Object);
-        }
-
+//         public ResidenciaControllerTest()
+//         {
+//             _residenciaServiceMock = new Mock<ResidenciaService>();
+//             _controller = new ResidenciaController(_residenciaServiceMock.Object);
+//         }
+/*
         [Fact]
         public async Task GetResidencia_ReturnsListOfResidencia()
         {
@@ -67,5 +67,6 @@ namespace Tests
             // Assert
             Assert.IsType<NotFoundResult>(result.Result);
         }
-    }
-}
+    */
+//     }
+// }

@@ -3999,32 +3999,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vitória\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Jobs\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Iane\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+      "projectUniqueName": "C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
       "projectName": "api-web-services-dose-certa",
-      "projectPath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Iane\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
-      "packagesPath": "C:\\Users\\Vitória\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vitória\\Downloads\\Dose-Certa-Iane\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
+      "projectPath": "C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+      "packagesPath": "C:\\Users\\Jobs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Vitória\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Jobs\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4105,6 +4097,12 @@
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1902",
       "level": "Warning",
