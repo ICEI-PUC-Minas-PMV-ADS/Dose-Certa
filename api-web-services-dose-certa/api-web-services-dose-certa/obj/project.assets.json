@@ -4004,11 +4004,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+      "projectUniqueName": "C:\\Users\\Jobs\\Desktop\\main atualizada\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
       "projectName": "api-web-services-dose-certa",
-      "projectPath": "C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+      "projectPath": "C:\\Users\\Jobs\\Desktop\\main atualizada\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
       "packagesPath": "C:\\Users\\Jobs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
+      "outputPath": "C:\\Users\\Jobs\\Desktop\\main atualizada\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jobs\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4097,12 +4097,6 @@
     }
   },
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1902",
       "level": "Warning",

@@ -37,30 +37,19 @@ const Residencia = () => {
 
   useEffect(() => {
     fetchData();
-    fetchPacientes();
     setPage(0);
   }, [itemsPerPage]);
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://192.168.0.6:5092/api/Residencia");
+      const response = await axios.get("http://localhost:5092/api/Residencia");
       setData(response.data);
     } catch (error) {
       console.error("Erro ao buscar dados:", error);
     }
   };
 
-  const fetchPacientes = () => {
-    axios
-      .get("http://192.168.0.6:5092/api/users?UserType=Paciente")
-      .then((response) => {
-        setPacientes(response.data);
-      })
-      .catch((error) => {
-        console.error("Erro ao buscar pacientes:", error);
-      });
-  };
-
+ 
   const hideDialog = () => setResidenciaDialog(false);
 
   const openNew = (residenciaId = null) => {
@@ -87,7 +76,7 @@ const Residencia = () => {
 
   const deleteResidencia = () => {
     axios
-      .delete(`http://192.168.0.6:5092/api/Residencia/${selectedResidenciaId}`)
+      .delete(`http://localhost:5092/api/Residencia/${selectedResidenciaId}`)
       .then(() => {
         hideDeleteResidenciaDialog();
         fetchData();
@@ -116,8 +105,8 @@ const Residencia = () => {
     };
 
     const request = residencia.id
-      ? axios.put(`http://192.168.0.6:5092/api/Residencia/${residencia.id}`, newResidencia)
-      : axios.post("http://192.168.0.6:5092/api/Residencia", newResidencia);
+      ? axios.put(`http://localhost:5092/api/Residencia/${residencia.id}`, newResidencia)
+      : axios.post("http://localhost:5092/api/Residencia", newResidencia);
 
     request
       .then(() => {

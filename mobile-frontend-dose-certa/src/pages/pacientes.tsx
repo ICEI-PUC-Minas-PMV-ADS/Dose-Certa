@@ -39,7 +39,7 @@ const PacientesDemo = () => {
 
   const fetchData = () => {
     axios
-      .get('http://192.168.0.6:5092/api/users')
+      .get('http://localhost:5092/api/users')
       .then((response) => {
         console.log(response.data)
         
@@ -84,8 +84,8 @@ const PacientesDemo = () => {
     };
 
     const request = selectedUserId 
-      ? axios.put(`http://192.168.0.6:5092/api/users/${selectedUserId}`, newUser) 
-      : axios.post('http://192.168.0.6:5092/api/users', newUser);
+      ? axios.put(`http://localhost:5092/api/users/${selectedUserId}`, newUser) 
+      : axios.post('http://localhost:5092/api/users', newUser);
 
     request
       .then(() => {
@@ -121,7 +121,7 @@ const PacientesDemo = () => {
 
   const deleteUser = () => {
     axios
-      .delete(`http://192.168.0.6:5092/api/users/${selectedUserId}`)
+      .delete(`http://localhost:5092/api/users/${selectedUserId}`)
       .then(() => {
         hideDeleteUserDialog();
         fetchData();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dI+PNiBRJ96sj71b0DF66zK+g4vF7Pt0GMp28sCTpPnviZuc5Q7gmrsHCNGnsBXMt9CvhV3P0Ho8eAq9KP1mgw==",
+  "dgSpecHash": "66Z0uP9EfA04bdzqozhTTpBB+ymVD6333mrxLUiibYcJscVfwOch0NCvElFCIC5VV4YNg80dzjl0xQMDQ29lZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+  "projectFilePath": "C:\\Users\\Jobs\\Desktop\\main atualizada\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jobs\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Jobs\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -74,12 +74,6 @@
     "C:\\Users\\Jobs\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Jobs\\Desktop\\projeto puc\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1902",
       "level": "Warning",
