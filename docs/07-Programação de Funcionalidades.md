@@ -45,6 +45,9 @@ A funcionalidade de Cadastro de Residência (RF-008) permite que um usuário cad
 
 ![Residencias](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/79332e65-bae0-4272-b744-6016784e6740)
 
+![Residencias Mobile](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/e2b138da-9341-4204-ab9b-5b48fe3db1f8)
+
+
 ##### Instruções de uso/acesso
 1. Acesse o site pelo [Link](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa?tab=readme-ov-file)
 2. Certifique que o seu cadastro/login foi efetuado corretamente
@@ -136,6 +139,8 @@ A funcionalidade de Cadastro de Pacientes (RF-002) permite que um usuário cadas
 |RF-014| O sistema deve permitir que os agentes cadastrados insiram informações sobre os pacientes. | AppMenu.tsx / pacientes(page.tsx) / PacienteController / Paciente.cs(Models) / PacienteService.cs
 
 ![Pacientes](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/b0429662-d8e4-4675-a23b-ea02f60f4e9f)
+
+![Pacientes Mobile](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/4bffaefd-e853-4c86-a580-bb54311ced8f)
 
 ##### Instruções de uso/acesso
 1. Acesse o site pelo [Link](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa?tab=readme-ov-file)
