@@ -7,10 +7,15 @@ Elaboramos a visão geral da interação do usuário pelas telas do sistema e pr
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
-[Prototype](https://www.figma.com/proto/lw75jaRKnAiAaMj0cBSvbD/Wireframes?type=design&node-id=296-1607&t=cPgoTVse0bBHwFXL-1&scaling=min-zoom&page-id=119%3A787&starting-point-node-id=296%3A1607&show-proto-sidebar=1&mode=design)
+![Diagrama de Fluxo - Web e Mobile](img/diagrama-de-fluxo.png)
 
-![Diagrama de Fluxo](img/diagrama-de-fluxo.png)
-![Diagrama de Fluxo - Figma](img/Diagrama%20de%20Fluxo%20-%20PUC.png)
+[Prototype Web](https://www.figma.com/proto/lw75jaRKnAiAaMj0cBSvbD/Wireframes?type=design&node-id=296-1607&t=cPgoTVse0bBHwFXL-1&scaling=min-zoom&page-id=119%3A787&starting-point-node-id=296%3A1607&show-proto-sidebar=1&mode=design)
+
+![Diagrama de Fluxo Web - Figma](img/Diagrama%20de%20Fluxo%20-%20PUC.png)
+
+[Prototype Mobile](https://www.figma.com/proto/lw75jaRKnAiAaMj0cBSvbD/Wireframes?node-id=559-1538&t=ZwijDscgKrFNpwPn-0&scaling=scale-down&page-id=369%3A4675&starting-point-node-id=559%3A1538)
+
+![Diagrama de Fluxo Mobile - Figma](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/057c496c-ea8d-44e2-b2db-fc98b95d6480)
 
 ## Wireframes - Web
 
