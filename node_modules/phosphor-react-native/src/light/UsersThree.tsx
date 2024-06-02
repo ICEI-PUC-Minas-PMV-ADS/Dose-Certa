@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const UsersThree = (props: IconProps) => <Svg className="users-three-light__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M243.6 148.8a6 6 0 0 1-8.4-1.2A53.58 53.58 0 0 0 192 126a6 6 0 0 1 0-12 26 26 0 1 0-25.18-32.5 6 6 0 0 1-11.62-3 38 38 0 1 1 59.91 39.63 65.69 65.69 0 0 1 29.69 22.27 6 6 0 0 1-1.2 8.4ZM189.19 213a6 6 0 0 1-2.19 8.2 5.9 5.9 0 0 1-3 .81 6 6 0 0 1-5.2-3 59 59 0 0 0-101.62 0 6 6 0 1 1-10.38-6 70.1 70.1 0 0 1 36.2-30.46 46 46 0 1 1 50.1 0A70.1 70.1 0 0 1 189.19 213ZM128 178a34 34 0 1 0-34-34 34 34 0 0 0 34 34Zm-58-58a6 6 0 0 0-6-6 26 26 0 1 1 25.18-32.51 6 6 0 1 0 11.62-3 38 38 0 1 0-59.91 39.63A65.69 65.69 0 0 0 11.2 140.4a6 6 0 1 0 9.6 7.2A53.58 53.58 0 0 1 64 126a6 6 0 0 0 6-6Z" /></Svg>;
+export default UsersThree;

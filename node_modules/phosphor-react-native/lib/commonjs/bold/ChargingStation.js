@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const ChargingStation = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "charging-station-bold__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M137.94 121.27a12 12 0 0 1 1.2 11.19l-16 40A12 12 0 0 1 112 180a11.86 11.86 0 0 1-4.46-.86 12 12 0 0 1-6.68-15.6l9.42-23.54H96a12 12 0 0 1-11.14-16.46l16-40a12 12 0 0 1 22.28 8.92L113.72 116H128a12 12 0 0 1 9.94 5.27ZM256 86.63V166a30 30 0 0 1-60 0v-38a4 4 0 0 0-4-4h-12v80h12a12 12 0 0 1 0 24H32a12 12 0 0 1 0-24h12V56a28 28 0 0 1 28-28h80a28 28 0 0 1 28 28v44h12a28 28 0 0 1 28 28v38a6 6 0 0 0 12 0V86.63a4 4 0 0 0-1.17-2.83l-19.32-19.31a12 12 0 0 1 17-17l19.29 19.34a27.81 27.81 0 0 1 8.2 19.8ZM156 204V56a4 4 0 0 0-4-4H72a4 4 0 0 0-4 4v148Z"
+}));
+var _default = exports.default = ChargingStation;

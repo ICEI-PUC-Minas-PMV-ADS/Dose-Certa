@@ -1,0 +1,24 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Ghost = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "ghost-duotone__svg-icon-phosphor",
+  fill: props.color,
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M216 120v96l-29.33-24-29.34 24L128 192l-29.33 24-29.34-24L40 216v-96a88 88 0 0 1 176 0Z",
+  opacity: 0.2
+}), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M112 116a12 12 0 1 1-12-12 12 12 0 0 1 12 12Zm44-12a12 12 0 1 0 12 12 12 12 0 0 0-12-12Zm68 16v96a8 8 0 0 1-13.07 6.19l-24.26-19.85-24.27 19.85a8 8 0 0 1-10.13 0L128 202.34l-24.27 19.85a8 8 0 0 1-10.13 0l-24.27-19.85-24.26 19.85A8 8 0 0 1 32 216v-96a96 96 0 0 1 192 0Zm-16 0a80 80 0 0 0-160 0v79.12l16.27-13.31a8 8 0 0 1 10.13 0l24.27 19.85 24.26-19.85a8 8 0 0 1 10.14 0l24.26 19.85 24.27-19.85a8 8 0 0 1 10.13 0L208 199.12Z"
+}));
+var _default = exports.default = Ghost;

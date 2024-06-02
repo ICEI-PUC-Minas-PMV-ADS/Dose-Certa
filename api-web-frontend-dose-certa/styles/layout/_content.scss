@@ -10,3 +10,23 @@
 .layout-main {
     flex: 1 1 auto;
 }
+
+
+.login-image {
+    display: flex;
+        align-items: center;
+        color: var(--surface-900);
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 300px;
+        border-radius: 12px;
+
+        img {
+            height: 2.5rem;
+            margin-right: .5rem;
+        }
+
+        &:focus {
+            @include focused();
+        }
+}

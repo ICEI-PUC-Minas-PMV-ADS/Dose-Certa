@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const Medal = (props: IconProps) => <Svg className="medal-thin__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M212 96a84 84 0 1 0-136 65.9V240a4 4 0 0 0 4 4 4.05 4.05 0 0 0 1.79-.42L128 220.47l46.22 23.11A4 4 0 0 0 180 240v-78.1A83.89 83.89 0 0 0 212 96Zm-40 137.53-42.22-21.11a4 4 0 0 0-3.58 0L84 233.53v-66a83.8 83.8 0 0 0 88 0ZM128 172a76 76 0 1 1 76-76 76.08 76.08 0 0 1-76 76Zm0-128a52 52 0 1 0 52 52 52.06 52.06 0 0 0-52-52Zm0 96a44 44 0 1 1 44-44 44.05 44.05 0 0 1-44 44Z" /></Svg>;
+export default Medal;

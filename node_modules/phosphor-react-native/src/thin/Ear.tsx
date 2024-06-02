@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const Ear = (props: IconProps) => <Svg className="ear-thin__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M212 104a4 4 0 0 1-8 0 76 76 0 0 0-152 0c0 28.4 9.55 37.61 18.79 46.52C79.25 158.67 88 167.11 88 188a40 40 0 0 0 40 40c11.37 0 20.83-4.76 28.92-14.55a4 4 0 0 1 6.16 5.1C153.52 230.13 141.71 236 128 236a48.05 48.05 0 0 1-48-48c0-17.49-6.84-24.09-14.76-31.72C55.28 146.68 44 135.79 44 104a84 84 0 0 1 168 0Zm-36.14 60.54a4 4 0 0 0-5.46 1.46 12 12 0 0 1-22.4-6c0-10.67 5.44-17.92 11.2-25.6 6.29-8.4 12.8-17.07 12.8-30.4a44 44 0 0 0-88 0 4 4 0 0 0 8 0 36 36 0 0 1 72 0c0 10.67-5.44 17.92-11.2 25.6-6.29 8.4-12.8 17.07-12.8 30.4a20 20 0 0 0 37.32 10 4 4 0 0 0-1.46-5.46Z" /></Svg>;
+export default Ear;

@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const GrainsSlash = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "grains-slash__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M53.92 34.62a8 8 0 1 0-11.84 10.76l9.73 10.71Q49.91 56 48 56a8 8 0 0 0-8 8v80a88.1 88.1 0 0 0 88 88 87.82 87.82 0 0 0 61.21-24.78l12.87 14.16a8 8 0 1 0 11.84-10.76ZM136.29 149a88.17 88.17 0 0 0-8.29 14.37 88.16 88.16 0 0 0-72-51V72.44a71.31 71.31 0 0 1 13.18 2.75ZM120 215.56A72.1 72.1 0 0 1 56 144v-15.56A72.1 72.1 0 0 1 120 200Zm16 0V200a72.09 72.09 0 0 1 11.36-38.81l31.08 34.19A71.85 71.85 0 0 1 136 215.56ZM216 144a88.13 88.13 0 0 1-3.15 23.4 8 8 0 0 1-7.71 5.88A7.79 7.79 0 0 1 203 173a8 8 0 0 1-5.59-9.83A72.55 72.55 0 0 0 200 144v-15.57a71.07 71.07 0 0 0-24.56 7.33 8 8 0 1 1-7.24-14.26 86.64 86.64 0 0 1 31.8-9.14V72.45a72.33 72.33 0 0 0-50.35 29.36 8 8 0 1 1-13-9.39 88.15 88.15 0 0 1 25.16-23.3C152.62 49.8 135.45 37.74 128 33.2a100.2 100.2 0 0 0-23.4 19.94 8 8 0 1 1-12.21-10.33 112.32 112.32 0 0 1 32-26 8 8 0 0 1 7.16 0c1.32.66 30.27 15.43 44.59 45.15A87.91 87.91 0 0 1 208 56a8 8 0 0 1 8 8Z"
+}));
+var _default = exports.default = GrainsSlash;

@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const Users = (props: IconProps) => <Svg className="users-thin__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M107.19 159a56 56 0 1 0-46.38 0 91.83 91.83 0 0 0-53.93 38.81 4 4 0 1 0 6.7 4.37 84 84 0 0 1 140.84 0 4 4 0 1 0 6.7-4.37A91.83 91.83 0 0 0 107.19 159ZM36 108a48 48 0 1 1 48 48 48.05 48.05 0 0 1-48-48Zm212 95.35a4 4 0 0 1-5.53-1.17A83.81 83.81 0 0 0 172 164a4 4 0 0 1 0-8 48 48 0 1 0-17.82-92.58 4 4 0 1 1-3-7.43 56 56 0 0 1 44 103 91.83 91.83 0 0 1 53.93 38.86 4 4 0 0 1-1.11 5.5Z" /></Svg>;
+export default Users;

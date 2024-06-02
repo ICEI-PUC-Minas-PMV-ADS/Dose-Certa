@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const UserRectangle = (props: IconProps) => <Svg className="user-rectangle-fill__svg-icon-phosphor" fill={props.color} viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M172 120a44 44 0 1 1-44-44 44 44 0 0 1 44 44Zm60-64v144a16 16 0 0 1-16 16H40a16 16 0 0 1-16-16V56a16 16 0 0 1 16-16h176a16 16 0 0 1 16 16Zm-16 144V56H40v144h14.68a80 80 0 0 1 29.41-34.84 4 4 0 0 1 4.83.31 59.82 59.82 0 0 0 78.16 0 4 4 0 0 1 4.83-.31A80 80 0 0 1 201.32 200H216Z" /></Svg>;
+export default UserRectangle;

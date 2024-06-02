@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Polygon = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "polygon-light__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M229.23 50.78a30 30 0 0 0-42.44 0 29.82 29.82 0 0 0-5.56 7.69l-31.31-8.54a30 30 0 0 0-51.14-23.16 30.09 30.09 0 0 0-4.65 36.43l-36.3 32.67a30.07 30.07 0 0 0-39.06 2.91 30 30 0 0 0 41.38 43.44l72.6 53.25a30 30 0 1 0 48.47-8.68 29.65 29.65 0 0 0-5.77-4.5l28.44-80.59a31.57 31.57 0 0 0 4.11.3 30 30 0 0 0 21.22-51.2Zm-122-15.52a18 18 0 1 1 0 25.46 18 18 0 0 1 .04-25.46Zm-80 97.47a18 18 0 1 1 25.46 0 18 18 0 0 1-25.43 0Zm145.47 88a18 18 0 1 1 0-25.46 18 18 0 0 1 .03 25.47Zm-8.61-42.43a30 30 0 0 0-24.27 7.48l-72.58-53.24a30.14 30.14 0 0 0-1.38-27.75l36.3-32.67a30 30 0 0 0 44.62-10.61l31.31 8.54a30 30 0 0 0 8.7 23.16 30.47 30.47 0 0 0 5.78 4.51Zm56.62-93.59a18 18 0 1 1 0-25.46 18 18 0 0 1 .03 25.47Z"
+}));
+var _default = exports.default = Polygon;

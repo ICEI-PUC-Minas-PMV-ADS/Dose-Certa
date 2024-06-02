@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const CircleDashed = (props: IconProps) => <Svg className="circle-dashed-light__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M98.19 36.54a6 6 0 0 1 4.3-7.31 102.12 102.12 0 0 1 51 0 6 6 0 0 1-3 11.62 90 90 0 0 0-45 0 6 6 0 0 1-7.3-4.31Zm-43 20A102.07 102.07 0 0 0 29.7 100.7a6 6 0 0 0 4.19 7.38 5.88 5.88 0 0 0 1.6.22 6 6 0 0 0 5.78-4.4A90 90 0 0 1 63.78 65a6 6 0 1 0-8.56-8.41Zm-13.91 95.55a6 6 0 1 0-11.56 3.2 102 102 0 0 0 25.49 44.18 6 6 0 0 0 8.55-8.41 90.11 90.11 0 0 1-22.48-38.97Zm109.21 63.06a90 90 0 0 1-45 0 6 6 0 1 0-3 11.62 102.16 102.16 0 0 0 51 0 6 6 0 0 0-3-11.62Zm71.62-67.23a6 6 0 0 0-7.38 4.18 90 90 0 0 1-22.51 39 6 6 0 1 0 8.56 8.41 102.12 102.12 0 0 0 25.52-44.21 6 6 0 0 0-4.19-7.38Zm-7.39-44a6 6 0 0 0 5.78 4.4 5.88 5.88 0 0 0 1.6-.22 6 6 0 0 0 4.18-7.38 102 102 0 0 0-25.49-44.18 6 6 0 0 0-8.55 8.41 90.05 90.05 0 0 1 22.48 38.96Z" /></Svg>;
+export default CircleDashed;

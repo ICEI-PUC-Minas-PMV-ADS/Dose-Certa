@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button } from 'primereact/button';
 import { Calendar } from 'primereact/calendar';
 import { Dialog } from 'primereact/dialog';
@@ -28,7 +28,7 @@ interface Item {
 interface User {
     id?: number;
     name: string;
-   
+
 }
 
 const PacientesDemo = () => {
@@ -39,7 +39,7 @@ const PacientesDemo = () => {
         name: '',
         cpf: '',
         // houseId: '',
-        
+
     };
 
     let emptyPaciente: User = {
@@ -73,7 +73,7 @@ const PacientesDemo = () => {
             .get('http://localhost:5092/api/users')
             .then((response) => {
                 console.log(response);
-                
+
                 // Corrigir a data antes de definir o estado
                 const correctedData = response.data.map((user: { dataNascimento: string | number | Date; }) => {
                     return {
@@ -81,7 +81,7 @@ const PacientesDemo = () => {
                         dataNascimento: new Date(user.dataNascimento).toLocaleDateString('pt-BR')
                     };
                 });
-    
+
                 setData(correctedData);
             })
     }
@@ -104,7 +104,7 @@ const PacientesDemo = () => {
             .get('http://localhost:5092/api/users?UserType=Agente')
             .then((response) => {
                 console.log(response)
-                setPacientes([emptyPaciente, ...response.data]); 
+                setPacientes([emptyPaciente, ...response.data]);
             })
             .catch((error) => {
                 console.error('Erro ao buscar pacientes:', error);
@@ -124,7 +124,7 @@ const PacientesDemo = () => {
         setUserDialog(true);
 
         if (userId) {
-            const selectedUser= data.find((user) => user.id === userId);
+            const selectedUser = data.find((user) => user.id === userId);
             if (selectedUser) {
                 const formattedUser = { ...selectedUser, date: new Date(selectedUser.dataNascimento) };
                 setUser(formattedUser);
@@ -140,9 +140,9 @@ const PacientesDemo = () => {
             dataNascimento: user.dataNascimento,
             cpf: user.cpf,
             name: user.name,
-            email:"teste@gmail.com",
+            email: "teste@gmail.com",
             password: "23456",
-            userType:"Agente",
+            userType: "Agente",
             // houseId: 90
             // status: user.status,
             // idUsuarioPaciente: user.idUsuarioPaciente || 0
@@ -191,7 +191,7 @@ const PacientesDemo = () => {
             setUser({ ...user, idUsuarioPaciente: null });
         }
     };
-    
+
 
     const editUser = (pacientes: Item) => {
         setUser({ ...pacientes });
@@ -252,7 +252,7 @@ const PacientesDemo = () => {
         if (!pacientes || pacientes.length === 0) {
             return 'Carregando...'; // Ou qualquer outra mensagem que você queira exibir enquanto os pacientes estão sendo carregados
         }
-    
+
         const paciente = pacientes.find(p => p.id === idUsuarioPaciente);
         return paciente ? paciente.name : 'Não encontrado';
     };
@@ -278,7 +278,7 @@ const PacientesDemo = () => {
                 <Button label="Novo" icon="pi pi-plus" style={{ marginRight: '.5em', backgroundColor: '#0C84F3', border: 'none' }} onClick={() => openNew()} />
             </div>
 
-            <div onClick = {()=>{console.log(columns)}}>
+            <div onClick={() => { console.log(columns) }}>
                 <DataTable
                     ref={dt}
                     value={data}

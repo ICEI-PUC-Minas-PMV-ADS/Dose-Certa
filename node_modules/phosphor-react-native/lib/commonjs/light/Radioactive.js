@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Radioactive = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "radioactive-light__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M92 134H40a13.94 13.94 0 0 1-10.28-4.56 14.17 14.17 0 0 1-3.66-10.84 101.81 101.81 0 0 1 42.75-74A14 14 0 0 1 89 49l26 45a6 6 0 0 1-10.4 6L78.62 55a2 2 0 0 0-2.88-.65A89.83 89.83 0 0 0 38 119.68a2.13 2.13 0 0 0 .57 1.67A1.88 1.88 0 0 0 40 122h52a6 6 0 0 1 0 12Zm137.94-15.4a101.81 101.81 0 0 0-42.75-74A14 14 0 0 0 167 49l-26 45a6 6 0 0 0 10.4 6l25.98-45a2 2 0 0 1 2.88-.65A89.83 89.83 0 0 1 218 119.68a2.13 2.13 0 0 1-.57 1.67 1.88 1.88 0 0 1-1.43.65h-52a6 6 0 0 0 0 12h52a13.94 13.94 0 0 0 10.28-4.56 14.17 14.17 0 0 0 3.66-10.84Zm-78.74 37.58a6 6 0 1 0-10.39 6l25.82 44.73a2 2 0 0 1-.88 2.82 90.29 90.29 0 0 1-75.5 0 2 2 0 0 1-.88-2.82l25.82-44.73a6 6 0 1 0-10.39-6L79 200.91a14 14 0 0 0 6.23 19.71 102.29 102.29 0 0 0 85.58 0 14 14 0 0 0 6.19-19.71ZM128 138a10 10 0 1 0-10-10 10 10 0 0 0 10 10Z"
+}));
+var _default = exports.default = Radioactive;

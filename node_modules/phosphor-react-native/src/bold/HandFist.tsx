@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const HandFist = (props: IconProps) => <Svg className="hand-fist-bold__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M200 76h-12V64a36 36 0 0 0-60-26.8 36 36 0 0 0-58.73 17.34A36 36 0 0 0 20 88v40a108 108 0 0 0 216 0v-16a36 36 0 0 0-36-36Zm-60-12a12 12 0 0 1 24 0v12h-24Zm-48 0a12 12 0 0 1 24 0v40a12 12 0 0 1-24 0ZM44 88a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm168 40a84 84 0 0 1-167.39 10.15A35.93 35.93 0 0 0 80 130.8a35.89 35.89 0 0 0 43.65 3.34 36.23 36.23 0 0 0 6.35 6.36 51.82 51.82 0 0 0-14 35.5 12 12 0 0 0 24 0 28 28 0 0 1 28-28 12 12 0 0 0 0-24h-16a12 12 0 0 1-12-12v-12h60a12 12 0 0 1 12 12Z" /></Svg>;
+export default HandFist;

@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Planet = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "planet-bold__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M248.59 58.67c-6.31-10.87-23-21.06-66.16-9.71A95.94 95.94 0 0 0 32 128q0 3.6.26 7.14C.56 166.86 1.1 186.4 7.44 197.33 13.4 207.61 25.3 212 40.68 212c9.79 0 21-1.78 32.95-4.91A95.94 95.94 0 0 0 224 128c0-2.41-.09-4.79-.27-7.16 14.31-14.38 23.86-28.21 27-40 2.82-10.42.39-17.84-2.14-22.17ZM128 56a72.11 72.11 0 0 1 70.19 56C184 124.73 165 138.59 141.92 151.86c-21.74 12.49-43.55 22.36-63.09 28.65A72 72 0 0 1 128 56ZM28.19 185.29c-.61-1.07-.17-8.22 10.67-21.71A95.77 95.77 0 0 0 52.35 187c-17.23 2.61-23.5-.59-24.16-1.71ZM128 200a71.66 71.66 0 0 1-22.56-3.64 394.1 394.1 0 0 0 48.42-23.69A388.11 388.11 0 0 0 198.43 143 72.12 72.12 0 0 1 128 200Zm99.57-125.35c-1.28 4.78-4.81 10.87-10.39 17.8A95.74 95.74 0 0 0 203.68 69c15.83-2.37 23.17 0 24.15 1.71.17.29.38 1.57-.26 3.94Z"
+}));
+var _default = exports.default = Planet;

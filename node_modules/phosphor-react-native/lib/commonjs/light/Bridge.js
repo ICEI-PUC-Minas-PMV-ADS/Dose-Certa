@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Bridge = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "bridge-light__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M232 162h-34V95.28a69.81 69.81 0 0 0 31.75 25.63 6 6 0 1 0 4.5-11.12A57.8 57.8 0 0 1 198 56a6 6 0 0 0-12 0 58 58 0 0 1-116 0 6 6 0 0 0-12 0 57.8 57.8 0 0 1-36.25 53.79 6 6 0 1 0 4.5 11.12A69.81 69.81 0 0 0 58 95.28V162H24a6 6 0 0 0 0 12h34v26a6 6 0 0 0 12 0v-26h116v26a6 6 0 0 0 12 0v-26h34a6 6 0 0 0 0-12Zm-86-38.35V162h-36v-38.35a70.11 70.11 0 0 0 36 0Zm-76-28.5a70.49 70.49 0 0 0 28 24.09V162H70ZM158 162v-42.76a70.49 70.49 0 0 0 28-24.09V162Z"
+}));
+var _default = exports.default = Bridge;

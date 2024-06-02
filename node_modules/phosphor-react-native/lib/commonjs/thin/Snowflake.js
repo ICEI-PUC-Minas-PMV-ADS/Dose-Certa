@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Snowflake = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "snowflake-thin__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M219.88 151.05a4 4 0 0 1-2.93 4.83l-28.6 7 7.51 28.12a4 4 0 0 1-2.83 4.9 3.65 3.65 0 0 1-1 .14 4 4 0 0 1-3.86-3l-8.17-30.4-48-27.71v55.41l22.83 22.83a4 4 0 0 1-5.66 5.66L128 197.66l-21.17 21.17a4 4 0 0 1-5.66-5.66L124 190.34v-55.41l-48 27.71L67.86 193a4 4 0 0 1-3.86 3 3.65 3.65 0 0 1-1-.14 4 4 0 0 1-2.83-4.9l7.51-28.05-28.6-7a4 4 0 1 1 1.92-7.79l31 7.61L120 128l-48-27.73-31 7.61a4.07 4.07 0 0 1-1 .12 4 4 0 0 1-1-7.88l28.6-7L60.14 65a4 4 0 0 1 7.72-2L76 93.36l48 27.71V65.66l-22.83-22.83a4 4 0 0 1 5.66-5.66L128 58.34l21.17-21.17a4 4 0 1 1 5.66 5.66L132 65.66v55.41l48-27.71L188.14 63a4 4 0 0 1 7.72 2l-7.51 28.05 28.6 7A4 4 0 0 1 216 108a4.07 4.07 0 0 1-1-.12l-31-7.61L136 128l48 27.73 31-7.61a4 4 0 0 1 4.88 2.93Z"
+}));
+var _default = exports.default = Snowflake;

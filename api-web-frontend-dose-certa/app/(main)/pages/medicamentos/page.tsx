@@ -23,8 +23,8 @@ const MedicamentoDemo = () => {
         nome: '',
         dosagem: '',
         frequencia: '',
-        indicacao: '', 
-        horario: '' 
+        indicacao: '',
+        horario: ''
     };
 
     const [data, setData] = useState<Item[]>([]);
@@ -42,7 +42,7 @@ const MedicamentoDemo = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:5092/api/Remedios'); 
+            const response = await axios.get('http://localhost:5092/api/Remedios');
             setData(response.data);
         } catch (error) {
             console.error('Erro ao buscar dados:', error);
@@ -52,7 +52,7 @@ const MedicamentoDemo = () => {
     const hideDialog = () => {
         setRemedioDialog(false);
     };
-    
+
     const openNew = (remedioId: string | null = null) => {
         setSelectedRemedioId(remedioId);
         setRemedioDialog(true);
@@ -67,38 +67,38 @@ const MedicamentoDemo = () => {
     };
 
     const saveRemedio = () => {
-        
+
         if (!remedio.nome || !remedio.dosagem || !remedio.frequencia) {
-            toast.current?.show({severity: 'warn', summary: 'Atenção', detail: 'Por favor, preencha todos os campos.'});
+            toast.current?.show({ severity: 'warn', summary: 'Atenção', detail: 'Por favor, preencha todos os campos.' });
             return;
         }
-    
-        
+
+
         const updateRemedio = {
             nome: remedio.nome,
             dosagem: remedio.dosagem,
-            horario: new Date().toISOString(), 
-            indicacao: remedio.indicacao, 
+            horario: new Date().toISOString(),
+            indicacao: remedio.indicacao,
             frequencia: remedio.frequencia
         };
-    
-        
-        const request = selectedRemedioId ? 
-            axios.put(`http://localhost:5092/api/Remedios/${selectedRemedioId}`, updateRemedio) : 
+
+
+        const request = selectedRemedioId ?
+            axios.put(`http://localhost:5092/api/Remedios/${selectedRemedioId}`, updateRemedio) :
             axios.post('http://localhost:5092/api/Remedios', updateRemedio);
-    
+
         request.then(response => {
             hideDialog();
-            fetchData(); 
-            toast.current?.show({severity: 'success', summary: 'Sucesso', detail: 'Remédio salvo com sucesso.'});
+            fetchData();
+            toast.current?.show({ severity: 'success', summary: 'Sucesso', detail: 'Remédio salvo com sucesso.' });
         })
-        .catch(error => {
-            console.error('Erro ao salvar remédio:', error);
-            console.log(error.response.data);
-            toast.current?.show({severity: 'error', summary: 'Erro', detail: 'Erro ao salvar remédio.'});
-        });
+            .catch(error => {
+                console.error('Erro ao salvar remédio:', error);
+                console.log(error.response.data);
+                toast.current?.show({ severity: 'error', summary: 'Erro', detail: 'Erro ao salvar remédio.' });
+            });
     };
-    
+
     const editRemedio = (remedio: Item) => {
         setRemedio(remedio);
         openNew(remedio.id);
@@ -124,13 +124,13 @@ const MedicamentoDemo = () => {
 
     const remedioDialogFooter = (
         <>
-            <Button label="Cancelar" icon="pi pi-times" style={{ color: '#FF0000', border: 'none' }} text onClick={hideDialog}  />
+            <Button label="Cancelar" icon="pi pi-times" style={{ color: '#FF0000', border: 'none' }} text onClick={hideDialog} />
             <Button label="Salvar" icon="pi pi-check" style={{ color: '#fff', backgroundColor: '#0C84F3', border: 'none' }} text onClick={saveRemedio} />
         </>
     );
     const deleteRemedioDialogFooter = (
         <>
-           <Button label="Não" icon="pi pi-times" style={{ color: '#000', border: 'none' }} text onClick={() => setConfirmDeleteDialog(false)} />
+            <Button label="Não" icon="pi pi-times" style={{ color: '#000', border: 'none' }} text onClick={() => setConfirmDeleteDialog(false)} />
             <Button label="Sim" icon="pi pi-check" style={{ backgroundColor: '#FF0000', border: 'none', color: '#fff' }} text onClick={handleDeleteRemedio} />
         </>
     );
@@ -139,7 +139,7 @@ const MedicamentoDemo = () => {
         return (
             <>
                 <Button icon="pi pi-pencil" rounded severity="success" className="mr-2" onClick={() => editRemedio(rowData)} />
-                <Button icon="pi pi-trash" rounded severity="warning" onClick={() => {setRemedio(rowData); showConfirmDeleteDialog();}} />
+                <Button icon="pi pi-trash" rounded severity="warning" onClick={() => { setRemedio(rowData); showConfirmDeleteDialog(); }} />
             </>
         );
     };
@@ -163,7 +163,7 @@ const MedicamentoDemo = () => {
             <div className="p-2 w-100 flex justify-content-end">
                 <Button label="Novo" icon="pi pi-plus" style={{ marginRight: '.5em', backgroundColor: '#0C84F3', border: 'none' }} onClick={() => openNew()} />
             </div>
-               
+
             <div>
                 <DataTable
                     ref={dt}
@@ -214,7 +214,7 @@ const MedicamentoDemo = () => {
                     <i className="pi pi-exclamation-triangle mr-3" style={{ fontSize: '2rem', color: '#FF0000' }} />
                     {remedio && <span>Tem certeza de que deseja excluir?</span>}
                 </div>
-               
+
             </Dialog>
         </div>
     );

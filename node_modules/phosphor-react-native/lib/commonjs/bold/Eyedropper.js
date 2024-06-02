@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Eyedropper = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "eyedropper-bold__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M228 67.24a39.77 39.77 0 0 0-12.51-28.52c-15.58-14.72-40.78-14.22-56.2 1.21l-16.81 16.91a28 28 0 0 0-35.64 3.29l-9 9a20 20 0 0 0-.73 27.49L48.9 144.84A43.76 43.76 0 0 0 37 185.28l-7.5 17.19a17.66 17.66 0 0 0 3.71 19.65 19.9 19.9 0 0 0 22.15 4.19l16.31-7.13a43.88 43.88 0 0 0 39.45-12.09l48.24-48.26a20 20 0 0 0 27.47-.73l9-9a28.06 28.06 0 0 0 3.26-35.72l17.23-17.33A39.69 39.69 0 0 0 228 67.24ZM94.15 190.11a20 20 0 0 1-20 5 11.93 11.93 0 0 0-8.32.47l-8.83 3.8 3.69-8.38a12 12 0 0 0 .37-8.64 19.92 19.92 0 0 1 4.81-20.55l48.2-48.22 28.28 28.3Zm105.14-111-25.37 25.52a12 12 0 0 0 0 16.95l4.88 4.89a4 4 0 0 1 0 5.66l-6.14 6.15-55-55.05 6.14-6.14a4 4 0 0 1 5.65 0l4.9 4.91a12 12 0 0 0 8.49 3.51 12 12 0 0 0 8.5-3.51l24.94-25.08c6.3-6.3 16.48-6.63 22.71-.74a16 16 0 0 1 .3 23Z"
+}));
+var _default = exports.default = Eyedropper;

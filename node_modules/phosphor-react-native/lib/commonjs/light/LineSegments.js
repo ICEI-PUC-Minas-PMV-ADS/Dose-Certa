@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const LineSegments = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "line-segments-light__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M237.23 34.77a30.06 30.06 0 0 0-42.44 0 30.06 30.06 0 0 0 0 42.44c.65.64 1.32 1.24 2 1.81l-28.14 52.26a30.11 30.11 0 0 0-25.19 3.72L121 112.54a30 30 0 0 0-46.22-37.76 30 30 0 0 0 0 42.43 26.28 26.28 0 0 0 2 1.82l-28.14 52.26a30 30 0 0 0-29.87 7.5 30 30 0 1 0 42.44 0c-.65-.64-1.32-1.24-2-1.81l28.14-52.26a30.07 30.07 0 0 0 25.19-3.72L135 143.46a30 30 0 1 0 46.25-4.67 26.28 26.28 0 0 0-2-1.82l28.14-52.26a30 30 0 0 0 29.87-49.94Zm-184.51 178a18 18 0 1 1 0-25.46 18 18 0 0 1 0 25.43Zm30.55-104a18 18 0 1 1 25.46 0 18 18 0 0 1-25.46-.04Zm89.46 64a18 18 0 1 1 0-25.46 18 18 0 0 1 0 25.42Zm56-104a18 18 0 1 1 0-25.46 18 18 0 0 1 .01 25.41Z"
+}));
+var _default = exports.default = LineSegments;

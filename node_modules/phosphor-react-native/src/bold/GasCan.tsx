@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const GasCan = (props: IconProps) => <Svg className="gas-can-bold__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M200 20h-68.69a19.86 19.86 0 0 0-14.14 5.86l-11.51 11.51-15.52-15.51a20 20 0 0 0-28.28 0l-24 24a20 20 0 0 0 0 28.28l15.51 15.52-11.51 11.51A19.86 19.86 0 0 0 36 115.31V216a20 20 0 0 0 20 20h144a20 20 0 0 0 20-20V40a20 20 0 0 0-20-20ZM57.66 60 76 41.66l12.69 12.68-18.35 18.35ZM196 212H60v-95l18.83-18.86L133 44h63ZM136 68a12 12 0 0 1 12-12h20a12 12 0 0 1 0 24h-20a12 12 0 0 1-12-12Zm39.5 65.37L147.21 156l28.29 22.63a12 12 0 0 1-15 18.74l-32.5-26-32.5 26a12 12 0 0 1-15-18.74L108.79 156 80.5 133.37a12 12 0 0 1 15-18.74l32.5 26 32.5-26a12 12 0 0 1 15 18.74Z" /></Svg>;
+export default GasCan;

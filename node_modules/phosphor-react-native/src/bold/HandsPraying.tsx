@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const HandsPraying = (props: IconProps) => <Svg className="hands-praying-bold__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="m238.15 177.18-35.53-35.53L166.45 22.3A25.75 25.75 0 0 0 128 8a25.75 25.75 0 0 0-38.45 14.3L53.38 141.65l-35.53 35.53a20 20 0 0 0 0 28.28l32.69 32.69a20 20 0 0 0 28.28 0l48.29-48.28c.31-.31.6-.62.89-.94.29.32.58.63.89.94l48.29 48.28a20 20 0 0 0 28.28 0l32.69-32.69a20 20 0 0 0 0-28.28ZM64.68 218.35l-27-27 11-11 27 27Zm51.32-59.6a19.85 19.85 0 0 1-5.86 14.14l-17.46 17.46-27-27 6.83-6.83a11.94 11.94 0 0 0 3-5l37-122.23a1.78 1.78 0 0 1 3.48.52Zm47.5 31.78-17.64-17.64a19.85 19.85 0 0 1-5.86-14.14v-129a1.78 1.78 0 0 1 3.48-.52l37 122.23a11.94 11.94 0 0 0 3 5l7.6 7.6Zm27.82 27.82-10.85-10.84 27.63-26.44 10.25 10.25Z" /></Svg>;
+export default HandsPraying;

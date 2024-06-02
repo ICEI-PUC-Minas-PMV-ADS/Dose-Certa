@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const FileSql = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "file-sql-bold__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M48 120a12 12 0 0 0 12-12V44h76v48a12 12 0 0 0 12 12h48v4a12 12 0 1 0 24 0V88a12 12 0 0 0-3.51-8.48l-56-56A12 12 0 0 0 152 20H56a20 20 0 0 0-20 20v68a12 12 0 0 0 12 12Zm135-40h-23V57Zm53 128a12 12 0 0 1-12 12h-28a12 12 0 0 1-12-12v-56a12 12 0 0 1 24 0v44h16a12 12 0 0 1 12 12ZM91.78 196.8a24.7 24.7 0 0 1-11 18c-6 4-13.26 5.15-19.73 5.15a63.75 63.75 0 0 1-16.23-2.21 12 12 0 1 1 6.46-23.11c6.81 1.85 15 1.61 16.39.06a2.48 2.48 0 0 0 .21-.71c-1.94-1.23-6.82-2.64-9.88-3.53-5.39-1.56-11-3.17-15.75-6.26-7.62-4.92-11.21-12.45-10.1-21.19a24.44 24.44 0 0 1 10.68-17.76c6.07-4.09 14.17-5.83 24.1-5.17A69 69 0 0 1 79 142a12 12 0 0 1-6.1 23.21c-6.35-1.63-13.61-1.5-16.07-.33a79.69 79.69 0 0 0 7.92 2.59c5.47 1.58 11.67 3.37 16.8 6.82 7.78 5.24 11.45 13.24 10.23 22.51Zm76 2A43.23 43.23 0 0 0 172 180c0-22-16.15-40-36-40s-36 18-36 40 16.15 40 36 40a32.78 32.78 0 0 0 15.25-3.77l.27.26a12 12 0 0 0 17-17ZM124 180c0-8.67 5.5-16 12-16s12 7.33 12 16v.69a12 12 0 0 0-15.51 14.56C127.62 193.16 124 187 124 180Z"
+}));
+var _default = exports.default = FileSql;

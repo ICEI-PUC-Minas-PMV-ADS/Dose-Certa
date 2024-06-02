@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Motorcycle = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "motorcycle-thin__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M216 124a36 36 0 0 0-9.11 1.17l-8.64-22.46A59.64 59.64 0 0 1 216 100a4 4 0 0 0 0-8h-21.87l-14.4-37.44A4 4 0 0 0 176 52h-32a4 4 0 0 0 0 8h29.25l12.31 32H152c-17.56 0-31.67 4-40.83 11.54a20.05 20.05 0 0 1-21 2.63c-13.11-6-60.55-25.12-65-26.85C22.83 78.37 17.24 76 16 76a4 4 0 0 0-1.43 7.72c.46.18 47.42 18.4 72.34 29.72a28.12 28.12 0 0 0 29.37-3.74c7.7-6.35 20-9.71 35.73-9.71h32.08a68.05 68.05 0 0 0-33.58 41.67A19.86 19.86 0 0 1 131.32 156H75.77a36 36 0 1 0 0 8h55.55a27.9 27.9 0 0 0 26.89-20.18 60.06 60.06 0 0 1 32.58-38.22l8.64 22.46A36 36 0 1 0 216 124ZM40 164h27.71a28 28 0 1 1 0-8H40a4 4 0 0 0 0 8Zm176 24a28 28 0 0 1-13.68-52.42l10 25.86A4 4 0 0 0 216 164a3.87 3.87 0 0 0 1.44-.27 4 4 0 0 0 2.29-5.17l-9.94-25.86A28 28 0 1 1 216 188Z"
+}));
+var _default = exports.default = Motorcycle;

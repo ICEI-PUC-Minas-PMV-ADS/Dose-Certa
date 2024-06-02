@@ -72,7 +72,7 @@ const MedicacoesDemo = () => {
     const hideDialog = () => {
         setMedicacaoDialog(false);
     };
-    
+
     const openNew = (medicacaoId: string | null = null) => {
         setMedicacaoDialog(true);
         if (medicacaoId) {
@@ -90,7 +90,7 @@ const MedicacoesDemo = () => {
             toast.current?.show({ severity: 'warn', summary: 'Atenção', detail: 'Por favor, preencha todos os campos obrigatórios.' });
             return;
         }
-    
+
         const newMedicacao = {
             observacao: medicacao.observacao,
             dataInicio: medicacao.dataInicio,
@@ -100,10 +100,10 @@ const MedicacoesDemo = () => {
         };
 
         const request = medicacao.id ? axios.put(`http://localhost:5092/api/Medicacao/${medicacao.id}`, newMedicacao) : axios.post('http://localhost:5092/api/Medicacao', newMedicacao);
-        
+
         request.then(() => {
             hideDialog();
-            fetchData(); 
+            fetchData();
             toast.current?.show({ severity: 'success', summary: 'Sucesso', detail: 'Medicação salva com sucesso.' });
         }).catch(error => {
             console.error('Erro ao salvar medicação:', error);
@@ -122,15 +122,15 @@ const MedicacoesDemo = () => {
             return;
         }
 
-        
+
         setConfirmDeleteDialog(true);
     };
 
     const confirmDelete = () => {
-        
+
         setConfirmDeleteDialog(false);
 
-       
+
         axios
             .delete(`http://localhost:5092/api/Medicacao/${medicacao.id}`)
             .then((response) => {
@@ -145,7 +145,7 @@ const MedicacoesDemo = () => {
     };
 
     const cancelDelete = () => {
-        
+
         setConfirmDeleteDialog(false);
     };
 
@@ -153,7 +153,7 @@ const MedicacoesDemo = () => {
         return (
             <>
                 <Button icon="pi pi-pencil" rounded severity="success" className="mr-2" onClick={() => editMedicacao(rowData)} />
-                <Button icon="pi pi-trash" rounded severity="warning" onClick={() => {setMedicacao(rowData); handleDeleteMedicacao();}} />
+                <Button icon="pi pi-trash" rounded severity="warning" onClick={() => { setMedicacao(rowData); handleDeleteMedicacao(); }} />
             </>
         );
     };
@@ -200,7 +200,7 @@ const MedicacoesDemo = () => {
             <div className="p-2 w-100 flex justify-content-end">
                 <Button label="Novo" icon="pi pi-plus" style={{ marginRight: '.5em', backgroundColor: '#0C84F3', border: 'none' }} onClick={() => openNew()} />
             </div>
-               
+
             <div>
                 <DataTable
                     ref={dt}
@@ -221,10 +221,10 @@ const MedicacoesDemo = () => {
                     <Column field="dataInicio" header="Data de Início" body={(rowData: Medicacao) => formatDate(rowData.dataInicio)} />
                     <Column field="dataTermino" header="Data de Término" body={(rowData: Medicacao) => formatDate(rowData.dataTermino)} />
 
-                    <Column 
-                        field="status" 
-                        header="Remédio" 
-                        body={(rowData: Medicacao) => getRemediosSelecionados(rowData.remedios, remedios)} 
+                    <Column
+                        field="status"
+                        header="Remédio"
+                        body={(rowData: Medicacao) => getRemediosSelecionados(rowData.remedios, remedios)}
                     />
 
                     <Column body={actionBodyTemplate}></Column>
@@ -237,13 +237,13 @@ const MedicacoesDemo = () => {
                     </div>
                     <div className="field">
                         <label htmlFor="multiselect">Remédios</label>
-                        <MultiSelect 
-                            id="multiselect" 
-                            value={medicacao.remedios} 
-                            options={remedios} 
-                            optionLabel="nome" 
-                            optionValue="id" 
-                            onChange={(e) => setMedicacao(prevState => ({ ...prevState, remedios: e.value }))} 
+                        <MultiSelect
+                            id="multiselect"
+                            value={medicacao.remedios}
+                            options={remedios}
+                            optionLabel="nome"
+                            optionValue="id"
+                            onChange={(e) => setMedicacao(prevState => ({ ...prevState, remedios: e.value }))}
                         />
                     </div>
                     <div className="field">
@@ -254,19 +254,19 @@ const MedicacoesDemo = () => {
                         <label htmlFor="dataTermino">Data de Término</label>
                         <Calendar id="dataTermino" name="dataTermino" value={medicacao.dataTermino} onChange={(e) => setMedicacao(prevState => ({ ...prevState, dataTermino: e.value || new Date() }))} showIcon />
                     </div>
-                    
+
                     <div className="flex justify-content-end">
-                    <Button label="Cancelar" icon="pi pi-times" style={{ color: '#FF0000', border: 'none' }} text onClick={hideDialog} />
+                        <Button label="Cancelar" icon="pi pi-times" style={{ color: '#FF0000', border: 'none' }} text onClick={hideDialog} />
                         <Button label="Salvar" icon="pi pi-check" style={{ color: '#fff', backgroundColor: '#0C84F3', border: 'none' }} text onClick={saveMedicacao} />
                     </div>
                 </Dialog>
 
                 <Dialog visible={confirmDeleteDialog} style={{ width: '450px' }} header="Confirmação" footer={confirmDeleteFooter} modal onHide={cancelDelete}>
-                <div className="flex align-items-center justify-content-center">
-                    <i className="pi pi-exclamation-triangle mr-3" style={{ fontSize: '2rem', color: '#FF0000' }} />
-                    {medicacao && <span>Tem certeza de que deseja excluir?</span>}
-                </div>
-            </Dialog>
+                    <div className="flex align-items-center justify-content-center">
+                        <i className="pi pi-exclamation-triangle mr-3" style={{ fontSize: '2rem', color: '#FF0000' }} />
+                        {medicacao && <span>Tem certeza de que deseja excluir?</span>}
+                    </div>
+                </Dialog>
             </div>
         </div>
     );

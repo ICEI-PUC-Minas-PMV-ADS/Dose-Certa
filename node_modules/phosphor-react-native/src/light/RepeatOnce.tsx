@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const RepeatOnce = (props: IconProps) => <Svg className="repeat-once-light__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M26 128a70.08 70.08 0 0 1 70-70h113.51l-13.75-13.76a6 6 0 0 1 8.48-8.48l24 24a6 6 0 0 1 0 8.48l-24 24a6 6 0 0 1-8.48-8.48L209.51 70H96a58.07 58.07 0 0 0-58 58 6 6 0 0 1-12 0Zm198-6a6 6 0 0 0-6 6 58.07 58.07 0 0 1-58 58H46.49l13.75-13.76a6 6 0 0 0-8.48-8.48l-24 24a6 6 0 0 0 0 8.48l24 24a6 6 0 0 0 8.48-8.48L46.49 198H160a70.08 70.08 0 0 0 70-70 6 6 0 0 0-6-6Zm-88 36a6 6 0 0 0 6-6v-48a6 6 0 0 0-8.68-5.37l-16 8a6 6 0 1 0 5.36 10.73l7.32-3.66V152a6 6 0 0 0 6 6Z" /></Svg>;
+export default RepeatOnce;

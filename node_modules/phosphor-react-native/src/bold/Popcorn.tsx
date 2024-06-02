@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const Popcorn = (props: IconProps) => <Svg className="popcorn-bold__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M232.28 71.32a12 12 0 0 0-7-3.25 48 48 0 0 0-55.19-31 48 48 0 0 0-84.24 0 48 48 0 0 0-55.19 31 12 12 0 0 0-10.34 14.68l30.55 129.83A19.92 19.92 0 0 0 70.34 228h115.32a19.92 19.92 0 0 0 19.47-15.42l30.55-129.83a12 12 0 0 0-3.4-11.43ZM76 60a23.68 23.68 0 0 1 11.23 2.79 12 12 0 0 0 17.35-8 24 24 0 0 1 46.84 0 12 12 0 0 0 17.35 8A23.68 23.68 0 0 1 180 60a24 24 0 0 1 21.78 13.87l-33.13 9.46-33.22-13.28a19.89 19.89 0 0 0-14.86 0L87.35 83.33l-33.13-9.46A24 24 0 0 1 76 60Zm25.13 43.67L128 92.92l26.87 10.75L141.49 204h-27Zm-52.77-6.51 28.78 8.22L90.29 204H73.5ZM182.5 204h-16.79l13.15-98.62 28.78-8.22Z" /></Svg>;
+export default Popcorn;

@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const PottedPlant = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "potted-plant-thin__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M122.83 138.83 145 116.7c9 4.89 18.06 7.35 26.81 7.35a45.57 45.57 0 0 0 23.87-6.74c22.42-13.58 34.41-45.45 32.07-85.26a4 4 0 0 0-3.75-3.76c-39.81-2.35-71.68 9.65-85.26 32.07-9.21 15.2-9 33.09.61 50.68L120 130.34l-17.06-17.06c6.66-12.78 6.71-26.2 0-37.22C92.89 59.4 69.33 50.49 40 52.21A4 4 0 0 0 36.21 56c-1.73 29.36 7.19 52.92 23.85 63A34.29 34.29 0 0 0 78 124a42 42 0 0 0 19.34-5l17 17.06-12 12H56a4 4 0 0 0 0 8h12.79L82.7 218.6a11.93 11.93 0 0 0 11.72 9.4h67.17a11.93 11.93 0 0 0 11.71-9.4l13.91-62.6H200a4 4 0 0 0 0-8h-86.34l9.17-9.17Zm22.7-74.32c11.62-19.2 39.27-29.71 74.37-28.41 1.29 35.1-9.21 62.74-28.41 74.37-13.08 7.92-28.77 7.32-44.29-1.68-8.99-15.51-9.59-31.2-1.67-44.28Zm-50.48 46.54c-10.84 6.19-21.76 6.59-30.84 1.08C50.78 104 43.35 84.68 44 60c24.64-.69 44 6.74 52.1 20.17 5.54 9.12 5.14 20.04-1.05 30.88Zm84 45-13.53 60.87a4 4 0 0 1-3.9 3.13h-67.2a4 4 0 0 1-3.91-3.13L77 156Z"
+}));
+var _default = exports.default = PottedPlant;

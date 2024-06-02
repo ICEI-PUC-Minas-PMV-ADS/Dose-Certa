@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const MicrosoftTeamsLogo = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "microsoft-teams-logo-thin__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M108 104a4 4 0 0 1-4 4H92v44a4 4 0 0 1-8 0v-44H72a4 4 0 0 1 0-8h32a4 4 0 0 1 4 4Zm120-11.26V152a36 36 0 0 1-35.44 36 60 60 0 0 1-113.13 0H40a12 12 0 0 1-12-12V80a12 12 0 0 1 12-12h62.07a36 36 0 0 1 66.48-27.36 28 28 0 0 1 35 43.36h15.69a8.75 8.75 0 0 1 8.76 8.74Zm-56.77-44.13A36 36 0 0 1 158.64 84H184a20 20 0 1 0-12.77-35.39ZM110.71 68H136a12 12 0 0 1 12 12v1.29A28 28 0 1 0 110.71 68ZM40 180h96a4 4 0 0 0 4-4V80a4 4 0 0 0-4-4H40a4 4 0 0 0-4 4v96a4 4 0 0 0 4 4Zm148-12V96a4 4 0 0 0-4-4h-36v84a12 12 0 0 1-12 12H88a52 52 0 0 0 100-20Zm32-75.26a.74.74 0 0 0-.74-.74h-24a11.8 11.8 0 0 1 .7 4v72a60.23 60.23 0 0 1-1.18 11.86A28 28 0 0 0 220 152Z"
+}));
+var _default = exports.default = MicrosoftTeamsLogo;

@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const LightningA = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "lightning-a-thin__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M171.92 112.34a4 4 0 0 0-2.28-2.85l-53-23.78 14.43-60.79a4 4 0 0 0-6.83-3.64L29.06 124.14a4 4 0 0 0 1.3 6.37l53 23.78-14.45 60.78a4 4 0 0 0 2 4.46 3.94 3.94 0 0 0 1.88.47 4 4 0 0 0 2.94-1.28l95.2-102.86a4 4 0 0 0 .99-3.52ZM80.21 202.1l11.68-49.18a4 4 0 0 0-2.25-4.57l-50.92-22.86 81.07-87.59-11.68 49.18a4 4 0 0 0 2.25 4.57l50.92 22.86Zm155.37 12.11-36-72a4 4 0 0 0-7.16 0l-36 72a4 4 0 1 0 7.16 3.58L174.47 196h43.06l10.89 21.79A4 4 0 0 0 232 220a4.12 4.12 0 0 0 1.79-.42 4 4 0 0 0 1.79-5.37ZM178.47 188 196 152.94 213.53 188Z"
+}));
+var _default = exports.default = LightningA;

@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const Aperture = (props: IconProps) => <Svg className="aperture-bold__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M204.41 51.63a108 108 0 1 0 0 152.74 107.38 107.38 0 0 0 0-152.74Zm-17 17A83.85 83.85 0 0 1 196.26 79L169 111.09l-23.3-65.21a83.52 83.52 0 0 1 41.73 22.72Zm-118.85 0a83.44 83.44 0 0 1 51.11-24.2l14.16 39.65-68.12-12.47c.93-1.02 1.88-2.02 2.87-3.01ZM48 153.7a84.48 84.48 0 0 1 3.4-60.3l41.44 7.6Zm20.55 33.7a83.94 83.94 0 0 1-8.81-10.4L87 144.91l23.3 65.21a83.53 83.53 0 0 1-41.72-22.72Zm36.36-63.61 15.18-17.85 23.06 4.21 7.88 22.06-15.17 17.85-23.06-4.21Zm82.49 63.61a83.49 83.49 0 0 1-51.11 24.2L122.15 172l68.14 12.44c-.93.97-1.88 1.97-2.86 2.96ZM163.16 155 208 102.3a84.43 84.43 0 0 1-3.41 60.3Z" /></Svg>;
+export default Aperture;

@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const Sidebar = (props: IconProps) => <Svg className="sidebar-thin__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M216 44H40a12 12 0 0 0-12 12v144a12 12 0 0 0 12 12h176a12 12 0 0 0 12-12V56a12 12 0 0 0-12-12ZM36 200v-52h20a4 4 0 0 0 0-8H36v-24h20a4 4 0 0 0 0-8H36V84h20a4 4 0 0 0 0-8H36V56a4 4 0 0 1 4-4h44v152H40a4 4 0 0 1-4-4Zm184 0a4 4 0 0 1-4 4H92V52h124a4 4 0 0 1 4 4Z" /></Svg>;
+export default Sidebar;

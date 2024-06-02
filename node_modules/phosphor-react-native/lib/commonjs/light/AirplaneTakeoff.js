@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const AirplaneTakeoff = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "airplane-takeoff-light__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M174 216a6 6 0 0 1-6 6H24a6 6 0 0 1 0-12h144a6 6 0 0 1 6 6Zm71.9-123.22a6 6 0 0 1-2.82 4l-147.41 88a38.22 38.22 0 0 1-19.23 5.23 37.8 37.8 0 0 1-25.92-10.33l-.1-.09-36.05-35.23a14 14 0 0 1 4-23l3-1.49a6 6 0 0 1 4.56-.29l29.15 9.83 23.17-14-23.7-23a14 14 0 0 1 4-23.18l.24-.1 7.15-2.71a6 6 0 0 1 4.19 0l54.84 20.18 52.38-31.27A37.81 37.81 0 0 1 226 64l.09.11L244.73 88a6 6 0 0 1 1.17 4.78ZM231.09 90l-14.42-18.47a25.86 25.86 0 0 0-33.26-5.89L128.6 98.36a6 6 0 0 1-5.15.48L68 78.45l-4.9 1.85a1.91 1.91 0 0 0-1.1 1.47 2 2 0 0 0 .63 1.82l.17.15 29.35 28.49a6 6 0 0 1-1.07 9.44l-32.19 19.49a6 6 0 0 1-5 .55l-29.45-9.94-.93.46-.28.13a2 2 0 0 0-.58 3.29l.1.09 36 35.28a25.84 25.84 0 0 0 30.81 3.47Z"
+}));
+var _default = exports.default = AirplaneTakeoff;

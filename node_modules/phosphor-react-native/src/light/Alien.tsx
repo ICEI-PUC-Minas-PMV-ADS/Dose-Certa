@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const Alien = (props: IconProps) => <Svg className="alien-light__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M128 18a94.11 94.11 0 0 0-94 94c0 23.6 12.41 54.2 33.21 81.83C83.27 215.18 107.68 238 128 238s44.73-22.82 60.79-44.17C209.59 166.2 222 135.6 222 112a94.11 94.11 0 0 0-94-94Zm51.21 168.62C161.48 210.17 140.91 226 128 226s-33.48-15.83-51.21-39.38C57.8 161.37 46 132.78 46 112a82 82 0 0 1 164 0c0 20.78-11.8 49.37-30.79 74.62ZM118 136a38 38 0 0 0-38-38 14 14 0 0 0-14 14 38 38 0 0 0 38 38 14 14 0 0 0 14-14Zm-14 2a26 26 0 0 1-26-26 2 2 0 0 1 2-2 26 26 0 0 1 26 26 2 2 0 0 1-2 2Zm72-40a38 38 0 0 0-38 38 14 14 0 0 0 14 14 38 38 0 0 0 38-38 14 14 0 0 0-14-14Zm-24 40a2 2 0 0 1-2-2 26 26 0 0 1 26-26 2 2 0 0 1 2 2 26 26 0 0 1-26 26Zm-2 46a6 6 0 0 1-6 6h-32a6 6 0 0 1 0-12h32a6 6 0 0 1 6 6Z" /></Svg>;
+export default Alien;

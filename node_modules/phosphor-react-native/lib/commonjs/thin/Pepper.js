@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Pepper = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "pepper-thin__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M163.79 44.14A36.06 36.06 0 0 0 128 12a4 4 0 0 0 0 8 28 28 0 0 1 27.73 24.17A60.07 60.07 0 0 0 100 104c0 48.75-26.71 81.34-79.4 96.87a12 12 0 0 0 1.33 23.36A260.42 260.42 0 0 0 66.69 228a256.53 256.53 0 0 0 34.83-2.3c33.23-4.59 60.2-15.41 80.19-32.18C207.12 172.21 220 142.09 220 104a60.07 60.07 0 0 0-56.21-59.86ZM160 52a52.08 52.08 0 0 1 50.19 38.44L192 99.54l-30.21-15.11a4 4 0 0 0-3.58 0L128 99.54l-18.19-9.1A52.08 52.08 0 0 1 160 52Zm16.57 135.39c-25.47 21.37-80.88 41.77-153.24 29a4 4 0 0 1-.47-7.81C78.56 192.14 108 156 108 104a53.28 53.28 0 0 1 .28-5.39l17.93 9a4 4 0 0 0 3.58 0L160 92.48l30.21 15.11a4 4 0 0 0 3.58 0l17.93-9A53.28 53.28 0 0 1 212 104c0 35.62-11.92 63.67-35.43 83.39Z"
+}));
+var _default = exports.default = Pepper;

@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const ChartLineDown = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "chart-line-down-bold__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M236 208a12 12 0 0 1-12 12H32a12 12 0 0 1-12-12V48a12 12 0 0 1 24 0v11l52 52 23.51-23.52a12 12 0 0 1 17 0L188 139v-11a12 12 0 0 1 24 0v40q0 .6-.06 1.2c0 .16-.05.33-.07.49s-.06.45-.1.67-.09.38-.14.56-.09.39-.15.58l-.19.54c-.07.19-.13.38-.21.56s-.15.34-.23.5-.17.38-.27.57-.18.3-.27.45-.21.38-.33.56-.24.32-.36.47-.22.32-.34.47-.46.53-.71.78l-.08.1-.1.08c-.25.25-.51.48-.78.71l-.46.34c-.16.12-.32.25-.48.36s-.37.22-.55.33-.3.19-.46.27-.37.18-.56.27-.33.16-.51.23l-.54.21-.57.19a4.92 4.92 0 0 1-.55.14l-.58.15-.64.09-.53.08a11.51 11.51 0 0 1-1.18.05h-40a12 12 0 0 1 0-24h11l-43-43-23.51 23.52a12 12 0 0 1-17 0L44 93v103h180a12 12 0 0 1 12 12Z"
+}));
+var _default = exports.default = ChartLineDown;

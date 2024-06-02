@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Detective = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "detective-light__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M248 114h-28.94L171 47.77a14 14 0 0 0-22.16-.61l-12.91 14.92a1.15 1.15 0 0 0-.14.17 10 10 0 0 1-15.58 0 1.15 1.15 0 0 0-.14-.17L107.2 47.16a14 14 0 0 0-22.2.61L36.94 114H8a6 6 0 0 0 0 12h240a6 6 0 0 0 0-12ZM94.75 54.82a2 2 0 0 1 3.15-.07l.15.17 12.86 14.92A21.88 21.88 0 0 0 128 78a21.88 21.88 0 0 0 17.09-8.16L158 54.92l.15-.17a2 2 0 0 1 3.15.07l43 59.18H51.77ZM180 146a34 34 0 0 0-33.94 32h-36.12a34 34 0 1 0-1.44 12h39a34 34 0 1 0 32.5-44ZM76 202a22 22 0 1 1 22-22 22 22 0 0 1-22 22Zm104 0a22 22 0 1 1 22-22 22 22 0 0 1-22 22Z"
+}));
+var _default = exports.default = Detective;

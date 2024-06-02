@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const UserSwitch = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "user-switch-light__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "m252.24 132.24-24 24a6 6 0 0 1-8.48 0l-24-24a6 6 0 1 1 8.48-8.48L218 137.51V128A90 90 0 0 0 54.87 75.5a6 6 0 1 1-9.74-7A102 102 0 0 1 230 128v9.51l13.76-13.75a6 6 0 1 1 8.48 8.48Zm-41.39 55.26A102 102 0 0 1 26 128v-9.51l-13.76 13.75a6 6 0 0 1-8.48-8.48l24-24a6 6 0 0 1 8.48 0l24 24a6 6 0 1 1-8.48 8.48L38 118.49V128a89.65 89.65 0 0 0 24.49 61.64 77.53 77.53 0 0 1 40-31.38 46 46 0 1 1 51 0 77.49 77.49 0 0 1 40 31.41 89.35 89.35 0 0 0 7.58-9.17 6 6 0 1 1 9.74 7ZM128 154a34 34 0 1 0-34-34 34 34 0 0 0 34 34Zm0 64a90.24 90.24 0 0 0 56.57-20 66 66 0 0 0-113.13 0A89.58 89.58 0 0 0 128 218Z"
+}));
+var _default = exports.default = UserSwitch;

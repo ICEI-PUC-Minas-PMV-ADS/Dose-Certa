@@ -22,7 +22,7 @@ interface Item {
     complemento: string;
     cidade: string;
     bairro: string;
-    idUsuarioPaciente?: number | null; 
+    idUsuarioPaciente?: number | null;
     formattedDate?: string;
 }
 
@@ -44,7 +44,7 @@ const ResidenciaDemo = () => {
         idUsuarioPaciente: null
     };
 
-    let emptyPaciente: User = {  
+    let emptyPaciente: User = {
         id: 0,
         name: ''
     }
@@ -87,7 +87,7 @@ const ResidenciaDemo = () => {
         axios
             .get('http://localhost:5092/api/users?UserType=Paciente')
             .then((response) => {
-                setPacientes([emptyPaciente, ...response.data]); 
+                setPacientes([emptyPaciente, ...response.data]);
             })
             .catch((error) => {
                 console.error('Erro ao buscar pacientes:', error);
@@ -158,7 +158,7 @@ const ResidenciaDemo = () => {
             setResidencia({ ...residencia, idUsuarioPaciente: null });
         }
     };
-    
+
 
     const editResidencia = (residencia: Item) => {
         setResidencia({ ...residencia });
@@ -219,7 +219,7 @@ const ResidenciaDemo = () => {
         if (!pacientes || pacientes.length === 0) {
             return 'Carregando...'; // Ou qualquer outra mensagem que você queira exibir enquanto os pacientes estão sendo carregados
         }
-    
+
         const paciente = pacientes.find(p => p.id === idUsuarioPaciente);
         return paciente ? paciente.name : 'Não encontrado';
     };
@@ -249,7 +249,7 @@ const ResidenciaDemo = () => {
             </div>
 
 
-            <div onClick = {()=>{console.log(columns)}}> 
+            <div onClick={() => { console.log(columns) }}>
                 <DataTable
                     ref={dt}
                     value={data}

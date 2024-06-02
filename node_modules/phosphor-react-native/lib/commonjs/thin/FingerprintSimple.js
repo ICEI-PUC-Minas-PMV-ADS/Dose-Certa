@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const FingerprintSimple = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "fingerprint-simple-thin__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M180 128a242.63 242.63 0 0 1-18.23 92.72 4 4 0 0 1-7.4-3A234.75 234.75 0 0 0 172 128a4 4 0 0 1 8 0Zm-19.21-29.33a4 4 0 0 0 6-5.33A52 52 0 0 0 76 128a140 140 0 0 1-17.48 67.8 4 4 0 0 0 7 3.88A148.13 148.13 0 0 0 84 128a44 44 0 0 1 76.79-29.34ZM128 28a99.9 99.9 0 0 0-33.33 5.69 4 4 0 1 0 2.66 7.54A92.08 92.08 0 0 1 220 128a285.69 285.69 0 0 1-7 63.12 4 4 0 0 0 3 4.78 3.86 3.86 0 0 0 .89.1 4 4 0 0 0 3.89-3.12A293 293 0 0 0 228 128 100.11 100.11 0 0 0 128 28ZM66.67 59.43a4 4 0 0 0-5.34-6A100.17 100.17 0 0 0 28 128a91.3 91.3 0 0 1-8.34 38.33 4 4 0 0 0 2 5.3 3.93 3.93 0 0 0 1.66.37 4 4 0 0 0 3.64-2.33A99.15 99.15 0 0 0 36 128a92.16 92.16 0 0 1 30.67-68.57Zm45.58 144.94a4 4 0 0 0-5.31 2c-2 4.29-4.13 8.57-6.42 12.71a4 4 0 1 0 7 3.88c2.39-4.32 4.65-8.78 6.7-13.25a4 4 0 0 0-1.97-5.34ZM128 124a4 4 0 0 0-4 4 188.67 188.67 0 0 1-5.92 47 4 4 0 0 0 2.87 4.87 3.87 3.87 0 0 0 1 .13 4 4 0 0 0 3.87-3 196.62 196.62 0 0 0 6.18-49 4 4 0 0 0-4-4Z"
+}));
+var _default = exports.default = FingerprintSimple;

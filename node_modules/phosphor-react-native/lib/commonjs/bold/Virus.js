@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Virus = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "virus-bold__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M108 128a20 20 0 1 1 20-20 20 20 0 0 1-20 20Zm60-20a20 20 0 1 0 20 20 20 20 0 0 0-20-20Zm-40 40a20 20 0 1 0 20 20 20 20 0 0 0-20-20Zm124-20a12 12 0 0 1-12 12h-12.72a99.62 99.62 0 0 1-20.62 49.69l9.83 9.82a12 12 0 0 1-17 17l-9.82-9.83a99.62 99.62 0 0 1-49.67 20.6V240a12 12 0 0 1-24 0v-12.72a99.62 99.62 0 0 1-49.69-20.62l-9.82 9.83a12 12 0 0 1-17-17l9.83-9.82A99.62 99.62 0 0 1 28.72 140H16a12 12 0 0 1 0-24h12.72a99.62 99.62 0 0 1 20.62-49.69l-9.83-9.82a12 12 0 0 1 17-17l9.82 9.83A99.62 99.62 0 0 1 116 28.72V16a12 12 0 0 1 24 0v12.72a99.62 99.62 0 0 1 49.69 20.62l9.82-9.83a12 12 0 0 1 17 17l-9.83 9.82a99.62 99.62 0 0 1 20.6 49.67H240a12 12 0 0 1 12 12Zm-48 0a76 76 0 1 0-76 76 76.08 76.08 0 0 0 76-76Z"
+}));
+var _default = exports.default = Virus;

@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const CoinVertical = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "coin-vertical-thin__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M195.05 58.1C183.73 38.69 168.44 28 152 28h-48c-16.44 0-31.73 10.69-43 30.1-11 18.74-17 43.56-17 69.9s6 51.16 17 69.9c11.27 19.41 26.56 30.1 43 30.1h48c16.44 0 31.73-10.69 43.05-30.1C206 179.16 212 154.34 212 128s-6-51.16-16.95-69.9ZM191.27 188H152.1c7.24-16.14 11.37-35.53 11.84-56h40c-.5 20.77-4.94 40.28-12.67 56Zm-27.33-64c-.47-20.47-4.6-39.86-11.84-56h39.17c7.74 15.72 12.17 35.23 12.67 56ZM152 36c12.89 0 25.19 8.51 34.84 24h-38.73c-.35-.63-.7-1.28-1.06-1.9-5.58-9.56-12.12-17-19.29-22.1ZM67.86 193.87C57.63 176.34 52 153 52 128s5.63-48.34 15.86-65.87C77.69 45.28 90.52 36 104 36s26.31 9.28 36.14 26.13C150.37 79.66 156 103.05 156 128s-5.63 48.34-15.86 65.87C130.31 210.72 117.48 220 104 220s-26.31-9.28-36.14-26.13ZM152 220h-24.24c7.17-5.09 13.71-12.54 19.29-22.1.36-.62.71-1.27 1.06-1.9h38.73c-9.65 15.49-21.95 24-34.84 24Z"
+}));
+var _default = exports.default = CoinVertical;

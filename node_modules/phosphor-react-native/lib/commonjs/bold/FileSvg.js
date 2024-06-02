@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const FileSvg = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "file-svg-bold__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M48 120a12 12 0 0 0 12-12V44h76v48a12 12 0 0 0 12 12h48v4a12 12 0 1 0 24 0V88a12 12 0 0 0-3.51-8.48l-56-56A12 12 0 0 0 152 20H56a20 20 0 0 0-20 20v68a12 12 0 0 0 12 12Zm135-40h-23V57ZM87.78 196.8a24.72 24.72 0 0 1-10.94 18c-6 4-13.27 5.15-19.74 5.15a63.75 63.75 0 0 1-16.23-2.21 12 12 0 1 1 6.46-23.11c6.82 1.85 15 1.61 16.39.06a2.48 2.48 0 0 0 .21-.71c-1.94-1.23-6.82-2.64-9.88-3.53-5.39-1.56-11-3.17-15.75-6.26-7.62-4.92-11.21-12.45-10.1-21.19a24.44 24.44 0 0 1 10.68-17.76c6.07-4.09 14.17-5.82 24.1-5.17A69 69 0 0 1 75 142a12 12 0 0 1-6.1 23.21c-6.35-1.63-13.61-1.51-16.07-.33a79.69 79.69 0 0 0 7.92 2.59c5.47 1.58 11.67 3.37 16.8 6.82 7.78 5.24 11.45 13.24 10.23 22.51ZM155.3 156l-20 56a12 12 0 0 1-22.6 0l-20-56a12 12 0 1 1 22.6-8l8.7 24.3 8.7-24.3a12 12 0 1 1 22.6 8Zm68.7 32v12.87a12 12 0 0 1-3.33 8.3A34 34 0 0 1 196 220c-19.85 0-36-17.94-36-40s16.15-40 36-40a33.39 33.39 0 0 1 18.71 5.8 12 12 0 1 1-13.42 19.89A9.39 9.39 0 0 0 196 164c-6.5 0-12 7.33-12 16s5.5 16 12 16a9 9 0 0 0 2.7-.42A12 12 0 0 1 208 176h4a12 12 0 0 1 12 12Z"
+}));
+var _default = exports.default = FileSvg;

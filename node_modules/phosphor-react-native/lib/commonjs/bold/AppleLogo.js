@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const AppleLogo = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "apple-logo-bold__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M227 168a12 12 0 0 0-4.21-5.09C207.25 152.22 204 133.68 204 120c0-16.17 12.68-30.6 20.25-37.76a12 12 0 0 0 0-17.43C210.89 52.17 188.81 44 168 44a76.29 76.29 0 0 0-40 11.37 75.59 75.59 0 0 0-93.58 11A78.64 78.64 0 0 0 12 123.51 131 131 0 0 0 53.43 216a43.81 43.81 0 0 0 30.17 12h87.69a43.87 43.87 0 0 0 32.05-13.85 127.63 127.63 0 0 0 18.4-25.39c1.57-2.88 3-5.71 4.14-8.41 1.59-3.68 3.24-7.48 1.12-12.35Zm-41.23 29.82a19.78 19.78 0 0 1-14.48 6.18H83.6a19.85 19.85 0 0 1-13.7-5.42 107.18 107.18 0 0 1-33.9-75.7 54.49 54.49 0 0 1 15.5-39.6A50.86 50.86 0 0 1 88 68h.72a51.5 51.5 0 0 1 31.76 11.4 12 12 0 0 0 15 0A51.41 51.41 0 0 1 168 68a67.24 67.24 0 0 1 29.88 7.4C186.26 89.66 180 105.13 180 120c0 23.33 7.47 42.89 21.25 56.19a103.3 103.3 0 0 1-15.49 21.62ZM128.75 13a43.83 43.83 0 0 1 13.42-11.49 12 12 0 0 1 11.64 21 19.84 19.84 0 0 0-6.11 5.24A12 12 0 0 1 128.75 13Z"
+}));
+var _default = exports.default = AppleLogo;

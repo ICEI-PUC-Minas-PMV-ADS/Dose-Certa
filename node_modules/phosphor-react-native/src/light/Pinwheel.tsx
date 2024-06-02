@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const Pinwheel = (props: IconProps) => <Svg className="pinwheel-light__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="m228.24 219.76-50.86-50.86a60.19 60.19 0 0 0 6.45-1.92 58 58 0 0 0 34.66-74.34 6 6 0 0 0-7.69-3.58L161.5 107a60.16 60.16 0 0 0 3.54-6.46 58 58 0 0 0-72.4-79 6 6 0 0 0-3.58 7.69L107 78.52a60.16 60.16 0 0 0-6.46-3.52 58 58 0 0 0-79 72.4 6 6 0 0 0 3.1 3.38 6 6 0 0 0 4.59.2L78.52 133a58.3 58.3 0 0 0-3.52 6.48A58.06 58.06 0 0 0 127.5 222a58.25 58.25 0 0 0 19.88-3.53 6 6 0 0 0 3.62-7.67l-18-49.3a57.8 57.8 0 0 0 29 8.95l57.79 57.79a6 6 0 0 0 8.48-8.48ZM102.52 31.11a46 46 0 0 1 31.2 85.72ZM31.11 137.5a46 46 0 0 1 85.72-31.2Zm106.39 71.4a46 46 0 0 1-31.2-85.72Zm26.95-50.41a46.07 46.07 0 0 1-41.27-24.77l85.72-31.2a46.06 46.06 0 0 1-44.39 56Z" /></Svg>;
+export default Pinwheel;

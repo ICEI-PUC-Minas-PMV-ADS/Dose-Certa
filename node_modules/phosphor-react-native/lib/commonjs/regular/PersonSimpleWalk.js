@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const PersonSimpleWalk = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "person-simple-walk__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M152 80a32 32 0 1 0-32-32 32 32 0 0 0 32 32Zm0-48a16 16 0 1 1-16 16 16 16 0 0 1 16-16Zm64 112a8 8 0 0 1-8 8c-35.31 0-52.95-17.81-67.12-32.12-2.74-2.77-5.36-5.4-8-7.84l-13.43 30.88 37.2 26.57A8 8 0 0 1 160 176v56a8 8 0 0 1-16 0v-51.88l-31.07-22.2-33.59 77.27A8 8 0 0 1 72 240a7.84 7.84 0 0 1-3.19-.67 8 8 0 0 1-4.15-10.52l54.08-124.37c-9.31-1.65-20.92 1.2-34.7 8.58a163.88 163.88 0 0 0-30.57 21.77 8 8 0 0 1-10.95-11.66c2.5-2.35 61.69-57.23 98.72-25.08 3.83 3.32 7.48 7 11 10.57C166.19 122.7 179.36 136 208 136a8 8 0 0 1 8 8Z"
+}));
+var _default = exports.default = PersonSimpleWalk;

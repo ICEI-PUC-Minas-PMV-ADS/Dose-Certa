@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const GlobeHemisphereEast = (props: IconProps) => <Svg className="globe-hemisphere-east-bold__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M128 20a108 108 0 1 0 108 108A108.12 108.12 0 0 0 128 20Zm0 24a83.57 83.57 0 0 1 44 12.48v16L151.79 96l-28.47 3.85-18.7-12.25a20 20 0 0 0-28.07 5.28l-20.94 31.3a19.89 19.89 0 0 0-3.38 11l-.16 28.69A84 84 0 0 1 128 44ZM68.41 187.14A20 20 0 0 0 76 171.55l.2-35 18.07-27 16.62 10.88a19.92 19.92 0 0 0 14.14 3.42l31.47-4.26a20 20 0 0 0 12.5-6.8L191.16 87a20.15 20.15 0 0 0 4.39-8.9 83.78 83.78 0 0 1 14.12 69.48l-11.34-10.37a20.08 20.08 0 0 0-21.17-3.71l-30.45 12.66a20.1 20.1 0 0 0-12.11 15.55l-2.39 16.2a20 20 0 0 0 14.71 22.26l16 4.18a83.78 83.78 0 0 1-94.47-17.24Zm116.77 2.32-1.63-1.63a20.05 20.05 0 0 0-9.08-5.22l-18-4.72 1.53-10.41 26-10.81 16 14.59a84.84 84.84 0 0 1-14.82 18.2Z" /></Svg>;
+export default GlobeHemisphereEast;

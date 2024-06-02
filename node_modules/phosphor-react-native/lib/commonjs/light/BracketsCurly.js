@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const BracketsCurly = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "brackets-curly-light__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M39.91 128a27.68 27.68 0 0 1 9.49 11.13C54 148.62 54 160.51 54 172c0 24.27 1.21 38 26 38a6 6 0 0 1 0 12c-16.88 0-27.81-5.6-33.4-17.13C42 195.38 42 183.49 42 172c0-24.27-1.21-38-26-38a6 6 0 0 1 0-12c24.79 0 26-13.73 26-38 0-11.49 0-23.38 4.6-32.87C52.19 39.6 63.12 34 80 34a6 6 0 0 1 0 12c-24.79 0-26 13.73-26 38 0 11.49 0 23.38-4.6 32.87A27.68 27.68 0 0 1 39.91 128ZM240 122c-24.79 0-26-13.73-26-38 0-11.49 0-23.38-4.6-32.87C203.81 39.6 192.88 34 176 34a6 6 0 0 0 0 12c24.79 0 26 13.73 26 38 0 11.49 0 23.38 4.6 32.87a27.68 27.68 0 0 0 9.49 11.13 27.68 27.68 0 0 0-9.49 11.13c-4.6 9.49-4.6 21.38-4.6 32.87 0 24.27-1.21 38-26 38a6 6 0 0 0 0 12c16.88 0 27.81-5.6 33.4-17.13 4.6-9.49 4.6-21.38 4.6-32.87 0-24.27 1.21-38 26-38a6 6 0 0 0 0-12Z"
+}));
+var _default = exports.default = BracketsCurly;

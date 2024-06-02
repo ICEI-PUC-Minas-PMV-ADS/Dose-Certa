@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Lighthouse = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "lighthouse-light__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M208 82a6 6 0 0 0-6 6v18h-15l-5-50.6a6 6 0 0 0-2-3.88l-42.89-38.15-.15-.12a14 14 0 0 0-17.92 0l-.15.12L76 51.52a6 6 0 0 0-2 3.88L69 106H54V88a6 6 0 0 0-12 0v24a6 6 0 0 0 6 6h19.75l-9.69 96.67A14 14 0 0 0 72 230h112a14 14 0 0 0 13.93-15.36L188.25 118H208a6 6 0 0 0 6-6V88a6 6 0 0 0-6-6Zm-81.23-59.58a2 2 0 0 1 2.46 0l31 27.58H95.77ZM85.43 62h85.14l4.43 44h-41V88a6 6 0 0 0-12 0v18H81Zm100 155.35a2 2 0 0 1-1.43.65H72a2 2 0 0 1-2-2.16L74.2 174h107.6l4.2 41.81a2 2 0 0 1-.52 1.54ZM180.6 162H75.4l4.41-44h96.38Z"
+}));
+var _default = exports.default = Lighthouse;

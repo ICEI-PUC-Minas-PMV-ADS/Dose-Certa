@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const NumberFive = (props: IconProps) => <Svg className="number-five-bold__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M180 160a60 60 0 0 1-100 44.72 12 12 0 1 1 16-17.88 36 36 0 1 0 .69-54.28 12 12 0 0 1-19.54-11.49l15.08-75.42A12 12 0 0 1 104 36h64a12 12 0 0 1 0 24h-54.16l-8.36 41.79A60 60 0 0 1 180 160Z" /></Svg>;
+export default NumberFive;

@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const Footprints = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "footprints-bold__svg-icon-phosphor",
+  fill: "currentColor",
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M212 180h-56a12 12 0 0 0-12 12v12a40 40 0 0 0 80 0v-12a12 12 0 0 0-12-12Zm-28 40a16 16 0 0 1-16-16h32a16 16 0 0 1-16 16Zm-84-64H44a12 12 0 0 0-12 12v12a40 40 0 0 0 80 0v-12a12 12 0 0 0-12-12Zm-28 40a16 16 0 0 1-16-16h32a16 16 0 0 1-16 16Zm0-184c-14.06 0-27.7 12.33-37.41 33.83-12.45 27.57-16.78 67.52 3.14 90.11a12 12 0 0 0 9 4.06h50.52a12 12 0 0 0 9-4.06c19.92-22.59 15.59-62.54 3.14-90.11C99.68 24.33 86 12 72 12Zm19.07 104H52.9c-6.71-12.13-7.67-35.45 3.56-60.3C63.16 40.85 70.28 36 72 36s8.82 4.85 15.53 19.7c11.2 24.85 10.24 48.17 3.54 60.3Zm67.68 48h50.54a12 12 0 0 0 9-4.06c19.92-22.59 15.59-62.54 3.14-90.11C211.72 48.33 198.08 36 184 36s-27.7 12.33-37.41 33.83c-12.45 27.57-16.78 67.52 3.14 90.11a12 12 0 0 0 9.02 4.06Zm9.74-84.3C175.2 64.85 182.32 60 184 60s8.82 4.85 15.52 19.7c11.23 24.85 10.27 48.17 3.56 60.3h-38.15c-6.7-12.13-7.66-35.45 3.56-60.3Z"
+}));
+var _default = exports.default = Footprints;

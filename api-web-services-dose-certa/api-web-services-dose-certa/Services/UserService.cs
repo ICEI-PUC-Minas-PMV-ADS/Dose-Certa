@@ -135,7 +135,28 @@ public class UserService
         }
         finally
         {
-            await _connection.CloseAsync();
+            try
+            {
+                await _connection.OpenAsync();
+
+                string hashedPassword = HashPassword(userUpdated.Password);
+
+                string query = "UPDATE User SET Name = @Name, Email = @Email, Password = @Password, UserType = @UserType, DataNascimento = @DataNascimento, Cpf = @Cpf WHERE Id = @Id";
+                MySqlCommand command = new MySqlCommand(query, _connection);
+                command.Parameters.AddWithValue("@Id", id);
+                command.Parameters.AddWithValue("@Name", userUpdated.Name);
+                command.Parameters.AddWithValue("@Email", userUpdated.Email);
+                command.Parameters.AddWithValue("@Password", hashedPassword); // Salva o hash da senha
+                command.Parameters.AddWithValue("@UserType", userUpdated.UserType);
+                command.Parameters.AddWithValue("@DataNascimento", userUpdated.DataNascimento);
+                command.Parameters.AddWithValue("@Cpf", userUpdated.Cpf);
+
+                await command.ExecuteNonQueryAsync();
+            }
+            finally
+            {
+                await _connection.CloseAsync();
+            }
         }
     }
 

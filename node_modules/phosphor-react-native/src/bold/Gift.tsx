@@ -1,0 +1,7 @@
+/* GENERATED FILE */
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import { IconProps } from '../lib'
+
+const Gift = (props: IconProps) => <Svg className="gift-bold__svg-icon-phosphor" fill="currentColor" viewBox="0 0 256 256" width={props.size} height={props.size} {...props}><Path d="M216 68h-25.94A33.82 33.82 0 0 0 196 49.69 36.62 36.62 0 0 0 158.31 12 33.44 33.44 0 0 0 134 23.25a54.65 54.65 0 0 0-6 8.3 54.65 54.65 0 0 0-6-8.3A33.44 33.44 0 0 0 97.69 12 36.62 36.62 0 0 0 60 49.69 33.82 33.82 0 0 0 65.94 68H40a20 20 0 0 0-20 20v32a20 20 0 0 0 16 19.6V200a20 20 0 0 0 20 20h144a20 20 0 0 0 20-20v-60.4a20 20 0 0 0 16-19.6V88a20 20 0 0 0-20-20Zm-4 48h-72V92h72Zm-60-76.83a9.59 9.59 0 0 1 7-3.17h.35A12.62 12.62 0 0 1 172 49a9.59 9.59 0 0 1-3.17 7c-6.9 6.12-18.25 9.26-27.63 10.76 1.5-9.34 4.64-20.69 10.8-27.59Zm-64.3.53a12.8 12.8 0 0 1 8.91-3.7H97a9.59 9.59 0 0 1 7 3.17c6.12 6.9 9.26 18.24 10.75 27.61C105.45 65.27 94 62.13 87.17 56A9.59 9.59 0 0 1 84 49a12.72 12.72 0 0 1 3.7-9.3ZM44 92h72v24H44Zm16 48h56v56H60Zm80 56v-56h56v56Z" /></Svg>;
+export default Gift;

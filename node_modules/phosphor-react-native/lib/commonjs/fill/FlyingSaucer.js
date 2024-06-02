@@ -1,0 +1,21 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var React = _interopRequireWildcard(require("react"));
+var _reactNativeSvg = _interopRequireWildcard(require("react-native-svg"));
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* GENERATED FILE */
+const FlyingSaucer = props => /*#__PURE__*/React.createElement(_reactNativeSvg.default, _extends({
+  className: "flying-saucer-fill__svg-icon-phosphor",
+  fill: props.color,
+  viewBox: "0 0 256 256",
+  width: props.size,
+  height: props.size
+}, props), /*#__PURE__*/React.createElement(_reactNativeSvg.Path, {
+  d: "M183.59 213.47a8 8 0 0 1-15.18 5.06l-8-24a8 8 0 0 1 15.18-5.06ZM128 184a8 8 0 0 0-8 8v32a8 8 0 0 0 16 0v-32a8 8 0 0 0-8-8Zm-37.47.41a8 8 0 0 0-10.12 5.06l-8 24a8 8 0 0 0 15.18 5.06l8-24a8 8 0 0 0-5.06-10.12ZM248 112c0 16.22-13.37 30.89-37.65 41.29C188.22 162.78 159 168 128 168s-60.22-5.22-82.35-14.71C21.37 142.89 8 128.22 8 112c0-8.37 3.67-20.79 21.17-32.5 11.37-7.61 26.94-13.76 45.18-17.85A63.64 63.64 0 0 1 173 50.45a64.84 64.84 0 0 1 9.11 11.3C223.43 71.09 248 89.74 248 112Zm-72-16a47.66 47.66 0 0 0-6.06-23.35l-.06-.09A48.07 48.07 0 0 0 127.36 48C101.25 48.34 80 70.25 80 96.83v3a7.92 7.92 0 0 0 6.13 7.76A188.24 188.24 0 0 0 128 112a188.09 188.09 0 0 0 41.85-4.37 7.93 7.93 0 0 0 6.15-7.76Z"
+}));
+var _default = exports.default = FlyingSaucer;
