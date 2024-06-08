@@ -1,27 +1,16 @@
 # Apresentação
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
-
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
+Uma aplicação distribuída que busca atrair e capacitar agentes comunitários para auxiliar idosos não alfabetizados. A aplicação tem como propósito conscientizar sobre a importância do cuidado regular com a saúde do paciente, promovendo ações que encorajem essa prática. Com uma interface fácil de usar e recursos intuitivos, Dose Certa torna o processo de organização de medicamentos mais simples e acessível para todos, especialmente para aqueles que vivem em cidades do interior do Brasil onde muitos idosos precisam tomar regularmente alguns remédios.
 
 ## Título do Projeto
 
-Nome e marca do projeto
+- `Dose Certa`
 
 ## Identidade Visual (Marca, Design)
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
-
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
+![logo](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/5c32d35a-4e55-45b2-bffe-e29d518b0794)
 
 ## Conjunto de Slides (Estrutura)
 
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
+[em breve]
  
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
