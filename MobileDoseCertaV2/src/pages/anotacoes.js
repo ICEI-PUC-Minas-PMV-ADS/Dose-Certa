@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import * as React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, ScrollView } from "react-native";
 import {
   Button,
   Dialog,
@@ -38,6 +38,8 @@ const Anotacoes = () => {
   const [noteDialog, setNoteDialog] = useState(false);
   const [editNoteDialog, setEditNoteDialog] = useState(false);
   const [edit, setEdit] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const [page, setPage] = useState(0);
   const [numberOfItemsPerPageList] = useState([5, 10, 15]);
@@ -153,6 +155,15 @@ const Anotacoes = () => {
       });
   };
 
+  const openModal = (item) => {
+    if (item.hasOwnProperty("content")) {
+      setSelectedItem(item);
+      setModalVisible(true);
+    } else {
+      console.error("O item não é uma anotação válido.");
+    }
+  };
+
   return (
     <PaperProvider>
       <View style={styles.container}>
@@ -178,7 +189,7 @@ const Anotacoes = () => {
           </DataTable.Header>
 
           {data.slice(from, to).map((item) => (
-            <DataTable.Row key={item.id}>
+            <DataTable.Row key={item.id} onPress={() => openModal(item)}>
               <DataTable.Cell>
                 {getPacienteName(item.idUserPaciente)}
               </DataTable.Cell>
@@ -213,6 +224,47 @@ const Anotacoes = () => {
             selectPageDropdownLabel={"Rows per page"}
           />
         </DataTable>
+
+        <Portal>
+          <Dialog
+            visible={modalVisible}
+            onDismiss={() => setModalVisible(false)}
+            style={styles.dialogContainer}
+          >
+            <Dialog.Title>Detalhes</Dialog.Title>
+            <Dialog.Content style={styles.dialogContent}>
+              <View>
+                <View>
+                  <ScrollView>
+                    <View style={styles.infoContainer}>
+                      <View style={styles.columnInfo}>
+                        <Text variant="titleMedium">Paciente:</Text>
+                        <Text style={styles.inputInfo}>
+                          {getPacienteName(selectedItem?.idUserPaciente)}
+                        </Text>
+                      </View>
+                      <View style={styles.columnInfo}>
+                        <Text variant="titleMedium">Anotação:</Text>
+                        <Text style={styles.inputInfo}>
+                          {selectedItem?.content}
+                        </Text>
+                      </View>
+                    </View>
+                  </ScrollView>
+                </View>
+              </View>
+            </Dialog.Content>
+            <Dialog.Actions>
+              <Button
+                icon={"close"}
+                textColor="#000000"
+                onPress={() => setModalVisible(false)}
+              >
+                Fechar
+              </Button>
+            </Dialog.Actions>
+          </Dialog>
+        </Portal>
 
         <Portal>
           <Dialog
@@ -317,6 +369,21 @@ const styles = StyleSheet.create({
     padding: 15,
     backgroundColor: "#fff",
   },
+  infoContainer: {
+    marginBottom: 20,
+  },
+  columnInfo: {
+    display: "flex",
+    flexDirection: "column",
+    paddingBottom: 10,
+  },
+  inputInfo: {
+    paddingVertical: 8,
+    paddingLeft: 5,
+    borderWidth: 0.4,
+    marginTop: 5,
+    borderRadius: 5,
+  },
   btn: {
     display: "flex",
     alignItems: "flex-end",
@@ -328,6 +395,14 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 15,
+  },
+  dialogContainer: {
+    backgroundColor: "#FFFFFF",
+    borderRadius: 10,
+  },
+  dialogContent: {
+    paddingHorizontal: 20,
+    paddingVertical: 10,
   },
   dialogDelete: {
     backgroundColor: "#fff",

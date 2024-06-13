@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import {
   View,
   StyleSheet,
-  TouchableOpacity,
-  Modal,
   Pressable,
+  ScrollView
 } from "react-native";
 import {
   Button,
@@ -41,6 +40,9 @@ const Visitas = () => {
   const [visitaDialog, setVisitaDialog] = useState(false);
   const [editVisitaDialog, setEditVisitaDialog] = useState(false);
   const [edit, setEdit] = useState(false);
+
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const [date, setDate] = useState(new Date());
   const [showPicker, setShowPicker] = useState(false);
@@ -103,6 +105,15 @@ const Visitas = () => {
       }
     } else {
       setVisita({ ...emptyVisita, formattedDate: formatDate(new Date()) });
+    }
+  };
+
+  const openModal = (item) => {
+    if (item.hasOwnProperty("observacoes")) {
+      setSelectedItem(item);
+      setModalVisible(true);
+    } else {
+      console.error("O item não é uma Visita válido.");
     }
   };
 
@@ -185,10 +196,7 @@ const Visitas = () => {
     };
 
     const request = visita.id
-      ? axios.put(
-          `http://localhost:5092/api/Visita/${visita.id}`,
-          newVisita
-        )
+      ? axios.put(`http://localhost:5092/api/Visita/${visita.id}`, newVisita)
       : axios.post("http://localhost:5092/api/Visita", newVisita);
 
     request
@@ -240,7 +248,7 @@ const Visitas = () => {
           </DataTable.Header>
 
           {data.slice(from, to).map((item) => (
-            <DataTable.Row key={item.id}>
+            <DataTable.Row key={item.id} onPress={() => openModal(item)}>
               <DataTable.Cell>
                 {getPacienteName(item.idUsuarioPaciente)}
               </DataTable.Cell>
@@ -278,6 +286,59 @@ const Visitas = () => {
 
         <Portal>
           <Dialog
+            visible={modalVisible}
+            onDismiss={() => setModalVisible(false)}
+            style={styles.dialogContainer}
+          >
+            <Dialog.Title>Detalhes</Dialog.Title>
+            <Dialog.Content style={styles.dialogContent}>
+              <View>
+                <View>
+                  <ScrollView>
+                    <View style={styles.infoContainer}>
+                      <View style={styles.columnInfo}>
+                        <Text variant="titleMedium">Paciente:</Text>
+                        <Text style={styles.inputInfo}>
+                          {getPacienteName(selectedItem?.idUsuarioPaciente)}
+                        </Text>
+                      </View>
+                      <View style={styles.columnInfo}>
+                        <Text variant="titleMedium">Data:</Text>
+                        <Text style={styles.inputInfo}>
+                        {formatDate(new Date(selectedItem?.date))}
+                        </Text>
+                      </View>
+                      <View style={styles.columnInfo}>
+                        <Text variant="titleMedium">Status:</Text>
+                        <Text style={styles.inputInfo}>
+                          {selectedItem?.status}
+                        </Text>
+                      </View>
+                      <View style={styles.columnInfo}>
+                        <Text variant="titleMedium">Status:</Text>
+                        <Text style={styles.inputInfo}>
+                          {selectedItem?.observacoes}
+                        </Text>
+                      </View>
+                    </View>
+                  </ScrollView>
+                </View>
+              </View>
+            </Dialog.Content>
+            <Dialog.Actions>
+              <Button
+                icon={"close"}
+                textColor="#000000"
+                onPress={() => setModalVisible(false)}
+              >
+                Fechar
+              </Button>
+            </Dialog.Actions>
+          </Dialog>
+        </Portal>
+
+        <Portal>
+          <Dialog
             visible={visitaDialog}
             onDismiss={hideDialog}
             style={styles.containerStyle}
@@ -299,7 +360,7 @@ const Visitas = () => {
                   }))}
                 />
               </View>
-              
+
               <View style={styles.groupUsersModal}>
                 <Text variant="bodyMedium">Data:</Text>
                 {showPicker && (
@@ -410,10 +471,33 @@ const styles = StyleSheet.create({
     padding: 15,
     backgroundColor: "#fff",
   },
+  infoContainer: {
+    marginBottom: 20,
+  },
+  columnInfo: {
+    display: "flex",
+    flexDirection: "column",
+    paddingBottom: 10,
+  },
+  inputInfo: {
+    paddingVertical: 8,
+    paddingLeft: 5,
+    borderWidth: 0.4,
+    marginTop: 5,
+    borderRadius: 5,
+  },
   btn: {
     display: "flex",
     alignItems: "flex-end",
     marginBottom: 15,
+  },
+  dialogContainer: {
+    backgroundColor: "#FFFFFF",
+    borderRadius: 10,
+  },
+  dialogContent: {
+    paddingHorizontal: 20,
+    paddingVertical: 10,
   },
   btnnew: {
     width: 100,
