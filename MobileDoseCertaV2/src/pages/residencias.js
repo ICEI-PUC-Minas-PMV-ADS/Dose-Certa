@@ -55,7 +55,7 @@ const Residencias = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://192.168.0.102:5092/api/Residencia");
+      const response = await axios.get("http://localhost:5092/api/Residencia");
       setData(response.data);
     } catch (error) {
       console.error("Erro ao buscar residências:", error);
@@ -126,10 +126,10 @@ const Residencias = () => {
 
     const request = residencia.id
       ? axios.put(
-          `http://192.168.0.102:5092/api/Residencia/${residencia.id}`,
+          `http://localhost:5092/api/Residencia/${residencia.id}`,
           newResidencia
         )
-      : axios.post("http://192.168.0.102:5092/api/Residencia", newResidencia);
+      : axios.post("http://localhost:5092/api/Residencia", newResidencia);
 
     request
       .then((response) => {
@@ -154,7 +154,7 @@ const Residencias = () => {
 
   const deleteResidencia = () => {
     axios
-      .delete(`http://192.168.0.102:5092/api/Residencia/${selectedResidenciaId}`)
+      .delete(`http://localhost:5092/api/Residencia/${selectedResidenciaId}`)
       .then((response) => {
         hideDeleteResidenciaDialog();
         fetchData();

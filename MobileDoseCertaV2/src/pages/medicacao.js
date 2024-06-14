@@ -76,7 +76,7 @@ const Medicacao = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "http://192.168.0.102:5092/api/Medicacao"
+        "http://localhost:5092/api/Medicacao"
       );
       setData(response.data);
     } catch (error) {
@@ -86,7 +86,7 @@ const Medicacao = () => {
 
   const fetchPacientes = () => {
     axios
-      .get("http://192.168.0.102:5092/api/users?UserType=Paciente")
+      .get("http://localhost:5092/api/users?UserType=Paciente")
       .then((response) => {
         setPacientes(response.data);
       })
@@ -98,7 +98,7 @@ const Medicacao = () => {
   const fetchRemedios = async () => {
     try {
       const response = await axios.get(
-        "http://192.168.0.102:5092/api/Remedios"
+        "http://localhost:5092/api/Remedios"
       );
       setRemedios(response.data);
     } catch (error) {
@@ -128,10 +128,10 @@ const Medicacao = () => {
 
     const request = medicacao.id
       ? axios.put(
-          `http://192.168.0.102:5092/api/Medicacao/${medicacao.id}`,
+          `http://localhost:5092/api/Medicacao/${medicacao.id}`,
           newMedicacao
         )
-      : axios.post("http://192.168.0.102:5092/api/Medicacao", newMedicacao);
+      : axios.post("http://localhost:5092/api/Medicacao", newMedicacao);
 
     request
       .then((response) => {
@@ -178,7 +178,7 @@ const Medicacao = () => {
 
   const deleteMedicacao = () => {
     axios
-      .delete(`http://192.168.0.102:5092/api/Medicacao/${selectedMedicacaoId}`)
+      .delete(`http://localhost:5092/api/Medicacao/${selectedMedicacaoId}`)
       .then((response) => {
         setDeleteMedicacaoDialog(false);
         fetchData();
