@@ -58,7 +58,7 @@ const Anotacoes = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:5092/api/Notes");
+      const response = await axios.get("http://192.168.0.102:5092/api/Notes");
       setData(response.data);
     } catch (error) {
       console.error("Erro ao buscar dados:", error);
@@ -67,7 +67,7 @@ const Anotacoes = () => {
 
   const fetchPacientes = () => {
     axios
-      .get("http://localhost:5092/api/users?UserType=Paciente")
+      .get("http://192.168.0.102:5092/api/users?UserType=Paciente")
       .then((response) => {
         setPacientes(response.data);
       })
@@ -107,7 +107,7 @@ const Anotacoes = () => {
 
   const deleteNote = () => {
     axios
-      .delete(`http://localhost:5092/api/Notes/${selectedNoteId}`)
+      .delete(`http://192.168.0.102:5092/api/Notes/${selectedNoteId}`)
       .then((response) => {
         hideDeleteNoteDialog();
         fetchData();
@@ -142,8 +142,8 @@ const Anotacoes = () => {
     };
 
     const request = note.id
-      ? axios.put(`http://localhost:5092/api/Notes/${note.id}`, newNote)
-      : axios.post("http://localhost:5092/api/Notes", newNote);
+      ? axios.put(`http://192.168.0.102:5092/api/Notes/${note.id}`, newNote)
+      : axios.post("http://192.168.0.102:5092/api/Notes", newNote);
 
     request
       .then((response) => {

@@ -72,7 +72,7 @@ const Visitas = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:5092/api/Visita");
+      const response = await axios.get("http://192.168.0.102:5092/api/Visita");
       setData(response.data);
     } catch (error) {
       console.error("Erro ao buscar dados:", error);
@@ -81,7 +81,7 @@ const Visitas = () => {
 
   const fetchPacientes = () => {
     axios
-      .get("http://localhost:5092/api/users?UserType=Paciente")
+      .get("http://192.168.0.102:5092/api/users?UserType=Paciente")
       .then((response) => {
         setPacientes(response.data);
       })
@@ -135,7 +135,7 @@ const Visitas = () => {
 
   const deleteVisita = () => {
     axios
-      .delete(`http://localhost:5092/api/Visita/${selectedVisitaId}`)
+      .delete(`http://192.168.0.102:5092/api/Visita/${selectedVisitaId}`)
       .then((response) => {
         hideDeleteVisitaDialog();
         fetchData();
@@ -196,8 +196,8 @@ const Visitas = () => {
     };
 
     const request = visita.id
-      ? axios.put(`http://localhost:5092/api/Visita/${visita.id}`, newVisita)
-      : axios.post("http://localhost:5092/api/Visita", newVisita);
+      ? axios.put(`http://192.168.0.102:5092/api/Visita/${visita.id}`, newVisita)
+      : axios.post("http://192.168.0.102:5092/api/Visita", newVisita);
 
     request
       .then((response) => {

@@ -1,14 +1,14 @@
 import React, { createContext, useState, useContext } from 'react';
 
 const defaultUserContextValue = {
-  signed: true,
+  signed: false,
   setSigned: () => {},
 };
 
 export const UserContext = createContext(defaultUserContextValue);
 
 export const UserProvider = ({ children }) => {
-  const [signed, setSigned] = useState(true);
+  const [signed, setSigned] = useState(false);
 
   return (
     <UserContext.Provider value={{ signed, setSigned }}>

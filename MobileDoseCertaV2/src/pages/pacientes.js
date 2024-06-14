@@ -53,13 +53,13 @@ const Pacientes = () => {
   }, []);
 
   const parseDate = (dateString) => {
-    const [day, month, year] = dateString.split('/');
+    const [day, month, year] = dateString.split("/");
     return new Date(year, month - 1, day); // Mês em JavaScript é zero-based
   };
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:5092/api/users");
+      const response = await axios.get("http://192.168.0.102:5092/api/users");
       const pacientesData = response.data.map((paciente) => ({
         ...paciente,
         dataNascimento: parseDate(paciente.dataNascimento), // Convertendo a string para Date
@@ -70,7 +70,6 @@ const Pacientes = () => {
       console.error("Erro ao buscar pacientes:", error);
     }
   };
-  
 
   const openModal = (item) => {
     if (item.hasOwnProperty("name")) {
@@ -127,8 +126,8 @@ const Pacientes = () => {
     };
 
     const request = paciente.id
-      ? axios.put(`http://localhost:5092/api/users/${paciente.id}`, newUSer)
-      : axios.post("http://localhost:5092/api/users", newUSer);
+      ? axios.put(`http://192.168.0.102:5092/api/users/${paciente.id}`, newUSer)
+      : axios.post("http://192.168.0.102:5092/api/users", newUSer);
 
     request
       .then((response) => {
@@ -149,7 +148,7 @@ const Pacientes = () => {
 
   const deletePaciente = () => {
     axios
-      .delete(`http://localhost:5092/api/users/${selectedPacienteId}`)
+      .delete(`http://192.168.0.102:5092/api/users/${selectedPacienteId}`)
       .then((response) => {
         setDeletePacienteDialog(false);
         fetchData();
@@ -200,7 +199,6 @@ const Pacientes = () => {
       formattedDataNascimento: formatDate(currentDate),
     });
   };
-  
 
   const toggleDatepicker = () => {
     setShowPicker(!showPicker);
