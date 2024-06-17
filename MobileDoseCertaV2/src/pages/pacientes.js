@@ -65,7 +65,6 @@ const Pacientes = () => {
         dataNascimento: parseDate(paciente.dataNascimento), // Convertendo a string para Date
       }));
       setData(pacientesData);
-      console.log(pacientesData);
     } catch (error) {
       console.error("Erro ao buscar pacientes:", error);
     }

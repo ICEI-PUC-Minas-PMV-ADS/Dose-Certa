@@ -9,7 +9,11 @@ import {
   Key,
   DoorOpen,
   PencilSimple,
+  SignOut,
 } from "phosphor-react-native";
+import { useUser } from "../contexts/UserContext";
+import axios from "axios";
+
 import Dashboard from "../pages/dashboard";
 import Pacientes from "../pages/pacientes";
 import Medicamento from "../pages/medicamento";
@@ -21,6 +25,38 @@ import Visitas from "../pages/visitas";
 const Drawer = createDrawerNavigator();
 
 export default function MyDrawer() {
+  const { setSigned, setName } = useUser();
+
+  const handleLogout = () => {
+    axios
+      .post(
+        "http://localhost:5092/api/auth/logout",
+        {},
+        {
+          headers: {
+            "x-api-key": "WKKTxXNEyayNn7frBp0ErULwxQYvaZaU",
+          },
+        }
+      )
+      .then((response) => {
+        setSigned(false);
+
+        // Limpar o token de autenticação ou qualquer outro estado relacionado ao login
+        // Por exemplo: localStorage.removeItem('token');
+      })
+      .catch((error) => {
+        console.error("Erro ao fazer logout:", error);
+        Alert.alert("Erro", "Falha no logout", [
+          { text: "OK", onPress: () => console.log(error.message) },
+        ]);
+      });
+  };
+
+  const LogoutScreen = () => {
+    handleLogout();
+    return null;
+  };
+
   return (
     <Drawer.Navigator
       initialRouteName="Home"
@@ -109,6 +145,16 @@ export default function MyDrawer() {
             <PencilSimple size={18} color={focused ? "#fff" : "#177CED"} />
           ),
           drawerLabel: "Anotações",
+        }}
+      />
+      <Drawer.Screen
+        name="Sair"
+        component={LogoutScreen}
+        options={{
+          drawerIcon: ({ focused }) => (
+            <SignOut size={18} color={focused ? "#fff" : "#177CED"} />
+          ),
+          drawerLabel: "Sair",
         }}
       />
     </Drawer.Navigator>

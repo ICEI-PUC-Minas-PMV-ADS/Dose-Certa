@@ -18,12 +18,12 @@ export const LoginProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   useEffect(() => {
     const token = localStorage.getItem('doseCertaToken');
     if (token) {
-      setIsLoggedIn(true);
+      setIsLoggedIn(false);
     }
   }, []); 
 
   const login = () => {
-    setIsLoggedIn(true);
+    setIsLoggedIn(false);
     localStorage.setItem('doseCertaToken', 'seu_token_aqui');
   };
 
