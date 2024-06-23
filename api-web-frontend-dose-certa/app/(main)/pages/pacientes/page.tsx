@@ -70,7 +70,7 @@ const PacientesDemo = () => {
 
     const fetchData = () => {
         axios
-            .get('http://localhost:5092/api/users')
+            .get('https://dosecerta.azurewebsites.net/api/Users')
             .then((response) => {
                 console.log(response);
                 
@@ -101,7 +101,7 @@ const PacientesDemo = () => {
 
     const fetchPacientes = () => {
         axios
-            .get('http://localhost:5092/api/users?UserType=Agente')
+            .get('https://dosecerta.azurewebsites.net/api/Users?UserType=Agente')
             .then((response) => {
                 console.log(response)
                 setPacientes([emptyPaciente, ...response.data]); 
@@ -148,7 +148,7 @@ const PacientesDemo = () => {
             // idUsuarioPaciente: user.idUsuarioPaciente || 0
         };
 
-        const request = selectedUserId ? axios.put(`http://localhost:5092/api/users/${selectedUserId}`, newUser) : axios.post('http://localhost:5092/api/users', newUser);
+        const request = selectedUserId ? axios.put(`https://dosecerta.azurewebsites.net/api/Users/${selectedUserId}`, newUser) : axios.post('https://dosecerta.azurewebsites.net/api/Users', newUser);
 
         request
             .then((response) => {
@@ -205,7 +205,7 @@ const PacientesDemo = () => {
 
     const deleteUser = () => {
         axios
-            .delete(`http://localhost:5092/api/users/${user.id}`)
+            .delete(`https://dosecerta.azurewebsites.net/api/Users/${user.id}`)
             .then((response) => {
                 hideDeleteUserDialog(); // Fecha o diálogo de confirmação
                 fetchData(); // Atualiza os dados para refletir a exclusão

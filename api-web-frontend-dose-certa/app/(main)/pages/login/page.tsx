@@ -21,7 +21,7 @@ const LoginPage = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('http://localhost:5092/api/auth/login', {
+            const response = await fetch('https://dosecerta.azurewebsites.net/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const LoginPage = () => {
             localStorage.setItem('userDoseCerta', JSON.stringify(data.user));
             toast.current?.show({ severity: 'success', summary: 'Sucesso', detail: 'Login efetuado com sucesso' });
     
-            router.replace('/dashboard');
+            router.push('/pages/dashboard');
         } catch (error) {
             console.error('Erro ao fazer login:', error);
             toast.current?.show({ severity: 'error', summary: 'Erro', detail: 'Falha na autenticação' });

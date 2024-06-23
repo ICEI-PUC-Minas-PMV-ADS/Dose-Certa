@@ -20,7 +20,7 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
 
     return (
         <div className="layout-topbar">
-            <Link href="/dashboard" className="layout-topbar-logo">
+            <Link href="/pages/dashboard" className="layout-topbar-logo">
                 <span>DOSE CERTA</span>
             </Link>
 

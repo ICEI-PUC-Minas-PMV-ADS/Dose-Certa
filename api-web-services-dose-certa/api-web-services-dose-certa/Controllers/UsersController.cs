@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace api_web_services_dose_certa.Controllers
 {
-    [Route("api/users")]
+    [Route("api/Users")]
     [ApiController]
     public class UsersController : ControllerBase
     {

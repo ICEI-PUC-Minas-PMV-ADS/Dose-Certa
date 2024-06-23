@@ -53,7 +53,7 @@ const LoginPage = ({ navigation }) => {
     };
 
     axios
-      .post("http://localhost:5092/api/auth/login", credentials, {
+      .post("https://dosecerta.azurewebsites.net/api/auth/login", credentials, {
         headers: {
           "x-api-key": "WKKTxXNEyayNn7frBp0ErULwxQYvaZaU",
         },

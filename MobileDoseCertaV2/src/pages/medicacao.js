@@ -76,8 +76,12 @@ const Medicacao = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5092/api/Medicacao"
+        "https://dosecerta.azurewebsites.net/api/Medicacao"
       );
+      const medicacoes = response.data.map((med) => ({
+        ...med,
+        status: med.status === 'true' ? true : false,
+      }));
       setData(response.data);
     } catch (error) {
       console.error("Erro ao buscar dados:", error);
@@ -86,7 +90,7 @@ const Medicacao = () => {
 
   const fetchPacientes = () => {
     axios
-      .get("http://localhost:5092/api/users?UserType=Paciente")
+      .get("https://dosecerta.azurewebsites.net/api/Users")
       .then((response) => {
         setPacientes(response.data);
       })
@@ -98,7 +102,7 @@ const Medicacao = () => {
   const fetchRemedios = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5092/api/Remedios"
+        "https://dosecerta.azurewebsites.net/api/Remedios"
       );
       setRemedios(response.data);
     } catch (error) {
@@ -120,7 +124,7 @@ const Medicacao = () => {
       id: medicacao.id || "",
       idUsuarioPaciente: medicacao.idUsuarioPaciente || 0,
       observacao: medicacao.observacao,
-      status: medicacao.status,
+      status: medicacao.status ? 'true' : 'false',
       dataInicio: medicacao.dataInicio,
       dataTermino: medicacao.dataTermino,
       remedios: medicacao.remedios || [],
@@ -128,10 +132,10 @@ const Medicacao = () => {
 
     const request = medicacao.id
       ? axios.put(
-          `http://localhost:5092/api/Medicacao/${medicacao.id}`,
+          `https://dosecerta.azurewebsites.net/api/Medicacao/${medicacao.id}`,
           newMedicacao
         )
-      : axios.post("http://localhost:5092/api/Medicacao", newMedicacao);
+      : axios.post("https://dosecerta.azurewebsites.net/api/Medicacao", newMedicacao);
 
     request
       .then((response) => {
@@ -143,6 +147,7 @@ const Medicacao = () => {
           "Erro ao salvar medicação:",
           error.response ? error.response.data : error
         );
+        console.log(error)
       });
   };
 
@@ -178,7 +183,7 @@ const Medicacao = () => {
 
   const deleteMedicacao = () => {
     axios
-      .delete(`http://localhost:5092/api/Medicacao/${selectedMedicacaoId}`)
+      .delete(`https://dosecerta.azurewebsites.net/api/Medicacao/${selectedMedicacaoId}`)
       .then((response) => {
         setDeleteMedicacaoDialog(false);
         fetchData();
@@ -321,7 +326,7 @@ const Medicacao = () => {
             <DataTable.Row
               key={item.id}
               onPress={() => openModal(item)}
-              style={{ backgroundColor: item.status ? "#C8E6C9" : "#FFCDD2" }}
+              style={{ backgroundColor: item.status === 'true' ? "#C8E6C9" : "#FFCDD2" }}
             >
               <DataTable.Cell style={styles.column}>
                 {getPacienteName(item.idUsuarioPaciente)}
@@ -401,7 +406,7 @@ const Medicacao = () => {
                       </View>
                       <View style={styles.columnInfo}>
                         <Text variant="titleMedium">Status:</Text>
-                        <Text style={styles.inputInfo}>{selectedItem?.status ? 'Ativo' : 'Inativo'}</Text>
+                        <Text style={styles.inputInfo}>{selectedItem && (selectedItem.status ? "Ativo" : "Inativo")}</Text>
                       </View>
                     </View>
                   </ScrollView>

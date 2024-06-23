@@ -5,10 +5,14 @@ import LoginPage from './(main)/pages/login/page';
 import Usuarios from './(main)/pages/usuarios/page';
 import { useRouter, usePathname } from 'next/navigation';
 import Dashboard from './(main)/page';
+
 import PacientesDemo from './(main)/pages/pacientes/page';
+import MedicamentoDemo from './(main)/pages/medicamentos/page';
+import MedicacoesDemo from './(main)/pages/medicacao/page';
 import ResidenciaDemo from './(main)/pages/residencia/page';
+import VisitasDemo from './(main)/pages/visita/page';
 import AnotacaoDemo from './(main)/pages/note/page';
-import VisitaDemo from './(main)/pages/visita/page';
+import DashboardDemo from './(main)/pages/dashboard/page';
 
 const AppRoutes = () => {
   const { isLoggedIn } = useLogin();
@@ -17,7 +21,7 @@ const AppRoutes = () => {
 
   useEffect(() => {
     if (!isLoggedIn && pathname !== '/auth/login' && pathname !== '/pages/usuarios') {
-      router.replace('/');
+      // router.replace('/');
     }
   }, [isLoggedIn, router, pathname]);
 
@@ -25,12 +29,13 @@ const AppRoutes = () => {
     <>
       {isLoggedIn ? ( 
         <>
-          {pathname === '/dashboard' ? <Dashboard /> : null}
+          {pathname === '/pages/dashboard' ? <DashboardDemo /> : null}
           {pathname === '/pages/pacientes' ? <PacientesDemo /> : null}
-          {pathname === '/pages/residencia' ? <ResidenciaDemo /> : null}
-          {pathname === '/pages/note' ? <AnotacaoDemo /> : null}
-          {pathname === '/pages/visita' ? <PacientesDemo /> : null}
-          {pathname === '/pages/visita' ? <VisitaDemo /> : null}
+          {pathname === '/pages/medicamento' ? <MedicamentoDemo /> : null}
+          {pathname === '/pages/medicacoes' ? <MedicacoesDemo /> : null}
+          {pathname === '/pages/residencias' ? <ResidenciaDemo /> : null}
+          {pathname === '/pages/visitas' ? <VisitasDemo /> : null}
+          {pathname === '/pages/anotacoes' ? <AnotacaoDemo /> : null}
 
         </>
       ) : (

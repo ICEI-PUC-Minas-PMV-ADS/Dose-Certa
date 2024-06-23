@@ -106,7 +106,7 @@ const NewAccountPage = ({ navigation }) => {
       dataNascimento: formattedDataNascimento,
     };
 
-    const request = axios.post("http://localhost:5092/api/users", newUSer);
+    const request = axios.post("https://dosecerta.azurewebsites.net/api/Users", newUSer);
 
     request
       .then((response) => {

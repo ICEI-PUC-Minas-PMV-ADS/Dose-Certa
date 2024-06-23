@@ -15,22 +15,16 @@ export const useLogin = () => {
 export const LoginProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    const token = localStorage.getItem('doseCertaToken');
-    if (token) {
-      setIsLoggedIn(false);
-    }
-  }, []); 
-
   const login = () => {
-    setIsLoggedIn(false);
     localStorage.setItem('doseCertaToken', 'seu_token_aqui');
+    setIsLoggedIn(true); 
   };
 
   const logout = () => {
     localStorage.removeItem('doseCertaToken');
-    setIsLoggedIn(false);
+    setIsLoggedIn(false); 
   };
+  
 
   return (
     <LoginContext.Provider value={{ isLoggedIn, login, logout }}>

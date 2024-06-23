@@ -59,7 +59,7 @@ const Pacientes = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:5092/api/users");
+      const response = await axios.get("https://dosecerta.azurewebsites.net/api/Users");
       const pacientesData = response.data.map((paciente) => ({
         ...paciente,
         dataNascimento: parseDate(paciente.dataNascimento), // Convertendo a string para Date
@@ -125,8 +125,8 @@ const Pacientes = () => {
     };
 
     const request = paciente.id
-      ? axios.put(`http://localhost:5092/api/users/${paciente.id}`, newUSer)
-      : axios.post("http://localhost:5092/api/users", newUSer);
+      ? axios.put(`https://dosecerta.azurewebsites.net/api/Users/${paciente.id}`, newUSer)
+      : axios.post("https://dosecerta.azurewebsites.net/api/Users", newUSer);
 
     request
       .then((response) => {
@@ -147,7 +147,7 @@ const Pacientes = () => {
 
   const deletePaciente = () => {
     axios
-      .delete(`http://localhost:5092/api/users/${selectedPacienteId}`)
+      .delete(`https://dosecerta.azurewebsites.net/api/Users/${selectedPacienteId}`)
       .then((response) => {
         setDeletePacienteDialog(false);
         fetchData();

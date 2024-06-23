@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mcnt1NLysEuDTAcooZRE6M/H6X3t1LakPdthka2eI3ERbRbk/wLRiQhIzYO7CwCwprjgEarHOO6TGQeOsH1gNQ==",
+  "dgSpecHash": "ZRxjZG5vRpI7/GftU5SUs+CO61fUZ5HjzfbJEOd8BX/uYRRuwIaMlJRX4IkRkOjASv7hwk/zTm+EuuqosmhsLw==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\PUC\\testes\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+  "projectFilePath": "C:\\workspace\\etapa5\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ellen\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ellen\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

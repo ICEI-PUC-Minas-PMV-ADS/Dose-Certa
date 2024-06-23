@@ -4005,11 +4005,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workspace\\PUC\\testes\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+      "projectUniqueName": "C:\\workspace\\etapa5\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
       "projectName": "api-web-services-dose-certa",
-      "projectPath": "C:\\workspace\\PUC\\testes\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
+      "projectPath": "C:\\workspace\\etapa5\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
       "packagesPath": "C:\\Users\\ellen\\.nuget\\packages\\",
-      "outputPath": "C:\\workspace\\PUC\\testes\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
+      "outputPath": "C:\\workspace\\etapa5\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

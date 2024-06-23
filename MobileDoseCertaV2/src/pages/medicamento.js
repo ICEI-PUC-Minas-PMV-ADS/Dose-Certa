@@ -57,7 +57,7 @@ const Medicamento = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:5092/api/Remedios");
+      const response = await axios.get("https://dosecerta.azurewebsites.net/api/Remedios");
       setData(response.data);
     } catch (error) {
       console.error("Erro ao buscar remédios:", error);
@@ -118,10 +118,10 @@ const Medicamento = () => {
 
     const request = remedio.id
       ? axios.put(
-          `http://localhost:5092/api/Remedios/${remedio.id}`,
+          `https://dosecerta.azurewebsites.net/api/Remedios/${remedio.id}`,
           newRemedio
         )
-      : axios.post("http://localhost:5092/api/Remedios", newRemedio);
+      : axios.post("https://dosecerta.azurewebsites.net/api/Remedios", newRemedio);
 
     request
       .then((response) => {
@@ -142,7 +142,7 @@ const Medicamento = () => {
 
   const deleteRemedio = () => {
     axios
-      .delete(`http://localhost:5092/api/Remedios/${selectedRemedioId}`)
+      .delete(`https://dosecerta.azurewebsites.net/api/Remedios/${selectedRemedioId}`)
       .then((response) => {
         hideDeleteRemedioDialog();
         fetchData();

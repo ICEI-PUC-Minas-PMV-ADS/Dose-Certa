@@ -30,7 +30,7 @@ export default function MyDrawer() {
   const handleLogout = () => {
     axios
       .post(
-        "http://localhost:5092/api/auth/logout",
+        "https://dosecerta.azurewebsites.net/api/auth/logout",
         {},
         {
           headers: {

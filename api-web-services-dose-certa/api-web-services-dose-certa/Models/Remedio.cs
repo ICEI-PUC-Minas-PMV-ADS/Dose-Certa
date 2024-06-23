@@ -14,8 +14,6 @@ namespace APIDoseCerta.Models
 
         public string Dosagem { get; set; }
 
-        public DateTime Horario { get; set; }
-
         public string Indicacao { get; set; }
 
         public string Frequencia { get; set; }
