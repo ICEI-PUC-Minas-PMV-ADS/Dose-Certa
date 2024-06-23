@@ -66,6 +66,9 @@ O quadro kanban do grupo no Trello está disponível através da URL e é aprese
 ## ETAPA 3 - Quadro Kanban
 ![ETAPA 3 - Quadro Kanban](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/5debaf2a-8ca9-47e9-85ef-24fd77d237ea)
 
+## ETAPA 4 - Quadro Kanban
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/45137aaa-72cc-48ad-9c13-3343917ba48f)
+
 As tarefas são, ainda, datadas. Isso significa que cada tarefa no Trello possui uma data específica associada a ela. Essa funcionalidade é extremamente útil para garantir que os integrantes da equipe não se esqueçam de suas responsabilidades, pois podem ver claramente quando cada tarefa é devida. Portanto, o Trello serve como um lembrete eficaz, ajudando o time a gerenciar o tempo de maneira mais eficiente e a cumprir suas obrigações pontualmente.
 
 ### Ferramentas
