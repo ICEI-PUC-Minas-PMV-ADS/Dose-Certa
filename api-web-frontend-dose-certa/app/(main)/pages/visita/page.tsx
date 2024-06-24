@@ -75,7 +75,7 @@ const VisitasDemo = () => {
 
     const fetchPacientes = () => {
         axios
-            .get('http://localhost:5092/api/users?UserType=Paciente')
+            .get('http://dosecerta.azurewebsites.net/api/users?UserType=Paciente')
             .then((response) => {
                 setPacientes([emptyPaciente, ...response.data]); 
             })
@@ -116,7 +116,7 @@ const VisitasDemo = () => {
             idUsuarioPaciente: visita.idUsuarioPaciente || 0
         };
 
-        const request = selectedVisitaId ? axios.put(`http://localhost:5092/api/Visita/${selectedVisitaId}`, newVisita) : axios.post('http://localhost:5092/api/Visita', newVisita);
+        const request = selectedVisitaId ? axios.put(`http://dosecerta.azurewebsites.net/api/Visita/${selectedVisitaId}`, newVisita) : axios.post('http://dosecerta.azurewebsites.net/api/Visita', newVisita);
 
         request
             .then((response) => {
@@ -173,7 +173,7 @@ const VisitasDemo = () => {
 
     const deleteVisita = () => {
         axios
-            .delete(`http://localhost:5092/api/Visita/${visita.id}`)
+            .delete(`http://dosecerta.azurewebsites.net/api/Visita/${visita.id}`)
             .then((response) => {
                 hideDeleteVisitaDialog(); // Fecha o diálogo de confirmação
                 fetchData(); // Atualiza os dados para refletir a exclusão
