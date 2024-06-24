@@ -1,29 +1,31 @@
 message: Please cite this software using these metadata.
-title:
+title: Dose CErta
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Xavier Rezende
+    given-names: Rafael
+  - family-names: Victória dos Santos Oliveira
+    given-names: Iane
+  - family-names: Gabriela Queiroz Gonçalves
+    given-names: Iris
+  - family-names: Ferreira Passos
+    given-names:  Joice
+  - family-names: de França Loyola Mourão
+    given-names: Matheus
+  - family-names: Ellen Jodas Ferreira
+    given-names: Milleny
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Vilela Cardoso
+    given-names: Leonardo
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: 
     given-names: 
 keywords:
-  - 
-  - 
-repository-code: 
+  - Farmacia
+  - Medicamento
+  - Remedio
+
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2024-06-23
