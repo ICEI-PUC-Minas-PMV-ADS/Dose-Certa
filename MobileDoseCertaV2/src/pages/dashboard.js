@@ -27,7 +27,7 @@ const DashboardScreen = () => {
           axios.get('https://dosecerta.azurewebsites.net/api/Remedios'),
           axios.get('https://dosecerta.azurewebsites.net/api/Medicacao'),
           axios.get('https://dosecerta.azurewebsites.net/api/Visita'),
-          axios.get('https://dosecerta.azurewebsites.net/api/users')
+          axios.get('https://dosecerta.azurewebsites.net/api/Users')
         ]);
 
         const filterByDate = (data, key) => {

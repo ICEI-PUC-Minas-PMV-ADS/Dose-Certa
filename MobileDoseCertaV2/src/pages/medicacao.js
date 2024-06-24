@@ -296,16 +296,8 @@ const Medicacao = () => {
     return paciente ? paciente.name : "N/A";
   };
 
-  const theme = {
-    ...DefaultTheme,
-    colors: {
-      ...DefaultTheme.colors,
-      text: 'black', // Definir a cor padrão do texto para preto
-    },
-  };
-
   return (
-    <PaperProvider theme={theme}>
+    <PaperProvider>
       <View style={styles.container}>
         <View style={styles.btn}>
           <Button

@@ -21,11 +21,7 @@ const LoginPage = () => {
 
     const handleLogin = async () => {
         try {
-<<<<<<< HEAD
             const response = await fetch('https://dosecerta.azurewebsites.net/api/auth/login', {
-=======
-            const response = await fetch('http://dosecerta.azurewebsites.net/api/auth/login', {
->>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

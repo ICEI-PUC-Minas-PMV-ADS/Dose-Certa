@@ -30,13 +30,7 @@ const Visitas = () => {
     idUsuarioPaciente: null,
   };
 
-  const theme = {
-    ...DefaultTheme,
-    colors: {
-      ...DefaultTheme.colors,
-      text: 'black', // Definir a cor padrão do texto para preto
-    },
-  };
+
 
   const [data, setData] = useState([]);
   const [pacientes, setPacientes] = useState([]);
@@ -233,7 +227,7 @@ const Visitas = () => {
   };
 
   return (
-    <PaperProvider theme={theme}>
+    <PaperProvider>
       <View style={styles.container}>
         <View style={styles.btn}>
           <Button
