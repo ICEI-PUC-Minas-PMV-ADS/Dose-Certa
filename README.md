@@ -25,7 +25,10 @@ Dose Certa é uma aplicação distribuída que busca atrair e capacitar agentes 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Para acessar o Front-And basta clicar no link  -> https://dose-certa-five.vercel.app/
+
+para verificar o funcionamento da API integrado com os bancos de dados MySQL e MongoDB Basta acessar o link -> dosecerta.azurewebsites.net utilizando o /api/ para verificar a coleção por exemplo https://dosecerta.azurewebsites.net/api/Users ou  https://dosecerta.azurewebsites.net/api/Remedios
+
 
 # Documentação
 
