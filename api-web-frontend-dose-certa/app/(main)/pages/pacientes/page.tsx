@@ -108,7 +108,7 @@ const PacientesDemo = () => {
 <<<<<<< HEAD
             .get('https://dosecerta.azurewebsites.net/api/Users?UserType=Agente')
 =======
-            .get('http://dosecerta.azurewebsites.net/api/users?UserType=Agente')
+            .get('https://dosecerta.azurewebsites.net/api/users?UserType=Agente')
 >>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
             .then((response) => {
                 console.log(response)
@@ -159,7 +159,7 @@ const PacientesDemo = () => {
 <<<<<<< HEAD
         const request = selectedUserId ? axios.put(`https://dosecerta.azurewebsites.net/api/Users/${selectedUserId}`, newUser) : axios.post('https://dosecerta.azurewebsites.net/api/Users', newUser);
 =======
-        const request = selectedUserId ? axios.put(`http://dosecerta.azurewebsites.net/api/users/${selectedUserId}`, newUser) : axios.post('http://dosecerta.azurewebsites.net/api/users', newUser);
+        const request = selectedUserId ? axios.put(`https://dosecerta.azurewebsites.net/api/users/${selectedUserId}`, newUser) : axios.post('https://dosecerta.azurewebsites.net/api/users', newUser);
 >>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
 
         request
@@ -220,7 +220,7 @@ const PacientesDemo = () => {
 <<<<<<< HEAD
             .delete(`https://dosecerta.azurewebsites.net/api/Users/${user.id}`)
 =======
-            .delete(`http://dosecerta.azurewebsites.net/api/users/${user.id}`)
+            .delete(`https://dosecerta.azurewebsites.net/api/users/${user.id}`)
 >>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
             .then((response) => {
                 hideDeleteUserDialog(); // Fecha o diálogo de confirmação
