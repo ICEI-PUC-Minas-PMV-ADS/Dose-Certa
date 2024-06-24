@@ -21,7 +21,7 @@ const LoginPage = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch('http://localhost:5092/api/auth/login', {
+            const response = await fetch('http://dosecerta.azurewebsites.net/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
