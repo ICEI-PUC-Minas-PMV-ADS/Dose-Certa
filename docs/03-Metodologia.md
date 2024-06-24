@@ -74,6 +74,50 @@ O quadro kanban do grupo no Trello está disponível através da URL e é aprese
 
 As tarefas são, ainda, datadas. Isso significa que cada tarefa no Trello possui uma data específica associada a ela. Essa funcionalidade é extremamente útil para garantir que os integrantes da equipe não se esqueçam de suas responsabilidades, pois podem ver claramente quando cada tarefa é devida. Portanto, o Trello serve como um lembrete eficaz, ajudando o time a gerenciar o tempo de maneira mais eficiente e a cumprir suas obrigações pontualmente.
 
+## Status das Contribuições dos Membros do Time
+
+### Nome: Iane Victória
+
+### Comentários Adicionais: 
+Demonstrou um grande comprometimento e dedicação ao projeto! Parabéns pela sua habilidade de liderar, trabalhar bem em equipe e contribuir significativamente para o sucesso do nosso projeto. Ótimo trabalho!
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/e6f68135-8d36-4b76-9171-799a806a0b24)
+
+### Nome: Milleny Ferreira
+
+### Comentários Adicionais: 
+Trabalho excepcional! Seu empenho e profissionalismo foram notáveis ao longo do projeto. Sua capacidade de colaborar eficazmente com a equipe foi essencial para atingirmos nossos objetivos. Excelente trabalho!
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/f8278b06-a9d0-42d1-9f09-b04af1da2ac1)
+
+### Nome: Joice Passos
+
+### Comentários Adicionais: 
+Sua dedicação foi fundamental em várias partes do projeto. Parabéns por sua contribuição e por colaborar tão bem com todos.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/a7b12bf9-d0c1-402c-abfe-63eed4d1cbc8)
+
+### Nome: Rafael Xavier
+
+### Comentários Adicionais: 
+Seu trabalho e evolução foram exemplar! Habilidade de trabalhar em equipe e dedicação ao projeto notáveis. Parabéns por sua contribuição e pelo excelente e significativo desempenho!
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/3af53211-ca3d-488f-97cc-b59b964dc9b3)
+
+### Nome: Matheus de França
+
+### Comentários Adicionais: 
+Seu esforço e comprometimento com o projeto foram bons. Demonstrou uma grande habilidade de evoluir eficazmente com a equipe. Parabéns pelo excelente trabalho!
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/3bcc2011-7077-4492-b10e-f9981ce3d074)
+
+### Nome: Íris Gabriela
+
+### Comentários Adicionais: 
+Seu desempenho foi incrível! Sua dedicação e capacidade de trabalhar em equipe foram excelentes. Parabéns pela ótima contribuição!
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/6c1fa1fc-d1d8-4559-b54a-96ac03adc0bf)
+
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:

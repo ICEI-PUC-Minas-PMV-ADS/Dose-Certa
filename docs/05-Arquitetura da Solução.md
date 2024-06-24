@@ -497,3 +497,32 @@ Eficiência: Tempo de resposta satisfatório e requisitos de hardware baixos pro
 - Comportamento em relação a recursos: medida da quantidade de recursos necessários (CPU, disco e memória, entre outros) e a duração;
 
 Em resumo, o “Dose Certa” é um exemplo de software de qualidade, que tem como objetivo atrair e treinar agentes comunitários para auxiliar idosos que não sabem ler e escrever. Com uma interface amigável, intuitivos e recursos de segurança avançados, “Dose Certa” é a escolha perfeita para quem deseja simplificar o processo de organização de medicamentos com eficiência e confiabilidade.
+
+## Análise Crítica
+
+O projeto Dose Certa representa um avanço significativo ao utilizar tecnologia para melhorar os serviços de saúde básica, especialmente em áreas com recursos limitados. Focado em apoiar os Agentes Comunitários de Saúde (ACS) e melhorar o cuidado aos pacientes, especialmente idosos e pessoas com dificuldades de mobilidade, o Dose Certa promete transformar a prestação de serviços de saúde. No entanto, para garantir sua eficácia a longo prazo, é essencial realizar uma análise detalhada que avalie seus pontos fortes, desafios e áreas que podem ser aprimoradas.
+
+**Pontos Fortes**: 
+
+  1.	**Inovação Tecnológica**: O projeto Dose Certa utiliza tecnologia para solucionar problemas reais enfrentados pelos Agentes Comunitários de Saúde (ACS), aumentando a eficiência e a qualidade do atendimento;
+  2.	**Acessibilidade**: Facilita o acesso de pacientes e ACS a informações importantes sobre medicações e saúde, especialmente para populações vulneráveis como idosos e pessoas com mobilidade reduzida;
+  3.	**Organização** e Gerenciamento: Melhora a organização das atividades dos ACS, permitindo um planejamento mais eficiente das visitas e um melhor acompanhamento dos pacientes;
+  4.	**Comunicação**: Proporciona uma comunicação mais eficaz entre ACS e pacientes, reduzindo a necessidade de deslocamentos e otimizando o tempo.
+
+**Pontos Fracos**:
+  1.	**Dependência de Tecnologia**: Em áreas com infraestrutura tecnológica limitada, a eficácia do Dose Certa pode ser comprometida. A falta de acesso à internet ou a dispositivos adequados pode limitar o alcance e a utilização da aplicação;
+  2.	**Capacitação dos ACS**: A adoção de novas tecnologias requer treinamento adequado para os ACS, que podem ter diferentes níveis de familiaridade com ferramentas digitais;
+  3.	**Privacidade e Segurança de Dados**: A coleta e o gerenciamento de dados de saúde exigem rigorosas medidas de segurança para proteger a privacidade dos pacientes para que estejam de acordo com a Lei Geral de Proteção de Dados(LGPD).
+
+## Proposta de Melhorias
+
+ 1.	Adotar protocolos de segurança rigorosos para proteger os dados dos pacientes, incluindo criptografia de dados e autenticação multifator;
+ 2.	Criar canais para a coleta de feedback dos ACS e dos pacientes sobre a aplicação, permitindo melhorias contínuas com base nas necessidades e sugestões dos usuários;
+ 3.	Integrar o Dose Certa com outros sistemas de saúde utilizados pelo SUS, como prontuários eletrônicos e sistemas de gestão hospitalar, para uma abordagem mais eficiente, clara e direta;
+ 4.	Implementar o modo off-line devido ao fato de algumas áreas de difícil acesso possuírem uma infraestrutura tecnológica limitada. A falta de acesso à internet ou a dispositivos adequados pode limitar o alcance e a utilização da aplicação.
+
+[Análise Crítica e Proposta de Melhorias.docx](https://github.com/user-attachments/files/15948749/Analise.Critica.e.Proposta.de.Melhorias.docx)
+
+
+
+     

@@ -70,7 +70,11 @@ const PacientesDemo = () => {
 
     const fetchData = () => {
         axios
+<<<<<<< HEAD
             .get('https://dosecerta.azurewebsites.net/api/Users')
+=======
+            .get('http://dosecerta.azurewebsites.net/api/users')
+>>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
             .then((response) => {
                 console.log(response);
                 
@@ -101,7 +105,11 @@ const PacientesDemo = () => {
 
     const fetchPacientes = () => {
         axios
+<<<<<<< HEAD
             .get('https://dosecerta.azurewebsites.net/api/Users?UserType=Agente')
+=======
+            .get('http://dosecerta.azurewebsites.net/api/users?UserType=Agente')
+>>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
             .then((response) => {
                 console.log(response)
                 setPacientes([emptyPaciente, ...response.data]); 
@@ -148,7 +156,11 @@ const PacientesDemo = () => {
             // idUsuarioPaciente: user.idUsuarioPaciente || 0
         };
 
+<<<<<<< HEAD
         const request = selectedUserId ? axios.put(`https://dosecerta.azurewebsites.net/api/Users/${selectedUserId}`, newUser) : axios.post('https://dosecerta.azurewebsites.net/api/Users', newUser);
+=======
+        const request = selectedUserId ? axios.put(`http://dosecerta.azurewebsites.net/api/users/${selectedUserId}`, newUser) : axios.post('http://dosecerta.azurewebsites.net/api/users', newUser);
+>>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
 
         request
             .then((response) => {
@@ -205,7 +217,11 @@ const PacientesDemo = () => {
 
     const deleteUser = () => {
         axios
+<<<<<<< HEAD
             .delete(`https://dosecerta.azurewebsites.net/api/Users/${user.id}`)
+=======
+            .delete(`http://dosecerta.azurewebsites.net/api/users/${user.id}`)
+>>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
             .then((response) => {
                 hideDeleteUserDialog(); // Fecha o diálogo de confirmação
                 fetchData(); // Atualiza os dados para refletir a exclusão
