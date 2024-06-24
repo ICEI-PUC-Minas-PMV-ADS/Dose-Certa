@@ -1,4 +1,4 @@
-﻿using api_web_services_dose_certa.Models;
+using api_web_services_dose_certa.Models;
 using api_web_services_dose_certa.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
