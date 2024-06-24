@@ -64,7 +64,7 @@ const VisitasDemo = () => {
 
     const fetchData = () => {
         axios
-            .get('http://localhost:5092/api/Visita')
+            .get('http://dosecerta.azurewebsites.net/api/Visita')
             .then((response) => {
                 setData(response.data);
             })
