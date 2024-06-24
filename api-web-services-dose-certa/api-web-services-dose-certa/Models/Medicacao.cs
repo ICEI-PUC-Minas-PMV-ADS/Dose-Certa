@@ -11,9 +11,9 @@ namespace APIDoseCerta.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
-        public DateTime DataInicio { get; set; } = DateTime.UtcNow;
+        public DateTime DataInicio { get; set; }
 
-        public DateTime DataTermino { get; set; } = DateTime.UtcNow;
+        public DateTime DataTermino { get; set; }
 
         public string Observacao { get; set; }
 
@@ -21,8 +21,7 @@ namespace APIDoseCerta.Models
 
         public List<string> Remedios { get; set; }
         
-        public bool Status { get; set; } 
-
+        public string Status { get; set; }
     }
 
 }
