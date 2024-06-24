@@ -53,7 +53,7 @@ const AnotacaoDemo = () => {
 
     const fetchData = () => {
         axios
-            .get('http://localhost:5092/api/Notes')
+            .get('http://dosecerta.azurewebsites.net/api/Notes')
             .then((response) => {
                 setData(response.data);
             })
@@ -102,7 +102,7 @@ const AnotacaoDemo = () => {
         };
         
     
-        const request = selectedNoteId ? axios.put(`http://localhost:5092/api/Notes/${selectedNoteId}`, newNote) : axios.post('http://localhost:5092/api/Notes', newNote);
+        const request = selectedNoteId ? axios.put(`http://dosecerta.azurewebsites.net/api/Notes/${selectedNoteId}`, newNote) : axios.post('http://dosecerta.azurewebsites.net/api/Notes', newNote);
         
         request.then(response => {
             hideDialog();
@@ -128,7 +128,7 @@ const AnotacaoDemo = () => {
 
     const deleteNote = () => {
         axios
-        .delete(`http://localhost:5092/api/Notes/${note.id}`)
+        .delete(`http://dosecerta.azurewebsites.net/api/Notes/${note.id}`)
         .then((response) => {
             hideDeleteNoteDialog(); // Fecha o diálogo de confirmação
             fetchData(); // Atualiza os dados para refletir a exclusão
