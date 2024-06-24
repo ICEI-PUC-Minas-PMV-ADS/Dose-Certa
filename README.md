@@ -27,6 +27,8 @@ Dose Certa é uma aplicação distribuída que busca atrair e capacitar agentes 
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
+Para baixar o apk do aplicativo, acesse o link: https://drive.google.com/drive/folders/1bSlyUjUhtsyl1PLrDT7MT5CC02CCaHiX?usp=sharing
+
 # Documentação
 
 <ol>

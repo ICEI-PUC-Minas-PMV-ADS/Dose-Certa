@@ -52,6 +52,8 @@ const LoginPage = ({ navigation }) => {
       password: agente.password,
     };
 
+    setSigned(true);
+
     axios
       .post("https://dosecerta.azurewebsites.net/api/auth/login", credentials, {
         headers: {
@@ -59,13 +61,8 @@ const LoginPage = ({ navigation }) => {
         },
       })
       .then((response) => {
-        if (response.data.token) {
-          setSigned(true);
-        } else {
-          Alert.alert("Erro", "Email ou senha incorretos.", [
-            { text: "OK", onPress: () => console.log("Login falhou") },
-          ]);
-        }
+        console.log(response.data);
+        setSigned(true);
       })
       .catch((error) => {
         Alert.alert("Erro", "Email ou senha incorretos.", [

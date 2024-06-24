@@ -2,6 +2,11 @@
   "expo": {
     "name": "MobileDoseCertaV2",
     "slug": "MobileDoseCertaV2",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "674db7f2-7d98-4ea8-867e-f0e50f07d4dd"
+      }
+    }
   }
 }
