@@ -3999,16 +3999,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Ivoney\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\Jobs\\.nuget\\packages\\": {}
->>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Ivoney\\Desktop\\dosecerta\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
       "projectName": "api-web-services-dose-certa",
       "projectPath": "C:\\Users\\Ivoney\\Desktop\\dosecerta\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
@@ -4017,16 +4012,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ivoney\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-      "projectUniqueName": "C:\\Users\\Jobs\\Desktop\\main atualizada\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
-      "projectName": "api-web-services-dose-certa",
-      "projectPath": "C:\\Users\\Jobs\\Desktop\\main atualizada\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\api-web-services-dose-certa.csproj",
-      "packagesPath": "C:\\Users\\Jobs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jobs\\Desktop\\main atualizada\\Dose-Certa\\api-web-services-dose-certa\\api-web-services-dose-certa\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\Jobs\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4107,11 +4092,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
->>>>>>> d28c013cbdd4f4acc33bf7afad302d3ff37ef1b7
       }
     }
   },

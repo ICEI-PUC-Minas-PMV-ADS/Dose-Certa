@@ -39,7 +39,7 @@ const LoginPage = () => {
             localStorage.setItem('userDoseCerta', JSON.stringify(data.user));
             toast.current?.show({ severity: 'success', summary: 'Sucesso', detail: 'Login efetuado com sucesso' });
     
-            router.push('/pages/dashboard');
+            router.push('/dashboard');
         } catch (error) {
             console.error('Erro ao fazer login:', error);
             toast.current?.show({ severity: 'error', summary: 'Erro', detail: 'Falha na autenticação' });

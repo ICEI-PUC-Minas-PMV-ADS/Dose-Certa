@@ -31,10 +31,7 @@ A funcionalidade de Cadastro de Visitas (RF-006) permite que um agente comunitá
 * [VisitaController](api-web-services-dose-certa/api-web-services-dose-certa/Controllers/VisitaController.cs)
 * [Visita.cs(Models)](api-web-services-dose-certa/api-web-services-dose-certa/Models/Visita.cs)
 * [VisitaService.cs](api-web-services-dose-certa/api-web-services-dose-certa/Services/VisitaService.cs)
-<<<<<<< HEAD
-=======
 * [visitas.tsx](../mobile-frontend-dose-certa/src/pages/visitas.tsx)
->>>>>>> milleny
 
 ### Funcionalidade 08: Cadastrar Residências (RF-008)
 A funcionalidade de Cadastro de Residência (RF-008) permite que um usuário cadastrado na plataforma `Dose Certa` insira informações sobre as residências dos pacientes. Ao fornecer detalhes como rua, número, cidade, bairro e complemento o usuário poderá posteriormente realizar outras atividades disponíveis na plataforma, tendo essas informações como base.
@@ -70,17 +67,10 @@ A funcionalidade de Criação de Anotações/Lembretes (RF-009) permite que um u
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
 |------|-----------------------------------------|----|
-<<<<<<< HEAD
-|RF-009| O sistema deve permitir que os usuários (agentes e pacientes) possam criar anotações relacionadas a tarefas pendentes ou lembretes. | AppMenu.tsx / note(page.tsx) / NotesController / Note.cs(Models) / NotesService.cs
-
-![Anotações](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/c0efbe55-67a9-4ebb-bef3-6344d193bed1)
-=======
 |RF-009| O sistema deve permitir que os usuários (agentes e pacientes) possam criar anotações relacionadas a tarefas pendentes ou lembretes. | AppMenu.tsx / note(page.tsx) / NotesController / Note.cs(Models) / NotesService.cs / anotacoes.tsx |
-
 ![Anotações](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa/assets/83494301/c0efbe55-67a9-4ebb-bef3-6344d193bed1)
 | ![Nova Anotações Mobile](./img/nova_anotação.png) | ![Anotações Mobile](./img/anotação.png) | ![Editar Anotações Mobile](./img/editar_anotação.png) |
 |:---:|:---:|:---:|
->>>>>>> milleny
 
 ##### Instruções de uso/acesso
 1. Acesse o site pelo [Link](https://github.com/ICEI-PUC-Minas-PMV-ADS/Dose-Certa?tab=readme-ov-file)
@@ -98,10 +88,8 @@ A funcionalidade de Criação de Anotações/Lembretes (RF-009) permite que um u
 * [NotesController](api-web-services-dose-certa/api-web-services-dose-certa/Controllers/NotesController.cs)
 * [Note.cs(Models)](api-web-services-dose-certa/api-web-services-dose-certa/Models/Note.cs)
 * [NotesService.cs](api-web-services-dose-certa/api-web-services-dose-certa/Services/NotesService.cs)
-<<<<<<< HEAD
-=======
 * [anotacoes.tsx](../mobile-frontend-dose-certa/src/pages/anotacoes.tsx)
->>>>>>> milleny
+
 
 ### Funcionalidade 11: Listagem de Visitas (RF-0011)
 A funcionalidade de Listagem de Visitas (RF-0011) permite que um agente comunitário cadastrado na plataforma `Dose Certa` visualize uma lista das visitas agendadas para o dia. Ao acessar essa lista, o agente poderá se organizar e planejar suas atividades do dia com base nas informações disponíveis.
