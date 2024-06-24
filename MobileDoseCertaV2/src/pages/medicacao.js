@@ -122,7 +122,7 @@ const Medicacao = () => {
   const saveMedicacao = () => {
     const newMedicacao = {
       id: medicacao.id || "",
-      idUsuarioPaciente: medicacao.idUsuarioPaciente || 0,
+      idUsuarioPaciente: medicacao.idUsuarioPaciente || 4,
       observacao: medicacao.observacao,
       status: medicacao.status ? 'true' : 'false',
       dataInicio: medicacao.dataInicio,
@@ -296,8 +296,16 @@ const Medicacao = () => {
     return paciente ? paciente.name : "N/A";
   };
 
+  const theme = {
+    ...DefaultTheme,
+    colors: {
+      ...DefaultTheme.colors,
+      text: 'black', // Definir a cor padrão do texto para preto
+    },
+  };
+
   return (
-    <PaperProvider>
+    <PaperProvider theme={theme}>
       <View style={styles.container}>
         <View style={styles.btn}>
           <Button
@@ -312,7 +320,7 @@ const Medicacao = () => {
           </Button>
         </View>
 
-        <DataTable>
+        <DataTable style={{color: '#000'}}>
           <DataTable.Header>
             <DataTable.Title style={styles.column}>Paciente</DataTable.Title>
             <DataTable.Title style={styles.column}>Observação</DataTable.Title>
@@ -625,6 +633,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 15,
     backgroundColor: "#fff",
+    color: '#000'
   },
   columnInfo: {
     display: "flex",
@@ -641,6 +650,7 @@ const styles = StyleSheet.create({
   dialogDelete: {
     backgroundColor: "#fff",
     padding: 20,
+    color: "#000"
   },
   deleteAlign: {
     flexDirection: "row",
@@ -813,6 +823,7 @@ const styles = StyleSheet.create({
   dialogContainer: {
     backgroundColor: "#FFFFFF",
     borderRadius: 10,
+    color: "#000"
   },
   dialogContent: {
     paddingHorizontal: 20,

@@ -30,6 +30,14 @@ const Visitas = () => {
     idUsuarioPaciente: null,
   };
 
+  const theme = {
+    ...DefaultTheme,
+    colors: {
+      ...DefaultTheme.colors,
+      text: 'black', // Definir a cor padrão do texto para preto
+    },
+  };
+
   const [data, setData] = useState([]);
   const [pacientes, setPacientes] = useState([]);
 
@@ -192,7 +200,7 @@ const Visitas = () => {
       date: visita.date,
       status: visita.status,
       observacoes: visita.observacoes,
-      idUsuarioPaciente: visita.idUsuarioPaciente || 0,
+      idUsuarioPaciente: visita.idUsuarioPaciente || 4,
     };
 
     const request = visita.id
@@ -225,7 +233,7 @@ const Visitas = () => {
   };
 
   return (
-    <PaperProvider>
+    <PaperProvider theme={theme}>
       <View style={styles.container}>
         <View style={styles.btn}>
           <Button
@@ -239,7 +247,7 @@ const Visitas = () => {
             Novo
           </Button>
         </View>
-        <DataTable>
+        <DataTable style={{color: '#000'}}>
           <DataTable.Header>
             <DataTable.Title>Paciente</DataTable.Title>
             <DataTable.Title>Data</DataTable.Title>
@@ -349,7 +357,7 @@ const Visitas = () => {
             <Divider />
             <Dialog.Content>
               <View style={styles.groupUsersModal}>
-                <Text variant="bodyMedium">Paciente:</Text>
+                <Text style={{color: '#000'}} variant="bodyMedium">Paciente:</Text>
                 <RNPickerSelect
                   placeholder={{ label: "Selecione um paciente", value: null }}
                   value={visita.idUsuarioPaciente}
@@ -362,7 +370,7 @@ const Visitas = () => {
               </View>
 
               <View style={styles.groupUsersModal}>
-                <Text variant="bodyMedium">Data:</Text>
+                <Text style={{color: '#000'}} variant="bodyMedium">Data:</Text>
                 {showPicker && (
                   <DateTimePicker
                     mode="date"
@@ -470,6 +478,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 15,
     backgroundColor: "#fff",
+    color: '#000'
   },
   infoContainer: {
     marginBottom: 20,
@@ -493,6 +502,7 @@ const styles = StyleSheet.create({
   },
   dialogContainer: {
     backgroundColor: "#FFFFFF",
+    color: '#000',
     borderRadius: 10,
   },
   dialogContent: {
@@ -516,9 +526,11 @@ const styles = StyleSheet.create({
   },
   dialogDelete: {
     backgroundColor: "#fff",
+    color: '#000'
   },
   containerStyle: {
     backgroundColor: "white",
+    color: '#000'
   },
   groupUsersModal: {
     paddingTop: 20,

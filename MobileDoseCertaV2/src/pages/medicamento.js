@@ -161,8 +161,16 @@ const Medicamento = () => {
     setDeleteRemedioDialog(false);
   };
 
+  const theme = {
+    ...DefaultTheme,
+    colors: {
+      ...DefaultTheme.colors,
+      text: 'black', // Definir a cor padrão do texto para preto
+    },
+  };
+
   return (
-    <PaperProvider>
+    <PaperProvider theme={theme}>
       <View style={styles.container}>
         <View style={styles.btn}>
           <Button
@@ -177,7 +185,7 @@ const Medicamento = () => {
           </Button>
         </View>
 
-        <DataTable>
+        <DataTable style={{color: '#000'}}>
             <DataTable.Header>
               <DataTable.Title style={styles.column}>Nome</DataTable.Title>
               <DataTable.Title style={styles.column}>Dosagem</DataTable.Title>
@@ -429,13 +437,16 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 15,
     backgroundColor: "#fff",
+    color: '#000'
   },
   dialogDelete: {
     backgroundColor: "#fff",
     padding: 20,
+    color: '#000'
   },
   containerStyle: {
     backgroundColor: "white",
+    color: '#000'
   },
   deleteAlign: {
     flexDirection: "row",
@@ -608,6 +619,7 @@ const styles = StyleSheet.create({
   dialogContainer: {
     backgroundColor: "#FFFFFF",
     borderRadius: 10,
+    color: '#000'
   },
   dialogContent: {
     paddingHorizontal: 20,

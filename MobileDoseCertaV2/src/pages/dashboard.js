@@ -4,7 +4,9 @@ import { Card, Button } from 'react-native-paper';
 import { BarChart } from 'react-native-chart-kit';
 import { Calendar } from 'react-native-calendars';
 import axios from 'axios';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import {
+  User
+} from "phosphor-react-native";
 
 const screenWidth = Dimensions.get('window').width;
 
@@ -67,7 +69,7 @@ const DashboardScreen = () => {
         <Card style={styles.card}>
           <Card.Content style={styles.cardContent}>
             <View style={styles.cardIcon}>
-              <Icon name="user" size={48} color="#666" />
+              <User size={48} color="#666" />
             </View>
             <View style={styles.cardText}>
               <Text style={{ textAlign: 'center' }}>Total de Pacientes</Text>

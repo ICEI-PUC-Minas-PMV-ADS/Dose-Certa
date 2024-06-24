@@ -20,7 +20,7 @@ const Anotacoes = () => {
   let emptyNote = {
     id: "",
     content: "",
-    idUserPaciente: null,
+    idUserPaciente: null
   };
 
   let emptyPaciente = {
@@ -138,6 +138,7 @@ const Anotacoes = () => {
     const newNote = {
       id: note.id || "",
       content: note.content,
+      creationDate: formatDate(new Date()),
       idUserPaciente: note.idUserPaciente || null,
     };
 
@@ -164,8 +165,28 @@ const Anotacoes = () => {
     }
   };
 
+  const formatDate = (date) => {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
+    const milliseconds = String(date.getMilliseconds()).padStart(3, '0');
+  
+    return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}Z`;
+  };
+
+  const theme = {
+    ...DefaultTheme,
+    colors: {
+      ...DefaultTheme.colors,
+      text: 'black', // Definir a cor padrão do texto para preto
+    },
+  };
+
   return (
-    <PaperProvider>
+    <PaperProvider theme={theme}>
       <View style={styles.container}>
         <View style={styles.btn}>
           <Button
@@ -180,7 +201,7 @@ const Anotacoes = () => {
             Novo
           </Button>
         </View>
-        <DataTable>
+        <DataTable style={{color: '#000'}}>
           <DataTable.Header>
             <DataTable.Title>Paciente</DataTable.Title>
             <DataTable.Title>Conteúdo</DataTable.Title>
@@ -368,6 +389,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 15,
     backgroundColor: "#fff",
+    color: '#000'
   },
   infoContainer: {
     marginBottom: 20,
@@ -399,6 +421,7 @@ const styles = StyleSheet.create({
   dialogContainer: {
     backgroundColor: "#FFFFFF",
     borderRadius: 10,
+    color: "#000"
   },
   dialogContent: {
     paddingHorizontal: 20,
@@ -406,9 +429,11 @@ const styles = StyleSheet.create({
   },
   dialogDelete: {
     backgroundColor: "#fff",
+    color: "#000"
   },
   containerStyle: {
     backgroundColor: "white",
+    color: "#000"
   },
   groupUsersModal: {
     paddingTop: 20,
