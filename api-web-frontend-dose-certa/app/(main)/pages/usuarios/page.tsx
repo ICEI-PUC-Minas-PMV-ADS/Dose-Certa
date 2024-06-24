@@ -30,7 +30,7 @@ const Usuarios = () => {
                 return;
             }
 
-            const response = await fetch(`http://localhost:5092/api/users`, {
+            const response = await fetch(`http://dosecerta.azurewebsites.net/api/users`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
