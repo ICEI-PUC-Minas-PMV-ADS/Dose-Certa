@@ -12,5 +12,5 @@ Uma aplicação distribuída que busca atrair e capacitar agentes comunitários 
 
 ## Conjunto de Slides (Estrutura)
 
-[em breve]
+[Apresentação Dose Certa.pdf](https://github.com/user-attachments/files/15948735/Apresentacao.Dose.Certa.pdf)
  
