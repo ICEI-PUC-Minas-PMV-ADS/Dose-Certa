@@ -38,18 +38,17 @@ namespace api_web_services_dose_certa.Services
         public async Task RemoveAsync(string id) =>
             await _medicacaoCollection.DeleteOneAsync(x => x.Id == id);
 
-        public async Task StartAsync(string id)
+        public void Start(string id)
         {
             var filter = Builders<Medicacao>.Filter.Eq(m => m.Id, id);
-            var update = Builders<Medicacao>.Update.Set(m => m.Status, true);
-            await _medicacaoCollection.UpdateOneAsync(filter, update);
+            var update = Builders<Medicacao>.Update.Set(m => m.Status, "Iniciado");
+            _medicacaoCollection.UpdateOne(filter, update);
         }
-
-        public async Task PauseAsync(string id)
+        public void Pause(string id)
         {
-            var filter = Builders<Medicacao>.Filter.Eq(m => m.Id, id);
-            var update = Builders<Medicacao>.Update.Set(m => m.Status, false);
-            await _medicacaoCollection.UpdateOneAsync(filter, update);
-        }
+           var filter = Builders<Medicacao>.Filter.Eq(m => m.Id, id);
+           var update = Builders<Medicacao>.Update.Set(m => m.Status, "Pausado");
+           _medicacaoCollection.UpdateOne(filter, update);
+        }     
     }  
 }
